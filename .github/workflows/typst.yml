@@ -26,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@main
       - name: Build
-        run: "typst compile tesi.typ tesi.pdf"
+        run: "typst compile wiki/burgeon.typ  wiki/burgeon.pdf"
       - name: Generate build artifact
         uses: actions/upload-artifact@main
         with:
