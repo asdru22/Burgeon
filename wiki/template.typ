@@ -1,5 +1,5 @@
 #let template(doc) = {
-  set text(font: "Book Antiqua", size: 10pt)
+  set text(size: 10pt)
   set page(margin: 15pt, height: auto, header: context {
     let aft-bef(sel) = {
       let before = query(sel.before(here()))

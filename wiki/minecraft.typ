@@ -9,15 +9,6 @@
   epic: (id: "Epic", color: rgb("#FF55FF")),
 )
 
-#let inline_item_text(t, item) = text(
-  fill: blue,
-box(scale(item.img_with_link, x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%) + underline(link(item.url, t))
-)
-
-#let inline_item(item) = text(inline_item_text(
-  item.name,
-  item,
-))
 
 #let inline_content(dest, content, custom: false) = text(fill: blue, if (custom == true) {
   underline(link(label(dest), content))
@@ -87,6 +78,10 @@ box(scale(item.img_with_link, x: pixel * 8, y: pixel * 8, reflow: true), baselin
       scaling: "pixelated",
     )
   }
+
+  let item_text(content) = text(
+  fill: blue,
+box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%) + underline(link(url,content)))
   return (
     id: id,
     image: i,
@@ -97,6 +92,8 @@ box(scale(item.img_with_link, x: pixel * 8, y: pixel * 8, reflow: true), baselin
     title_image: box(scale(i, x: pixel * 10, y: pixel * 10, reflow: true), baseline: 20%),
     grid_image: link(url, grid_image),
     header: [#heading(depth: 2, name)#label(id)],
+    txt: item_text(name),
+    txt-param: item_text
   )
 }
 

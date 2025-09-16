@@ -29,12 +29,12 @@
 #top_grid(col: 2, item-tooltip(
   bloomguard_seed,
   type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #inline_item_text("Etched Vases", etched_vase) filled with #inline_item(dirt). When fully grown, it can be harvested to obtain #inline_item_text("Bloomguard", bloomguard) and can also drop 1-3 Seeds.]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
 #top_grid(col: 2, item-tooltip(
   protobean,
   type: "Item",
-))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #inline_item_text("Etched Vases", etched_vase) filled with #inline_item(dirt). When fully grown, it can be harvested to obtain #inline_item_text("Bean Pods", bean_pod).]
+))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
 
 #top_grid(
   col: 2,
@@ -43,12 +43,12 @@
     type: "Item",
   ),
   recipe3x3(ghast_tear, beetroot, resin_clump, magma_cream, none, none, none, none, none, sour_kernel, shapeless: true),
-)[Can be inserted in a #inline_item(pale_oak_log) placed in an #inline_item(etched_vase). After some time, it will overcome the log, turning it into a #inline_item(glutted_log).]
+)[Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some time, it will overcome the log, turning it into a #glutted_log.txt.]
 
 #top_grid(col: 2, item-tooltip(
   tangleroot_seed,
   type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #inline_item_text("Etched Vases", etched_vase) filled with #inline_item(moss_block). When fully grown, it can be harvested to obtain #inline_item(rootsplit_sickle).]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
 == Tools & Weapons
 
@@ -56,31 +56,31 @@
   sap_bucket,
   max_stack: 1,
   type: "Tool",
-))[Obtained from #inline_item_text("Spiles", spile)  attached to #inline_item_text("active Creaking Hearts", creaking_heart).]
+))[Obtained from #(spile.txt-param)[Spiles]  attached to #(creaking_heart.txt-param)[Active Creaking Hearts].]
 
 #top_grid(col: 2, item-tooltip(
   bloomguard,
   type: "Tool",
   alt: "items/bloomguard_open.png",
-))[Obtained from grown #inline_item_text("Bloomguard Seeds", bloomguard_seed). Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing the use button will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
+))[Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing the use button will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
 
 #top_grid(col: 2, item-tooltip(
   rootsplit_sickle,
   type: "Tool",
   durability: 145,
   alt: "items/rootsplit_staff.png",
-))[Obtained from grown #inline_item_text("Tangleroot Seeds", tangleroot_seed). The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding the use button will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding sprint + use will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+))[Obtained from grown #(tangleroot_seed.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding the use button will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding sprint + use will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 == Other
 #top_grid(col: 2, item-tooltip(
   bean_pod,
   type: "Item",
-))[Obtained from fully grown #inline_item_text("Protobeans", protobean). Can be opened to obtain 1-4 #inline_item_text("Beans", bean).]
+))[Obtained from fully grown #(protobean.txt-param)[Bloomguard Seeds]. Can be opened to obtain 1-4 #(bean.txt-param)[Bloomguard Seeds].]
 
 #top_grid(col: 2, item-tooltip(
   bean,
   type: "Currency",
-))[Obtained from opening #inline_item_text("Bean Pods", bean_pod). Used as currency by the creature inside the #inline_item(glutted_log). Cannot be planted.]
+))[Obtained from opening #(bean_pod.txt-param)[Bloomguard Seeds]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
 
 = Blocks
 
@@ -91,7 +91,7 @@
     type: "Block",
   ),
   recipe3x3(none, iron_ingot, none, iron_ingot, iron_ingot, iron_ingot, iron_ingot, none, none, spile),
-)[Used to extract #inline_item_text("Sap", sap_bucket) from #inline_item_text("active Creaking Hearts", creaking_heart). Each time a #inline_item(bucket) is filled, there is a 10% chance to convert the Heart into a #inline_item(pale_oak_log).]
+)[Used to extract #(sap_bucket.txt-param)[Bloomguard Seeds] from #(creaking_heart.txt-param)[active Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance to convert the Heart into a #pale_oak_log.txt.]
 
 #top_grid(
   col: 3,
@@ -119,31 +119,31 @@
     [Block],
     [Seed],
     [Result],
-    table.cell(rowspan: 2, inline_item(dirt)),
-    inline_item(protobean),
-    inline_item(bean_pod),
-    inline_item(bloomguard_seed),
-    inline_item(bloomguard),
-    inline_item(moss_block),
-    inline_item(tangleroot_seed),
-    inline_item(rootsplit_sickle),
-    inline_item(pale_oak_log),
-    inline_item(sour_kernel),
-    inline_item(glutted_log),
+    table.cell(rowspan: 2, dirt.txt),
+    protobean.txt,
+    bean_pod.txt,
+    bloomguard_seed.txt,
+    bloomguard.txt,
+    moss_block.txt,
+    tangleroot_seed.txt,
+    rootsplit_sickle.txt,
+    pale_oak_log.txt,
+    sour_kernel.txt,
+    glutted_log.txt,
   )]
 
 #top_grid(col: 2, item-tooltip(
   glutted_log,
   type: "Block",
 ))[
-  Formed when a #inline_item(pale_oak_log) harboring a #inline_item(sour_kernel) is placed within an #inline_item(etched_vase). If #inline_item_text("Beans", bean) are left nearby a Glutted Log, they will attract a mysterious creature drawn to the offering. Upon arrival, the entity will steal the beans and take residence within the log, turning it into a #inline_item(murky_crevice).
+  Formed when a #pale_oak_log.txt harboring a #sour_kernel.txt is placed within an #etched_vase.txt. If #(bean.txt-param)[Beans] are left nearby a Glutted Log, they will attract a mysterious creature drawn to the offering. Upon arrival, the entity will steal the beans and take residence within the log, turning it into a #murky_crevice.txt.
 ]
 
 #top_grid(col: 2, item-tooltip(
   murky_crevice,
   type: "Block",
 ))[
-  Created when a mysterious creature takes residence within a #inline_item(glutted_log). If #inline_item_text("Beans", bean) are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.]
+  Created when a mysterious creature takes residence within a #glutted_log.txt. If (bean.txt-param)[Beans] are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.]
 
 = Structures
 
