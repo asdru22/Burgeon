@@ -241,3 +241,16 @@ box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%)
     ),
   )
 }
+
+
+#let input(content) = box(baseline:25%,fill: rgb("#d7d7d7"), stroke:gray, inset:2pt, radius:2pt,text(font:"DejaVu Sans Mono",content,size:7pt))
+
+#let inputs = (
+  "use": input[use],
+  "sneak": input[sneak],
+  "attack": input[attack],
+  "jump": input[jump],
+  "drop": input[drop],
+  "sprint": input[sprint],
+  "use-sprint": input[sprint + use],
+)
