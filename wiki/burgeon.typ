@@ -50,6 +50,11 @@
   type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
+#top_grid(col: 2, item-tooltip(
+  bloom_bud,
+  type: "Item",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
+
 == Tools & Weapons
 
 #top_grid(col: 2, item-tooltip(
@@ -70,6 +75,12 @@
   durability: 145,
   alt: "items/rootsplit_staff.png",
 ))[Obtained from grown #(tangleroot_seed.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+
+#top_grid(col: 2, item-tooltip(
+  blooming_bulb,
+  max_stack: 1,
+  type: "Tool",
+))[Obtained from grown #(bloom_bud.txt-param)[Bloom Buds]. When in your inventory, taking damage will charge a bar in the bulb. After taking damage 13 times, it will heal the player for #health(6)[health].]
 
 == Other
 #top_grid(col: 2, item-tooltip(
@@ -130,6 +141,9 @@
     pale_oak_log.txt,
     sour_kernel.txt,
     glutted_log.txt,
+    mud.txt,
+    bloom_bud.txt,
+    blooming_bulb.txt,
   )]
 
 #top_grid(col: 2, item-tooltip(

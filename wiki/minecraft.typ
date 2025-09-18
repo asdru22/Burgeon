@@ -49,13 +49,16 @@
 
 #let heart_half = health("health_half")
 
-#let damage(amount) = {
+
+#let health(amount,content) = {
   let full = calc.floor(amount / 2)
   let half = calc.rem-euclid(amount, 2)
 
   let hearts = heart * full + if half == 1 { heart_half }
-  [#amount (#hearts) damage]
+  [#amount (#hearts) #content]
 }
+
+#let damage(amount) = health(amount)[damage]
 
 
 
