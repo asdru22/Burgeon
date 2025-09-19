@@ -61,7 +61,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #pagebreak()
 
 #top_grid(col: 2, item-tooltip(
-    tangleroot_seed,
+    tangleroot,
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
@@ -73,7 +73,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     azure_thistle_seeds,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(azure_thistle.txt-param)[Blooming Bulbs].]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(azure_thistle.txt-param)[Azure Thistles].]
 
 #top_grid(col: 2, item-tooltip(
     scarlet_fang_root,
@@ -81,17 +81,17 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
 
 == Tools & Weapons
-
+/*
 #top_grid(col: 2, item-tooltip(
     sap_bucket,
     max_stack: 1,
     type: "Tool",
 ))[Obtained from #(spile.txt-param)[Spiles]  attached to #(creaking_heart.txt-param)[Active Creaking Hearts].]
-
+*/
 #top_grid(col: 2, item-tooltip(
     bloomguard,
     type: "Tool",
-    alt: "items/bloomguard_open.png",
+    alt: "../resourcepack/assets/brg/items/bloomguard_blocking.png",
 ))[Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing #inputs.use will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
 
 #top_grid(col: 2, item-tooltip(
@@ -99,7 +99,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     type: "Tool",
     durability: 145,
     alt: "items/rootsplit_staff.png",
-))[Obtained from grown #(tangleroot_seed.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+))[Obtained from grown #(tangleroot.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
     blooming_bulb,
@@ -121,15 +121,15 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     bean_pod,
     type: "Item",
-))[Obtained from fully grown #(protobean.txt-param)[Bloomguard Seeds]. Can be opened to obtain 1-4 #(bean.txt-param)[Bloomguard Seeds].]
+))[Obtained from fully grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 1-4 #(bean.txt-param)[Beans].]
 
 #top_grid(col: 2, item-tooltip(
     bean,
     type: "Currency",
-))[Obtained from opening #(bean_pod.txt-param)[Bloomguard Seeds]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
+))[Obtained from opening #(bean_pod.txt-param)[Bean Pods]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
 
 = Blocks
-
+/*
 #top_grid(
     col: 2,
     item-tooltip(
@@ -140,6 +140,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     pb: false
 )
 Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-param)[Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance the Heart turns into a #pale_oak_log.txt.
+*/
 
 #pagebreak()
 
@@ -180,7 +181,7 @@ Can be filled up with various blocks to grow different plants.
         table.cell(rowspan: 2, moss_block.txt),
         azure_thistle_seeds.txt,
         azure_thistle.txt,
-        tangleroot_seed.txt,
+        tangleroot.txt,
         rootsplit_sickle.txt,
         pale_oak_log.txt,
         sour_kernel.txt,
