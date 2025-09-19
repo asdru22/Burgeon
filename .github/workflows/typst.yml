@@ -26,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@main
       - name: Build
-        run: "typst compile wiki/burgeon.typ  wiki/burgeon.pdf --font-path wiki --root path/here"
+        run: "typst compile wiki/burgeon.typ  wiki/burgeon.pdf --font-path wiki --root ."
       - name: Generate build artifact
         uses: actions/upload-artifact@main
         with:
