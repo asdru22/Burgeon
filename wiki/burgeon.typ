@@ -140,9 +140,10 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     pb: false
 )
 Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-param)[Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance the Heart turns into a #pale_oak_log.txt.
+#pagebreak()
+
 */
 
-#pagebreak()
 
 #top_grid(
     col: 2,
@@ -212,7 +213,7 @@ Can be filled up with various blocks to grow different plants.
 = Structures
 
 == Mossy Trail <mossy_trail>
-Found in #inline_content("plains", "Plains") biomes.
+Found in the #inline_content("plains", "Plains") biome.
 
 #pagebreak()
 
