@@ -4,21 +4,21 @@
 
 #rarity.insert("currency", (id: "Currency", color: rgb("#55FF55")))
 
-#let top_grid(col: 2, ..content) = [
-  #grid(
-    columns: 3,
-    align: top,
-    gutter: 10pt,
-    ..content,
-  )
-  #pagebreak()
+#let top_grid(col: 2, ..content, pb: true) = {
+    grid(
+        columns: 3,
+        align: top,
+        gutter: 10pt,
+        ..content,
+    )
+    if(pb) {pagebreak()}
+}
 
-]
 
 #show: template
 
 #align(center, text(22pt)[
-  *Burgeon*
+    *Burgeon*
 ])
 
 #outline(title: none)
@@ -27,157 +27,186 @@
 = Items
 == Seeds
 #top_grid(col: 2, item-tooltip(
-  bloomguard_seed,
-  type: "Item",
+    bloomguard_seed,
+    type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
 #top_grid(col: 2, item-tooltip(
-  protobean,
-  type: "Item",
+    protobean,
+    type: "Item",
 ))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
 
 #top_grid(
-  col: 2,
-  item-tooltip(
-    sour_kernel,
-    type: "Item",
-  ),
-  recipe3x3(ghast_tear, beetroot, resin_clump, magma_cream, none, none, none, none, none, sour_kernel, shapeless: true),
-)[Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some time, it will overcome the log, turning it into a #glutted_log.txt.]
+    col: 2,
+    item-tooltip(
+        sour_kernel,
+        type: "Item",
+    ),
+    recipe3x3(
+        ghast_tear,
+        beetroot,
+        resin_clump,
+        magma_cream,
+        none,
+        none,
+        none,
+        none,
+        none,
+        sour_kernel,
+        shapeless: true,
+    ),
+    pb: false
+)
+Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some time, it will overcome the log, turning it into a #glutted_log.txt.
+#pagebreak()
 
 #top_grid(col: 2, item-tooltip(
-  tangleroot_seed,
-  type: "Item",
+    tangleroot_seed,
+    type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
 #top_grid(col: 2, item-tooltip(
-  bloom_bud,
-  type: "Item",
+    bloom_bud,
+    type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
 
 #top_grid(col: 2, item-tooltip(
-  azure_thistle_seeds,
-  type: "Item",
+    azure_thistle_seeds,
+    type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(azure_thistle.txt-param)[Blooming Bulbs].]
 
 #top_grid(col: 2, item-tooltip(
-  scarlet_fang_root,
-  type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
+    scarlet_fang_root,
+    type: "Item",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
 
 == Tools & Weapons
 
 #top_grid(col: 2, item-tooltip(
-  sap_bucket,
-  max_stack: 1,
-  type: "Tool",
+    sap_bucket,
+    max_stack: 1,
+    type: "Tool",
 ))[Obtained from #(spile.txt-param)[Spiles]  attached to #(creaking_heart.txt-param)[Active Creaking Hearts].]
 
 #top_grid(col: 2, item-tooltip(
-  bloomguard,
-  type: "Tool",
-  alt: "items/bloomguard_open.png",
+    bloomguard,
+    type: "Tool",
+    alt: "items/bloomguard_open.png",
 ))[Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing #inputs.use will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
 
 #top_grid(col: 2, item-tooltip(
-  rootsplit_sickle,
-  type: "Tool",
-  durability: 145,
-  alt: "items/rootsplit_staff.png",
+    rootsplit_sickle,
+    type: "Tool",
+    durability: 145,
+    alt: "items/rootsplit_staff.png",
 ))[Obtained from grown #(tangleroot_seed.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
-  blooming_bulb,
-  max_stack: 1,
-  type: "Tool",
+    blooming_bulb,
+    max_stack: 1,
+    type: "Tool",
 ))[Obtained from grown #(bloom_bud.txt-param)[Bloom Buds]. When in your inventory, taking damage will charge a bar in the bulb. After taking damage 13 times, it will heal the player for #health(6)[health].]
 
 #top_grid(col: 2, item-tooltip(
-  azure_thistle,
-  type: "Tool",
+    azure_thistle,
+    type: "Tool",
 ))[Obtained from grown #azure_thistle_seeds.txt. Also drops 1-2 seeds when broken. Azure Thistles can be used as arrows. Mobs hit will take an additional #damage(2) every time they are hurt for 20 seconds.]
 
 #top_grid(col: 2, item-tooltip(
-  scarlet_fang,
-  type: "Tool",
+    scarlet_fang,
+    type: "Tool",
 ))[Obtained from grown #scarlet_fang_root.txt. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
 
 == Other
 #top_grid(col: 2, item-tooltip(
-  bean_pod,
-  type: "Item",
+    bean_pod,
+    type: "Item",
 ))[Obtained from fully grown #(protobean.txt-param)[Bloomguard Seeds]. Can be opened to obtain 1-4 #(bean.txt-param)[Bloomguard Seeds].]
 
 #top_grid(col: 2, item-tooltip(
-  bean,
-  type: "Currency",
+    bean,
+    type: "Currency",
 ))[Obtained from opening #(bean_pod.txt-param)[Bloomguard Seeds]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
 
 = Blocks
 
 #top_grid(
-  col: 2,
-  item-tooltip(
-    spile,
-    type: "Block",
-  ),
-  recipe3x3(none, iron_ingot, none, iron_ingot, iron_ingot, iron_ingot, iron_ingot, none, none, spile),
-)[Used to extract #(sap_bucket.txt-param)[Bloomguard Seeds] from #(creaking_heart.txt-param)[active Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance to convert the Heart into a #pale_oak_log.txt.]
+    col: 2,
+    item-tooltip(
+        spile,
+        type: "Block",
+    ),
+    recipe3x3(none, iron_ingot, none, iron_ingot, iron_ingot, iron_ingot, iron_ingot, none, none, spile),
+    pb: false
+)
+Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-param)[Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance the Heart turns into a #pale_oak_log.txt.
+
+#pagebreak()
 
 #top_grid(
-  col: 3,
-  item-tooltip(
-    etched_vase,
-    type: "Block",
-  ),
-  recipe3x3(
-    nether_brick,
-    none,
-    nether_brick,
-    nether_brick,
-    none,
-    nether_brick,
-    none,
-    nether_brick,
-    none,
-    etched_vase,
-  ),
-)[Can be filled up with various blocks to grow different plants.
-  #table(
-    columns: 3,
-    align: horizon,
-    inset: 4pt,
-    [Block],
-    [Seed],
-    [Result],
-    table.cell(rowspan: 2, dirt.txt),
-    protobean.txt,
-    bean_pod.txt,
-    bloomguard_seed.txt,
-    bloomguard.txt,
-    moss_block.txt,
-    tangleroot_seed.txt,
-    rootsplit_sickle.txt,
-    pale_oak_log.txt,
-    sour_kernel.txt,
-    glutted_log.txt,
-    mud.txt,
-    bloom_bud.txt,
-    blooming_bulb.txt,
-  )]
+    col: 2,
+    item-tooltip(
+        etched_vase,
+        type: "Block",
+    ),
+    recipe3x3(
+        nether_brick,
+        none,
+        nether_brick,
+        nether_brick,
+        none,
+        nether_brick,
+        none,
+        nether_brick,
+        none,
+        etched_vase,
+    ),
+    pb:false
+)
+
+Can be filled up with various blocks to grow different plants.
+#table(
+        columns: 3,
+        align: horizon,
+        inset: 4pt,
+        [Block],
+        [Seed],
+        [Result],
+        table.cell(rowspan: 2, dirt.txt),
+        protobean.txt,
+        bean_pod.txt,
+        bloomguard_seed.txt,
+        bloomguard.txt,
+        table.cell(rowspan: 2, moss_block.txt),
+        azure_thistle_seeds.txt,
+        azure_thistle.txt,
+        tangleroot_seed.txt,
+        rootsplit_sickle.txt,
+        pale_oak_log.txt,
+        sour_kernel.txt,
+        glutted_log.txt,
+        mud.txt,
+        bloom_bud.txt,
+        blooming_bulb.txt,
+        soul_soil.txt,
+        scarlet_fang_root.txt,
+        scarlet_fang.txt,
+    )
+
+#pagebreak()
 
 #top_grid(col: 2, item-tooltip(
-  glutted_log,
-  type: "Block",
+    glutted_log,
+    type: "Block",
 ))[
-  Formed when a #pale_oak_log.txt harboring a #sour_kernel.txt is placed within an #etched_vase.txt. If #(bean.txt-param)[Beans] are left nearby a Glutted Log, they will attract a mysterious creature drawn to the offering. Upon arrival, the entity will steal the beans and take residence within the log, turning it into a #murky_crevice.txt.
+    A Glutted Log is formed when a #pale_oak_log.txt harboring a #sour_kernel.txt is placed in an #etched_vase.txt. If #(bean.txt-param)[Beans] are left nearby a Glutted Log, they will attract a mysterious creature that is drawn to them. Upon arrival, the entity will steal the beans and make log into its den, turning it into a #murky_crevice.txt.
 ]
 
 #top_grid(col: 2, item-tooltip(
-  murky_crevice,
-  type: "Block",
+    murky_crevice,
+    type: "Block",
 ))[
-  Created when a mysterious creature takes residence within a #glutted_log.txt. If #(bean.txt-param)[Beans] are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.]
+    Created when a mysterious creature takes residence within a #glutted_log.txt. If #(bean.txt-param)[Beans] are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.]
 
 = Structures
 

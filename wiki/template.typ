@@ -1,6 +1,6 @@
 #let template(doc) = {
   set text(size: 10pt)
-  set page(margin: 15pt, height: auto, header: context {
+  set page(margin: 15pt, height: auto, width: 40em, header: context {
     let aft-bef(sel) = {
       let before = query(sel.before(here()))
       let in-page = query(sel).find(m => m.location().page() == here().page())

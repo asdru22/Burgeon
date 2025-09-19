@@ -32,7 +32,10 @@
   )
 })
 
-#let load-image(path, size) = {
+#let load-image(path, size, type: "item") = {
+  if(type=="item") {
+    path = "../resourcepack/assets/burgeon/textures/"
+  }
   image(
     path,
     width: size * pixel,
@@ -67,6 +70,7 @@
   let i = load-image(
     path + "/" + id + ".png",
     size,
+    type
   )
   if (custom == true) {
     url = label(id)
@@ -129,7 +133,7 @@ box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%)
   width: size + pixel,
   height: size + pixel,
 
-  align(center + horizon, load-image(img, 16)),
+  align(center + horizon, load-image(img, 16,type)),
 ))
 
 #let recipe3x3(tl, tm, tr, ml, mm, mr, bl, bm, br, result,shapeless:false) = {

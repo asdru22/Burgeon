@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{UUID:[I;-1158356306,2006665070,-1278907677,-1484175936]}"
+            }
+        }
+    ]
+}

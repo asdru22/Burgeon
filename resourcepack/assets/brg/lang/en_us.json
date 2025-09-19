@@ -1,0 +1,5 @@
+{
+    "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
+    "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",
+    "commands.brg.initiate.wrong_version.title": "WRONG VERSION"
+}
