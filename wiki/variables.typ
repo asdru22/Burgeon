@@ -16,9 +16,10 @@
 #let rootsplit_sickle = item("rootsplit_sickle", "Rootsplit Sickle", custom: true)
 #let blooming_bulb = item("blooming_bulb", "Blooming Bulb", custom: true)
 #let bloom_bud = item("bloom_bud", "Bloom Bud", custom: true)
-
-
-
+#let azure_thistle_seeds = item("azure_thistle_seeds", "Azure Thistle Seeds", custom: true)
+#let azure_thistle = item("azure_thistle", "Azure Thistle", custom: true)
+#let scarlet_fang_root = item("scarlet_fang_root", "Scarlet Fang Root", custom: true)
+#let scarlet_fang = item("scarlet_fang", "Scarlet Fang", custom: true)
 
 
 #let mud = block("mud", "Mud")

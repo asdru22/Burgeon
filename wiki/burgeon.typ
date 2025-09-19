@@ -55,6 +55,16 @@
   type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
 
+#top_grid(col: 2, item-tooltip(
+  azure_thistle_seeds,
+  type: "Item",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(azure_thistle.txt-param)[Blooming Bulbs].]
+
+#top_grid(col: 2, item-tooltip(
+  scarlet_fang_root,
+  type: "Item",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
+
 == Tools & Weapons
 
 #top_grid(col: 2, item-tooltip(
@@ -81,6 +91,16 @@
   max_stack: 1,
   type: "Tool",
 ))[Obtained from grown #(bloom_bud.txt-param)[Bloom Buds]. When in your inventory, taking damage will charge a bar in the bulb. After taking damage 13 times, it will heal the player for #health(6)[health].]
+
+#top_grid(col: 2, item-tooltip(
+  azure_thistle,
+  type: "Tool",
+))[Obtained from grown #azure_thistle_seeds.txt. Also drops 1-2 seeds when broken. Azure Thistles can be used as arrows. Mobs hit will take an additional #damage(2) every time they are hurt for 20 seconds.]
+
+#top_grid(col: 2, item-tooltip(
+  scarlet_fang,
+  type: "Tool",
+))[Obtained from grown #scarlet_fang_root.txt. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
 
 == Other
 #top_grid(col: 2, item-tooltip(
@@ -164,7 +184,10 @@
 == Mossy Trail <mossy_trail>
 Found in #inline_content("plains", "Plains") biomes.
 
+#pagebreak()
+
 = Rituals
+== Ideas
 Use special type of plant in etched vase. The plant overruns the vase turning it into a wishing well of sorts. Plant found via archaeology? Sniffer in special biome? Crafted?
 
 - More beans when opening pods or convert bean back to protobean

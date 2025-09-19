@@ -32,7 +32,7 @@
   )
 })
 
-#let load_image(path, size) = {
+#let load-image(path, size) = {
   image(
     path,
     width: size * pixel,
@@ -42,19 +42,19 @@
 }
 
 #let health(path) = {
-  box(baseline: 17%, load_image(path + ".png", 4), inset: 1pt)
+  box(baseline: 17%, load-image(path + ".png", 4), inset: 1pt)
 }
 
 #let heart = health("health")
 
-#let heart_half = health("health_half")
+#let heart-half = health("health_half")
 
 
 #let health(amount,content) = {
   let full = calc.floor(amount / 2)
   let half = calc.rem-euclid(amount, 2)
 
-  let hearts = heart * full + if half == 1 { heart_half }
+  let hearts = heart * full + if half == 1 { heart-half }
   [#amount (#hearts) #content]
 }
 
@@ -64,7 +64,7 @@
 
 #let entry(id, name, custom, size, path, type) = {
   let url
-  let i = load_image(
+  let i = load-image(
     path + "/" + id + ".png",
     size,
   )
@@ -82,7 +82,7 @@
     )
   }
 
-  let item_text(content) = text(
+  let item-text(content) = text(
   fill: blue,
 box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%) + underline(link(url,content)))
   return (
@@ -95,8 +95,8 @@ box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%)
     title_image: box(scale(i, x: pixel * 10, y: pixel * 10, reflow: true), baseline: 20%),
     grid_image: link(url, grid_image),
     header: [#heading(depth: 2, name)#label(id)],
-    txt: item_text(name),
-    txt-param: item_text
+    txt: item-text(name),
+    txt-param: item-text
   )
 }
 
@@ -129,7 +129,7 @@ box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline:20%)
   width: size + pixel,
   height: size + pixel,
 
-  align(center + horizon, load_image(img, 16)),
+  align(center + horizon, load-image(img, 16)),
 ))
 
 #let recipe3x3(tl, tm, tr, ml, mm, mr, bl, bm, br, result,shapeless:false) = {
