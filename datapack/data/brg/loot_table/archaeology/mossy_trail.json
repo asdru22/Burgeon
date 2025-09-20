@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:blocks/bloomguard_seed"
+}

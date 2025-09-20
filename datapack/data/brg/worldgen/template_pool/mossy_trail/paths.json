@@ -1,0 +1,50 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "brg:mossy_trail/paths/straight",
+        "processors": "brg:mossy_path",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "brg:mossy_trail/paths/right",
+        "processors": "brg:mossy_path",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "brg:mossy_trail/paths/left",
+        "processors": "brg:mossy_path",
+        "projection": "terrain_matching"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "brg:mossy_trail/paths/split",
+        "processors": "brg:mossy_path",
+        "projection": "terrain_matching"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "brg:mossy_trail/paths/spine",
+        "processors": "brg:mossy_path",
+        "projection": "terrain_matching"
+      },
+      "weight": 4
+    }
+  ],
+  "fallback": "minecraft:empty"
+}
