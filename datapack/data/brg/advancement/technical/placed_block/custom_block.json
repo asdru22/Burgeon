@@ -8,7 +8,7 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "predicates": {
-                "minecraft:custom_data": "{tcc:{custom_block:1b}}"
+                "minecraft:custom_data": "{brg:{custom_block:1b}}"
               }
             }
           }
