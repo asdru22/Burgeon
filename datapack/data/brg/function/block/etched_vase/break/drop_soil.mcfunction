@@ -1,3 +1,3 @@
 # Summon temp item
 
-$summon item ~ ~ ~ {Item:{id:"$(id)",count:1}}
+$summon item ~ ~ ~ {Item:{$(soil)}

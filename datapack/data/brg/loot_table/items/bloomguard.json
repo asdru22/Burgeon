@@ -9,12 +9,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"bloomguard_seed\",seed:{identifier:true, result:\"burgeon:items/bloomguard\",soil:{id:\"minecraft:dirt\"}}}}"
+                            "tag": "{brg:{id:\"bloomguard\"}}"
                         },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:bloomguard_seed",
+                                "minecraft:item_model": "brg:bloomguard",
                                 "!minecraft:consumable": {},
                                 "!minecraft:food": {},
                                 "tooltip_style": "brg:default"
@@ -23,7 +23,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.brg.bloomguard_seed"
+                                "translate": "item.brg.bloomguard"
                             },
                             "target": "item_name"
                         },
@@ -37,5 +37,5 @@
             ]
         }
     ],
-    "random_sequence": "brg:items/bloomguard_seed"
+    "random_sequence": "brg:items/bloomguard"
 }
