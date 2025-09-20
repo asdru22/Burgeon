@@ -1,0 +1,34 @@
+{
+  "parent": "brg:recipes/root",
+  "rewards": {
+    "recipes": [
+      "brg:etched_vase"
+    ]
+  },
+  "criteria": {
+    "nether_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_brick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "brg:etched_vase"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nether_brick",
+      "has_the_recipe"
+    ]
+  ]
+}
