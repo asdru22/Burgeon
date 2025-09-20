@@ -166,7 +166,7 @@ Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-pa
     pb:false
 )
 
-Can be filled up with various blocks to grow different plants. Click #inputs.use to place soil and seeds. Click #inputs.attack to remove them.
+Can be filled up with various "soil" blocks to grow different plants. Click #inputs.use to place soil and seeds. Click #inputs.attack to remove them.
 #table(
         columns: 3,
         align: horizon,
