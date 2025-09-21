@@ -31,8 +31,6 @@
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
-#brewing-stand(sour_kernel,soul_soil,sour_kernel)
-
 #top_grid(col: 2, item-tooltip(
     protobean,
     type: "Item",

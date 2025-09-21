@@ -182,7 +182,8 @@
 
         if (result != none) {
             arrow
-
+        },
+        if (result != none) {
             item-box(result, size: 18 * mc-settings.pixel)
         },
     )
@@ -209,7 +210,8 @@
 
         if (result != none) {
             arrow
-
+        },
+        if (result != none) {
             item-box(result, size: 18 * mc-settings.pixel)
         },
     )
@@ -246,7 +248,8 @@
 
         if (result != none) {
             arrow
-
+        },
+        if (result != none) {
             item-box(result, size: 18 * mc-settings.pixel)
         },
     )
@@ -273,7 +276,8 @@
         ),
         if (result != none) {
             arrow
-
+        },
+        if (result != none) {
             item-box(result, size: 18 * mc-settings.pixel)
         },
     )
