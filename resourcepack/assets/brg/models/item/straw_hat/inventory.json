@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "brg:item/straw_hat/inventory",
+    "layer1": "brg:item/straw_hat/inventory_overlay"
+  }
+}

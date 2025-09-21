@@ -1,6 +1,10 @@
 #import "@preview/cetz:0.3.4"
 
-#let pixel = 1.5pt
+
+#let mc-settings = (
+    "pixel": 1.5pt,
+    "external-resources": "../resourcepack/assets/brg/textures/",
+)
 
 #let rarity = (
     common: (id: "Common", color: black),
@@ -15,48 +19,40 @@
 } else { underline(link("https://minecraft.wiki/w/" + dest, content)) })
 
 
-
-#let arrow = cetz.canvas(length: pixel, {
-    import cetz.draw: *
-    line(
-        (0, 5),
-        (9, 5),
-        (9, -.5),
-        (16, 6.5),
-        (9, 13.5),
-        (9, 8),
-        (0, 8),
-        close: true,
-        fill: rgb("#8b8b8b"),
-        stroke: none,
-    )
-})
-
-
 #let load-rp-image(size, id, type) = {
-    let root = "../resourcepack/assets/brg/textures/"
+    let root = mc-settings.at("external-resources", default: "textures")
     image(
         root + "/" + type + "/" + id + ".png",
-        width: size * pixel,
-        height: size * pixel,
+        width: size * mc-settings.pixel,
+        height: size * mc-settings.pixel,
         scaling: "pixelated",
     )
 }
 
 #let load-image(path, size) = image(
     path,
-    width: size * pixel,
-    height: size * pixel,
+    width: size * mc-settings.pixel,
+    height: size * mc-settings.pixel,
     scaling: "pixelated",
 )
+
+#let load-image-scale(path, width, height) = image(
+    path,
+    width: width * mc-settings.pixel,
+    height: height * mc-settings.pixel,
+    scaling: "pixelated",
+)
+
+#let arrow = load-image("icons/crafting_arrow.png", 22)
+
 
 #let health(path) = {
     box(baseline: 17%, load-image(path + ".png", 4), inset: 1pt)
 }
 
-#let heart = health("health")
+#let heart = health("icons/health")
 
-#let heart-half = health("health_half")
+#let heart-half = health("icons/health_half")
 
 
 #let health(amount, content) = {
@@ -91,15 +87,15 @@
     if (type == "block") {
         grid_image = image(
             path + "/" + id + ".png",
-            width: size * 4 * pixel,
-            height: size * 4 * pixel,
+            width: size * 4 * mc-settings.pixel,
+            height: size * 4 * mc-settings.pixel,
             scaling: "pixelated",
         )
     }
 
     let item-text(content) = text(
         fill: blue,
-        box(scale(link(url, i), x: pixel * 8, y: pixel * 8, reflow: true), baseline: 20%)
+        box(scale(link(url, i), x: mc-settings.pixel * 8, y: mc-settings.pixel * 8, reflow: true), baseline: 20%)
             + underline(link(url, content)),
     )
     return (
@@ -110,7 +106,7 @@
         name: name,
         custom: custom,
         url: url,
-        title_image: box(scale(i, x: pixel * 10, y: pixel * 10, reflow: true), baseline: 20%),
+        title_image: box(scale(i, x: mc-settings.pixel * 10, y: mc-settings.pixel * 10, reflow: true), baseline: 20%),
         grid_image: link(url, grid_image),
         header: [#heading(depth: 2, name)#label(id)],
         txt: item-text(name),
@@ -118,19 +114,19 @@
     )
 }
 
-#let item(id, name, custom: false) = entry(id, name, custom, 16, "item", "item")
-#let block(id, name, custom: false) = entry(id, name, custom, 4, "blocks", "block")
+#let mc-item(id, name, custom: false) = entry(id, name, custom, 16, "item", "item")
+#let mc-block(id, name, custom: false) = entry(id, name, custom, 4, "blocks", "block")
 
-#let item-box(item, size: 16 * pixel) = pad(pixel / 2, box(
+#let item-box(item, size: 16 * mc-settings.pixel) = pad(mc-settings.pixel / 2, box(
     fill: rgb("#8b8b8b"),
     stroke: (
-        top: rgb("#373737") + pixel,
-        left: rgb("#373737") + pixel,
-        bottom: rgb("#ffffff") + pixel,
-        right: rgb("#ffffff") + pixel,
+        top: rgb("#373737") + mc-settings.pixel,
+        left: rgb("#373737") + mc-settings.pixel,
+        bottom: rgb("#ffffff") + mc-settings.pixel,
+        right: rgb("#ffffff") + mc-settings.pixel,
     ),
-    width: size + pixel,
-    height: size + pixel,
+    width: size + mc-settings.pixel,
+    height: size + mc-settings.pixel,
     if (item == none) { align(center + horizon, []) } else {
         align(center + horizon, item.grid_image)
     },
@@ -147,26 +143,26 @@
     }
 }
 
-#let fake-item-box(item, img, size: 16 * pixel) = pad(pixel / 2, box(
+#let fake-item-box(item, img, size: 16 * mc-settings.pixel) = pad(mc-settings.pixel / 2, box(
     fill: rgb("#8b8b8b"),
     stroke: (
-        top: rgb("#373737") + pixel,
-        left: rgb("#373737") + pixel,
-        bottom: rgb("#ffffff") + pixel,
-        right: rgb("#ffffff") + pixel,
+        top: rgb("#373737") + mc-settings.pixel,
+        left: rgb("#373737") + mc-settings.pixel,
+        bottom: rgb("#ffffff") + mc-settings.pixel,
+        right: rgb("#ffffff") + mc-settings.pixel,
     ),
-    width: size + pixel,
-    height: size + pixel,
+    width: size + mc-settings.pixel,
+    height: size + mc-settings.pixel,
 
     align(center + horizon, img-fake-item-box(item, img, 16)),
 ))
 
-#let recipe3x3(tl, tm, tr, ml, mm, mr, bl, bm, br, result, shapeless: false) = {
+#let recipe3x3(tl, tm, tr, ml, mm, mr, bl, bm, br, result: none, shapeless: false) = {
     set align(center)
     show: box.with(
         fill: rgb("#c6c6c6"),
-        inset: 8 * pixel,
-        radius: 1 * pixel,
+        inset: 8 * mc-settings.pixel,
+        radius: 1 * mc-settings.pixel,
     )
     let shaped = none
     if (shapeless == true) {
@@ -174,9 +170,9 @@
     }
     show: align.with(horizon)
     align(left, text([Crafting] + shaped, font: "Minecraftia", fill: rgb("#373737")))
-    stack(
-        dir: ltr,
-        spacing: 2 * pixel,
+    grid(
+        columns: 3,
+        gutter: 5 * mc-settings.pixel,
         grid(
             columns: 3,
             item-box(tl), item-box(tm), item-box(tr),
@@ -184,34 +180,102 @@
             item-box(bl), item-box(bm), item-box(br),
         ),
 
-        arrow,
+        if (result != none) {
+            arrow
 
-        item-box(result, size: 18 * pixel),
+            item-box(result, size: 18 * mc-settings.pixel)
+        },
     )
 }
 
-#let recipe2x2(tl, tr, bl, br, result) = {
+#let recipe2x2(tl, tr, bl, br, result: none) = {
     set align(center)
     show: box.with(
         fill: rgb("#c6c6c6"),
-        inset: 8 * pixel,
-        radius: 1 * pixel,
+        inset: 8 * mc-settings.pixel,
+        radius: 1 * mc-settings.pixel,
     )
 
     show: align.with(horizon)
     align(left, text([Crafting], font: "Minecraftia", fill: rgb("#373737")))
     stack(
         dir: ltr,
-        spacing: 2 * pixel,
+        spacing: 2 * mc-settings.pixel,
         grid(
             columns: 2,
             item-box(tl), item-box(tr),
             item-box(bl), item-box(br),
         ),
 
-        arrow,
+        if (result != none) {
+            arrow
 
-        item-box(result, size: 18 * pixel),
+            item-box(result, size: 18 * mc-settings.pixel)
+        },
+    )
+}
+
+#let brewing-stand(fuel, ingredient, bottle, result: none) = {
+    set align(center)
+    show: box.with(
+        fill: rgb("#c6c6c6"),
+        inset: 8 * mc-settings.pixel,
+        radius: 1 * mc-settings.pixel,
+    )
+
+    let put-icon(dx, dy, cnt) = place(
+        top + left,
+        dx: dx * mc-settings.pixel,
+        dy: dy * mc-settings.pixel,
+        cnt.grid_image,
+    )
+
+    show: align.with(horizon)
+    align(left, text([Brewing], font: "Minecraftia", fill: rgb("#373737")))
+    stack(
+        dir: ltr,
+        spacing: 2 * mc-settings.pixel,
+        block({
+            load-image-scale("icons/brewing_stand.png", 103, 60)
+            put-icon(1, 2, fuel)
+            put-icon(40, 36, bottle)
+            put-icon(63, 43, bottle)
+            put-icon(86, 36, bottle)
+            put-icon(63, 2, ingredient)
+        }),
+
+        if (result != none) {
+            arrow
+
+            item-box(result, size: 18 * mc-settings.pixel)
+        },
+    )
+}
+
+#let recipe-furnace(ingredient, fuel, result: none) = {
+    set align(center)
+    show: box.with(
+        fill: rgb("#c6c6c6"),
+        inset: 8 * mc-settings.pixel,
+        radius: 1 * mc-settings.pixel,
+    )
+    show: align.with(horizon)
+    align(left, text([Furnace], font: "Minecraftia", fill: rgb("#373737")))
+    stack(
+        dir: ltr,
+        spacing: 2 * mc-settings.pixel,
+        grid(
+            columns: 1,
+            inset: 2 * mc-settings.pixel,
+            item-box(ingredient),
+            load-image("icons/furnace_flames.png", 14),
+            item-box(fuel),
+        ),
+        if (result != none) {
+            arrow
+
+            item-box(result, size: 18 * mc-settings.pixel)
+        },
     )
 }
 
@@ -220,7 +284,7 @@
     rarity: rarity.common,
     max_stack: 64,
     type: "Material",
-    size: 16 * pixel,
+    size: 16 * mc-settings.pixel,
     alt: none,
     durability: none,
 ) = {
@@ -235,26 +299,26 @@
     set text(font: "Minecraftia")
     show: box.with(
         fill: rgb("#c6c6c6"),
-        inset: 8 * pixel,
-        radius: 1 * pixel,
+        inset: 8 * mc-settings.pixel,
+        radius: 1 * mc-settings.pixel,
     )
 
     show: align.with(horizon + center)
     stack(
         dir: ttb,
         [#heading(depth: 3, item.name) #label(item.id)],
-        pad(pixel / 2, stack(
+        pad(mc-settings.pixel / 2, stack(
             dir: ltr,
-            pad(pixel / 2, box(
+            pad(mc-settings.pixel / 2, box(
                 fill: rgb("#8b8b8b"),
                 stroke: (
-                    top: rgb("#373737") + pixel,
-                    left: rgb("#373737") + pixel,
-                    bottom: rgb("#ffffff") + pixel,
-                    right: rgb("#ffffff") + pixel,
+                    top: rgb("#373737") + mc-settings.pixel,
+                    left: rgb("#373737") + mc-settings.pixel,
+                    bottom: rgb("#ffffff") + mc-settings.pixel,
+                    right: rgb("#ffffff") + mc-settings.pixel,
                 ),
-                width: size + pixel,
-                height: size + pixel,
+                width: size + mc-settings.pixel,
+                height: size + mc-settings.pixel,
                 align(center + horizon, item.grid_image),
             )),
             get_img(alt),

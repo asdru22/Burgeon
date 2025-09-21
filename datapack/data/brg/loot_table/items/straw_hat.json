@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"straw_hat\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:straw_hat",
+                "minecraft:attribute_modifiers": [],
+                "!minecraft:damage": {},
+                "minecraft:equippable": {
+                  "equip_sound": {
+                    "sound_id": "brg:item.armor.equip_straw_hat"
+                  },
+                  "slot": "head"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.straw_hat"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:leather_helmet"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/straw_hat"
+}

@@ -31,6 +31,8 @@
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
+#brewing-stand(sour_kernel,soul_soil,sour_kernel)
+
 #top_grid(col: 2, item-tooltip(
     protobean,
     type: "Item",
@@ -52,7 +54,7 @@
         none,
         none,
         none,
-        sour_kernel,
+        result:sour_kernel,
         shapeless: true,
     ),
     pb: false
@@ -161,7 +163,7 @@ Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-pa
         none,
         nether_brick,
         none,
-        etched_vase,
+        result:etched_vase,
     ),
     pb:false
 )
@@ -216,7 +218,6 @@ Can be filled up with various "soil" blocks to grow different plants. Click #inp
 Found in the #inline_content("plains", "Plains") biome.
 
 #pagebreak()
-
 = Rituals
 == Ideas
 Use special type of plant in etched vase. The plant overruns the vase turning it into a wishing well of sorts. Plant found via archaeology? Sniffer in special biome? Crafted?

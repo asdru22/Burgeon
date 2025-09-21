@@ -1,0 +1,31 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:item/straw_hat/head",
+          "tints": [
+            {
+              "type": "minecraft:dye",
+              "default": -1
+            }
+          ]
+        },
+        "when": "head"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/straw_hat/inventory",
+      "tints": [
+        {
+          "type": "minecraft:dye",
+          "default": -1
+        }
+      ]
+    }
+  }
+}

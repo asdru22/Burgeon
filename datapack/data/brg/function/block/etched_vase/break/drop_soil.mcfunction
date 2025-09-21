@@ -1,3 +1,4 @@
 # Summon temp item
+$say $(soil)
 
-$summon item ~ ~ ~ {Item:{$(soil)}
+$summon item ~ ~ ~ {Item:{$(soil)}}
