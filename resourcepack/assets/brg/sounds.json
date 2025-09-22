@@ -1,0 +1,31 @@
+{
+  "block.etched_vase.fill_success": {
+    "sounds": [
+      "block/composter/fill_success1",
+      "block/composter/fill_success2",
+      "block/composter/fill_success3",
+      "block/composter/fill_success4"
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.fill"
+  },
+  "block.etched_vase.take_soil": {
+    "sounds": [
+      {
+        "name": "random/pop",
+        "pitch": 0.6,
+        "volume": 0.8
+      },
+      {
+        "name": "random/pop",
+        "pitch": 0.7,
+        "volume": 0.8
+      },
+      {
+        "name": "random/pop",
+        "pitch": 0.8,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.take_soil"
+  }
+}

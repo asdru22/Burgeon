@@ -10,3 +10,4 @@ execute as @p[advancements={brg:technical/player_interacted_with_entity/interact
 
 data remove entity @s item.components."minecraft:custom_data".brg.soil
 tag @s remove brg.etched_vase.has_soil
+playsound brg:block.etched_vase.take_soil block @a[distance=..16]

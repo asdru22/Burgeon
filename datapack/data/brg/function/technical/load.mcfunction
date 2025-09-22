@@ -3,6 +3,9 @@
 # Use for single-tick operations
 scoreboard objectives add brg.dummy dummy
 
+# Seed age
+scoreboard objectives add brg.seed_age dummy
+
 ## Gamerules
 gamerule logAdminCommands false
 gamerule commandBlockOutput false
