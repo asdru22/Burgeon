@@ -1,4 +1,4 @@
-scoreboard players set @s brg.seed_age 0
+tag @s remove brg.etched_vase.initiate
 
 # Handle rotations and wall placement
 execute if block ~ ~ ~ player_wall_head positioned ~ ~0.75 ~ run return run function brg:block/etched_vase/wall_placement
