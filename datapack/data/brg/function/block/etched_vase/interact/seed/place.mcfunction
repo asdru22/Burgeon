@@ -12,6 +12,8 @@ execute if score #temp_0 brg.dummy matches 1 run return fail
 tag @s add brg.etched_vase.has_seed
 scoreboard players set @s brg.seed_age 0
 
+data modify storage brg:temp root.rotation set from entity @s Rotation
+
 tag @s add brg.temp
 execute summon item_display run function brg:block/etched_vase/interact/seed/setup
 tag @s remove brg.temp

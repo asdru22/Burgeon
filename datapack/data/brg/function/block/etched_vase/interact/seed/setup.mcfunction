@@ -3,3 +3,5 @@ item replace entity @s contents from entity @p[advancements={brg:technical/playe
 tag @s add brg.etched_vase.seed
 item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["age0"],mode:"replace_all"}}
 data merge entity @s {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.33f,0f],scale:[0.66f,0.66f,0.66f]}}
+
+data modify entity @s Rotation set from storage brg:temp root.rotation

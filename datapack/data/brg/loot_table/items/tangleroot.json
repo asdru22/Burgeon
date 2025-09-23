@@ -9,12 +9,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"bloom_bud\",seed:{identifier:true, result:\"burgeon:items/blooming_bulb\",soil:{id:\"minecraft:mud\"},stages:16}}}"
+                            "tag": "{brg:{id:\"tangleroot\",seed:{identifier:true, result:\"burgeon:items/rootsplit_sickle\",soil:{id:\"minecraft:moss\"},stages:16}}}"
                         },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:bloom_bud",
+                                "minecraft:item_model": "brg:tangleroot",
                                 "!minecraft:consumable": {},
                                 "!minecraft:food": {},
                                 "tooltip_style": "brg:default"
@@ -23,7 +23,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.brg.bloom_bud"
+                                "translate": "item.brg.tangleroot"
                             },
                             "target": "item_name"
                         },
@@ -37,5 +37,5 @@
             ]
         }
     ],
-    "random_sequence": "brg:items/bloom_bud"
+    "random_sequence": "brg:items/tangleroot"
 }

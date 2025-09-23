@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"protobean\",seed:{identifier:true, result:\"burgeon:items/bean_pod\",soil:{id:\"minecraft:dirt\"},stages:16}}}"
+                            "tag": "{brg:{id:\"protobean\",seed:{identifier:true, result:\"burgeon:items/bean_pod\",soil:{id:\"minecraft:dirt\"},stages:14}}}"
                         },
                         {
                             "function": "minecraft:set_components",

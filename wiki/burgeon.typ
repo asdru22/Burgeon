@@ -99,7 +99,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     type: "Tool",
     durability: 145,
     alt: "items/rootsplit_staff.png",
-))[Obtained from grown #(tangleroot.txt-param)[Bloomguard Seeds]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
     blooming_bulb,
@@ -115,13 +115,13 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     scarlet_fang,
     type: "Tool",
-))[Obtained from grown #scarlet_fang_root.txt. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
+))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
 
 == Other
 #top_grid(col: 2, item-tooltip(
     bean_pod,
     type: "Item",
-))[Obtained from fully grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 1-4 #(bean.txt-param)[Beans].]
+))[Obtained from fully grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 3-6 #(bean.txt-param)[Beans].]
 
 #top_grid(col: 2, item-tooltip(
     bean,
