@@ -6,6 +6,7 @@ function brg:block/break_particles/spawn_vase
 
 data remove storage brg:temp root.item
 data modify storage brg:temp root.item set from entity @s item.components."minecraft:custom_data".brg.soil
+data modify storage brg:temp root.item.count set value 1
 execute unless data storage brg:temp root.item.components run data modify storage brg:temp root.item.components set value {}
 execute if entity @s[tag=brg.etched_vase.has_soil] run function brg:technical/macros/loot/spawn with storage brg:temp root.item
 

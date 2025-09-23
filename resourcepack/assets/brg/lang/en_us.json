@@ -6,13 +6,14 @@
   "item.brg.bloomguard": "Bloomguard",
   "item.brg.straw_hat": "Straw Hat",
   "block.brg.etched_vase": "Etched Vase",
+  "enchantment.brg.hyperbloom":"Hyperbloom",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",
   "commands.brg.initiate.wrong_version.title": "WRONG VERSION",
   "commands.brg.initiate": "%s is enabled.",
   "subtitles.brg.block.etched_vase.fill": "Etched Vase filled",
-    "subtitles.brg.block.etched_vase.take_soil": "Soil removed",
-
+  "subtitles.brg.block.etched_vase.take_soil": "Soil removed",
+  "subtitles.brg.item.armor.equip_straw_hat": "Straw Hat rustles",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"
 }

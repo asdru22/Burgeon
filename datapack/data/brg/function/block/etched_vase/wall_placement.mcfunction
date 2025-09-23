@@ -1,6 +1,6 @@
 # Handle wall directions
 
-item modify entity @s contents {function:"minecraft:set_custom_model_data",flags:{values:[1b],mode:"replace_all"}}
+item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["wall"],mode:"replace_all"}}
 
 execute if block ~ ~ ~ player_wall_head[facing=south] run return run tp @s ~ ~ ~-0.25 0 0
 execute if block ~ ~ ~ player_wall_head[facing=east] run return run tp @s ~-0.25 ~ ~ -90 0

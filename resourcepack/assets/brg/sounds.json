@@ -27,5 +27,16 @@
       }
     ],
     "subtitle": "subtitles.brg.block.etched_vase.take_soil"
+  },
+    "item.armor.equip_straw_hat": {
+    "sounds": [
+      "item/armor/equip_leather1",
+      "item/armor/equip_leather2",
+      "item/armor/equip_leather3",
+      "item/armor/equip_leather4",
+      "item/armor/equip_leather5",
+      "item/armor/equip_leather6"
+    ],
+    "subtitle": "subtitles.brg.item.armor.equip_straw_hat"
   }
 }

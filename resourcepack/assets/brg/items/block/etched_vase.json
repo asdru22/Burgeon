@@ -1,15 +1,26 @@
 {
   "model": {
-    "type": "minecraft:condition",
+    "type": "minecraft:select",
     "property": "minecraft:custom_model_data",
-    "index": 0,
-    "on_true": {
+    "cases": [
+      {
+        "when": "ground",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/etched_vase"
+        }
+      },
+      {
+        "when": "wall",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/etched_vase_wall"
+        }
+      }
+    ],
+    "fallback": {
       "type": "minecraft:model",
-      "model": "brg:block/etched_vase_wall"
-    },
-    "on_false": {
-      "type": "minecraft:model",
-      "model": "brg:block/etched_vase"
+      "model": "brg:item/etched_vase"
     }
   }
 }
