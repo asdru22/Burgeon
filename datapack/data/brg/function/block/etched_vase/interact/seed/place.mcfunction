@@ -1,5 +1,4 @@
 # Remove item and summon seed
-
 # Check if soil matches
 data remove storage brg:temp root.soil
 
@@ -9,8 +8,6 @@ data remove storage brg:temp root.item.count
 execute store success score #temp_0 brg.dummy run data modify storage brg:temp root.soil set from storage brg:temp root.item.components."minecraft:custom_data".brg.seed.soil
 
 execute if score #temp_0 brg.dummy matches 1 run return fail
-
-
 # summon item display
 tag @s add brg.etched_vase.has_seed
 scoreboard players set @s brg.seed_age 0

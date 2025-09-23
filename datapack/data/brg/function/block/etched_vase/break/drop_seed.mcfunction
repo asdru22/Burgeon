@@ -1,1 +1,1 @@
-$loot spawn ~ ~ ~ loot brg:blocks/$(id)
+$loot spawn ~ ~ ~ loot brg:etched_vase/$(id)

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ghast_tear",
+    "minecraft:magma_cream",
+    "minecraft:resin_clump",
+    "minecraft:beetroot"
+  ],
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "count": 1,
+    "components": {
+      "!minecraft:consumable": {},
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "brg": {
+          "id": "sour_kernel",
+          "seed": {
+            "identifier": true,
+            "result": "burgeon:blocks/glutted_log",
+            "soil": {
+              "id": "minecraft:pale_oak_log"
+            },
+            "stages": 12
+          }
+        }
+      },
+      "minecraft:item_model": "brg:sour_kernel",
+      "minecraft:item_name": {
+        "translate": "item.brg.sour_kernel"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ],
+      "minecraft:tooltip_style": "brg:default"
+    }
+  }
+}
