@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "brg:block/scarlet_fang_root_age0"
+  }
+}
