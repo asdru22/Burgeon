@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:item_frame",
       "components": {
-        "minecraft:item_model": "brg:block/etched_vase"
+        "minecraft:item_model": "brg:pointerpod"
       }
     },
     "title": {
@@ -12,13 +12,14 @@
     "description": {
       "translate": "advancements.brg.root.description"
     },
-    "background": "minecraft:block/moss_block",
-    "show_toast": false,
-    "announce_to_chat": false
+    "background": "minecraft:block/moss_block"
   },
   "criteria": {
     "tick": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "brg:pointerpod"
+      }
     }
   }
 }
