@@ -38,5 +38,34 @@
       "item/armor/equip_leather6"
     ],
     "subtitle": "subtitles.brg.item.armor.equip_straw_hat"
+  },
+  "item.armor.equip_wildstep_pods": {
+    "sounds": [
+      {
+        "name": "block/bamboo/sapling_place1",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place2",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place3",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place4",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place5",
+        "volume": 0.9
+      },
+      {
+        "name": "block/bamboo/sapling_place6",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.brg.item.armor.equip_wildstep_pods"
   }
 }

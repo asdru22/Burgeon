@@ -17,6 +17,8 @@
   "item.brg.azure_thistle": "Azure Thistle",
   "item.brg.scarlet_fang_root": "Scarlet Fang Root",
   "item.brg.scarlet_fang": "Scarlet Fang",
+  "item.brg.wildstep_seed": "Wildstep Seed",
+  "item.brg.wildstep_pods": "Wildstep Pods",
   "block.brg.etched_vase": "Etched Vase",
   "block.brg.glutted_log": "Glutted Log",
   "enchantment.brg.hyperbloom": "Hyperbloom",
@@ -27,6 +29,7 @@
   "subtitles.brg.block.etched_vase.fill": "Etched Vase filled",
   "subtitles.brg.block.etched_vase.take_soil": "Soil removed",
   "subtitles.brg.item.armor.equip_straw_hat": "Straw Hat rustles",
+  "subtitles.brg.item.armor.equip_wildstep_pods": "Wildstep Pods rustle",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"
 }

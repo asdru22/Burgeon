@@ -20,6 +20,8 @@
 #let azure_thistle = mc-item("azure_thistle", "Azure Thistle", custom: true)
 #let scarlet_fang_root = mc-item("scarlet_fang_root", "Scarlet Fang Root", custom: true)
 #let scarlet_fang = mc-item("scarlet_fang", "Scarlet Fang", custom: true)
+#let wildstep_seed = mc-item("wildstep_seed", "Wildstep Seed", custom: true)
+#let wildstep_pods = mc-item("wildstep_pods", "Wildstep Pods", custom: true)
 
 
 #let mud = mc-block("mud", "Mud")
@@ -28,6 +30,7 @@
 #let soul_soil = mc-block("soul_soil", "Soul Soil")
 #let moss_block = mc-block("moss_block", "Moss")
 #let pale_oak_log = mc-block("pale_oak_log", "Pale Oak Log")
+#let grass_block = mc-block("grass_block", "Grass")
 
 #let bucket = mc-item("bucket", "Bucket")
 #let iron_ingot = mc-item("iron_ingot", "Iron Ingot")

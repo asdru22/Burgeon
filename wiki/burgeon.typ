@@ -11,7 +11,7 @@
         gutter: 10pt,
         ..content,
     )
-    if(pb) {pagebreak()}
+    if (pb) { pagebreak() }
 }
 
 
@@ -52,10 +52,10 @@
         none,
         none,
         none,
-        result:sour_kernel,
+        result: sour_kernel,
         shapeless: true,
     ),
-    pb: false
+    pb: false,
 )
 Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some time, it will overcome the log, turning it into a #glutted_log.txt.
 #pagebreak()
@@ -79,6 +79,11 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     scarlet_fang_root,
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
+
+#top_grid(col: 2, item-tooltip(
+    wildstep_seed,
+    type: "Item",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
 
 == Tools & Weapons
 /*
@@ -116,6 +121,12 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     scarlet_fang,
     type: "Tool",
 ))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
+
+#top_grid(col: 2, item-tooltip(
+    wildstep_pods,
+    type: "Armor",
+    max_stack: 1,
+))[Obtained from grown #(wildstep_seed.txt-param)[Wildstep Seeds]. When worn, they will convert underneath #dirt.txt into #(grass_block.txt-param)[Grass], consuming durability in the process.]
 
 == Other
 #top_grid(col: 2, item-tooltip(
@@ -161,39 +172,38 @@ Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-pa
         none,
         nether_brick,
         none,
-        result:etched_vase,
+        result: etched_vase,
     ),
-    pb:false
+    pb: false,
 )
 
 Can be filled up with various "soil" blocks to grow different plants. Click #inputs.use to place soil and seeds. Click #inputs.attack to remove them.
 #table(
-        columns: 3,
-        align: horizon,
-        inset: 4pt,
-        [Soil],
-        [Seed],
-        [Result],
-        table.cell(rowspan: 2, dirt.txt),
-        protobean.txt,
-        bean_pod.txt,
-        bloomguard_seed.txt,
-        bloomguard.txt,
-        table.cell(rowspan: 2, moss_block.txt),
-        azure_thistle_seeds.txt,
-        azure_thistle.txt,
-        tangleroot.txt,
-        rootsplit_sickle.txt,
-        pale_oak_log.txt,
-        sour_kernel.txt,
-        glutted_log.txt,
-        mud.txt,
-        bloom_bud.txt,
-        blooming_bulb.txt,
-        soul_soil.txt,
-        scarlet_fang_root.txt,
-        scarlet_fang.txt,
-    )
+    columns: 3,
+    align: horizon,
+    inset: 4pt,
+    [Soil],
+    [Seed],
+    [Result],
+    // dirt
+    table.cell(rowspan: 2, dirt.txt),
+    protobean.txt, bean_pod.txt,
+    bloomguard_seed.txt, bloomguard.txt,
+    // moss block
+    table.cell(rowspan: 3, moss_block.txt),
+    azure_thistle_seeds.txt, azure_thistle.txt,
+    tangleroot.txt, rootsplit_sickle.txt,
+    wildstep_seed.txt, wildstep_pods.txt,
+    // pale oak log
+    pale_oak_log.txt,
+    sour_kernel.txt, glutted_log.txt,
+    // mud
+    mud.txt,
+    bloom_bud.txt, blooming_bulb.txt,
+    // soul soil
+    soul_soil.txt,
+    scarlet_fang_root.txt, scarlet_fang.txt,
+)
 
 #pagebreak()
 
