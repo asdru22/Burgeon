@@ -1,0 +1,28 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+              "brg:burgeon/remove_hyperbloom": false
+            }
+          }
+        },
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{id:\"wildstep_pods\"}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:entity/player/advancements/remove_hyperbloom"
+  }
+}

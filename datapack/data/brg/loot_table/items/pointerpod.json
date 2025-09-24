@@ -9,12 +9,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"protobean\",seed:{identifier:true,soil:{id:\"minecraft:dirt\"},stages:14}}}"
+                            "tag": "{brg:{id:\"pointerpod\",seed:{identifier:true,soil:{id:\"minecraft:sand\"},stages:14}}}"
                         },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:protobean",
+                                "minecraft:item_model": "brg:pointerpod",
                                 "!minecraft:consumable": {},
                                 "!minecraft:food": {},
                                 "tooltip_style": "brg:default"
@@ -23,7 +23,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.brg.protobean"
+                                "translate": "item.brg.pointerpod"
                             },
                             "target": "item_name"
                         },
@@ -37,5 +37,5 @@
             ]
         }
     ],
-    "random_sequence": "brg:items/protobean"
+    "random_sequence": "brg:items/pointerpod"
 }

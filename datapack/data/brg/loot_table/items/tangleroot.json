@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"tangleroot\",seed:{identifier:true, result:\"burgeon:items/rootsplit_sickle\",soil:{id:\"minecraft:moss_block\"},stages:16}}}"
+                            "tag": "{brg:{id:\"tangleroot\",seed:{identifier:true,soil:{id:\"minecraft:moss_block\"},stages:16}}}"
                         },
                         {
                             "function": "minecraft:set_components",

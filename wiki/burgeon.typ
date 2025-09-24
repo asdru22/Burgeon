@@ -85,6 +85,12 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
 
+#top_grid(col: 2, item-tooltip(
+    pointerpod,
+    type: "Item",
+    alt: "../resourcepack/assets/brg/textures/item/pointerpod_long.png",
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When fully grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].]
+
 == Tools & Weapons
 /*
 #top_grid(col: 2, item-tooltip(
@@ -96,14 +102,14 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     bloomguard,
     type: "Tool",
-    alt: "../resourcepack/assets/brg/items/bloomguard_blocking.png",
+    alt: "../resourcepack/assets/brg/textures/item/bloomguard_blocking.png",
 ))[Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing #inputs.use will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
 
 #top_grid(col: 2, item-tooltip(
     rootsplit_sickle,
     type: "Tool",
     durability: 145,
-    alt: "items/rootsplit_staff.png",
+    alt: "/resourcepack/assets/brg/textures/item/rootsplit_sickle_combined_small.png",
 ))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
@@ -128,6 +134,11 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     max_stack: 1,
 ))[Obtained from grown #(wildstep_seed.txt-param)[Wildstep Seeds]. When worn, they will convert underneath #dirt.txt into #(grass_block.txt-param)[Grass], consuming durability in the process.]
 
+#top_grid(col: 2, item-tooltip(
+    twining_tendril,
+    type: "Currency",
+))[Obtained from grown #(pointerpod.txt-param)[Pointerpods]. Used to open #(vault.txt-param)[Vaults] located in  #inline_content("mossy_trail", "Mossy Trails", custom: true).]
+
 == Other
 #top_grid(col: 2, item-tooltip(
     bean_pod,
@@ -138,6 +149,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     bean,
     type: "Currency",
 ))[Obtained from opening #(bean_pod.txt-param)[Bean Pods]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
+
 
 = Blocks
 /*
@@ -203,6 +215,9 @@ Can be filled up with various "soil" blocks to grow different plants. Click #inp
     // soul soil
     soul_soil.txt,
     scarlet_fang_root.txt, scarlet_fang.txt,
+    // sand
+    sand.txt,
+    pointerpod.txt, twining_tendril.txt,
 )
 
 #pagebreak()

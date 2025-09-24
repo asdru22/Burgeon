@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"azure_thistle_seeds\",seed:{identifier:true, result:\"burgeon:items/azure_thistle\",soil:{id:\"minecraft:moss_block\"},stages:19}}}"
+                            "tag": "{brg:{id:\"azure_thistle_seeds\",seed:{identifier:true, soil:{id:\"minecraft:moss_block\"},stages:19}}}"
                         },
                         {
                             "function": "minecraft:set_components",

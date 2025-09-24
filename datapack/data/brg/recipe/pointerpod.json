@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": "minecraft:wheat_seeds"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "!minecraft:consumable": {},
+      "!minecraft:food": {},
+      "minecraft:custom_data": {
+        "brg": {
+          "id": "pointerpod",
+          "seed": {
+            "identifier": true,
+            "soil": {
+              "id": "minecraft:sand"
+            },
+            "stages": 14
+          }
+        }
+      },
+      "minecraft:item_model": "brg:pointerpod",
+      "minecraft:item_name": {
+        "translate": "item.brg.pointerpod"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ],
+      "minecraft:tooltip_style": "brg:default"
+    },
+    "count": 1
+  }
+}

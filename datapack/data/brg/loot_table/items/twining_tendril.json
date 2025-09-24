@@ -9,21 +9,22 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"protobean\",seed:{identifier:true,soil:{id:\"minecraft:dirt\"},stages:14}}}"
+                            "tag": "{brg:{id:\"twining_tendril\"}}"
                         },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:protobean",
+                                "minecraft:item_model": "brg:twining_tendril",
                                 "!minecraft:consumable": {},
                                 "!minecraft:food": {},
-                                "tooltip_style": "brg:default"
+                                "tooltip_style": "brg:default",
+                                "minecraft:max_stack_size": 1
                             }
                         },
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.brg.protobean"
+                                "translate": "item.brg.twining_tendril"
                             },
                             "target": "item_name"
                         },
@@ -37,5 +38,5 @@
             ]
         }
     ],
-    "random_sequence": "brg:items/protobean"
+    "random_sequence": "brg:items/twining_tendril"
 }

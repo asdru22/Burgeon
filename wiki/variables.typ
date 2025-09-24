@@ -22,6 +22,8 @@
 #let scarlet_fang = mc-item("scarlet_fang", "Scarlet Fang", custom: true)
 #let wildstep_seed = mc-item("wildstep_seed", "Wildstep Seed", custom: true)
 #let wildstep_pods = mc-item("wildstep_pods", "Wildstep Pods", custom: true)
+#let pointerpod = mc-item("pointerpod", "Pointerpod", custom: true)
+#let twining_tendril = mc-item("twining_tendril", "Twining Tendril", custom: true)
 
 
 #let mud = mc-block("mud", "Mud")
@@ -31,6 +33,9 @@
 #let moss_block = mc-block("moss_block", "Moss")
 #let pale_oak_log = mc-block("pale_oak_log", "Pale Oak Log")
 #let grass_block = mc-block("grass_block", "Grass")
+#let sand = mc-block("sand", "Sand")
+#let vault = mc-block("vault", "Vault")
+
 
 #let bucket = mc-item("bucket", "Bucket")
 #let iron_ingot = mc-item("iron_ingot", "Iron Ingot")

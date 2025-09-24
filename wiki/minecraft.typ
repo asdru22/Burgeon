@@ -132,18 +132,15 @@
     },
 ))
 
-#let img-fake-item-box(item, img, size) = {
-    if (item.custom) {
+#let img-fake-item-box(item, img, size, alt) = {
+    if (item.custom and not alt) {
         return load-rp-image(size, item.id, item.type)
-    } else {
-        return load-image(
-            path + "/" + id + ".png",
-            size,
-        )
+    } else if (alt) {load-image(img,16)} else {
+        img
     }
 }
 
-#let fake-item-box(item, img, size: 16 * mc-settings.pixel) = pad(mc-settings.pixel / 2, box(
+#let fake-item-box(item, img, size: 16 * mc-settings.pixel, alt) = pad(mc-settings.pixel / 2, box(
     fill: rgb("#8b8b8b"),
     stroke: (
         top: rgb("#373737") + mc-settings.pixel,
@@ -154,7 +151,7 @@
     width: size + mc-settings.pixel,
     height: size + mc-settings.pixel,
 
-    align(center + horizon, img-fake-item-box(item, img, 16)),
+    align(center + horizon, img-fake-item-box(item, img, 16, alt)),
 ))
 
 #let recipe3x3(tl, tm, tr, ml, mm, mr, bl, bm, br, result: none, shapeless: false) = {
@@ -292,9 +289,9 @@
     alt: none,
     durability: none,
 ) = {
-    let get_img(alt) = {
+    let get-img(alt) = {
         if (alt == none) { none } else {
-            fake-item-box(item, alt)
+            fake-item-box(item, alt, true)
         }
     }
 
@@ -325,7 +322,7 @@
                 height: size + mc-settings.pixel,
                 align(center + horizon, item.grid_image),
             )),
-            get_img(alt),
+            get-img(alt),
         )),
         v(20pt),
         align(

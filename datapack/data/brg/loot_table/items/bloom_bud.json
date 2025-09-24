@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"bloom_bud\",seed:{identifier:true, result:\"burgeon:items/blooming_bulb\",soil:{id:\"minecraft:mud\"},stages:16}}}"
+                            "tag": "{brg:{id:\"bloom_bud\",seed:{identifier:true,soil:{id:\"minecraft:mud\"},stages:16}}}"
                         },
                         {
                             "function": "minecraft:set_components",

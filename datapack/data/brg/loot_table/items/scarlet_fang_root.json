@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"scarlet_fang_root\",seed:{identifier:true, result:\"burgeon:items/scarlet_fang\",soil:{id:\"minecraft:soul_soil\"},stages:25}}}"
+                            "tag": "{brg:{id:\"scarlet_fang_root\",seed:{identifier:true,soil:{id:\"minecraft:soul_soil\"},stages:25}}}"
                         },
                         {
                             "function": "minecraft:set_components",
