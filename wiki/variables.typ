@@ -44,3 +44,4 @@
 #let ghast_tear = mc-item("ghast_tear", "Ghast Tear")
 #let resin_clump = mc-item("resin_clump", "Resin Clump")
 #let magma_cream = mc-item("magma_cream", "Magma Cream")
+#let wheat_seeds = mc-item("wheat_seeds", "Wheat Seeds")

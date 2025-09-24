@@ -85,11 +85,24 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     type: "Item",
 ))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
 
-#top_grid(col: 2, item-tooltip(
-    pointerpod,
-    type: "Item",
-    alt: "../resourcepack/assets/brg/textures/item/pointerpod_long.png",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When fully grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].]
+#top_grid(
+    col: 2,
+    item-tooltip(
+        pointerpod,
+        type: "Item",
+        alt: "../resourcepack/assets/brg/textures/item/pointerpod_long.png",
+    ),
+    recipe2x2(
+        wheat_seeds,
+        wheat_seeds,
+        wheat_seeds,
+        wheat_seeds,
+        result: pointerpod,
+    ),
+    pb: false,
+)
+Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When fully grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].
+#pagebreak()
 
 == Tools & Weapons
 /*
