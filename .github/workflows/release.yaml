@@ -23,11 +23,15 @@ jobs:
 
       - name: Zip datapack
         run: |
-          zip -r "datapack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" datapack
+          cd datapack
+          zip -r "../datapack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" .
+          cd ..
 
       - name: Zip resourcepack
         run: |
-          zip -r "resourcepack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" resourcepack
+          cd resourcepack
+          zip -r "../resourcepack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" .
+          cd ..
 
       - name: Upload release assets
         uses: softprops/action-gh-release@v1
