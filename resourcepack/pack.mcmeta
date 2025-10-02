@@ -1,0 +1,20 @@
+{
+  "pack": {
+    "pack_format": 69,
+    "min_format": 69,
+    "max_format": 69,
+    "description": [
+      {
+        "text": "Burgeon",
+        "color": "#1cc396"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "DEV VERSION DON'T DISTRIBUTE",
+        "color": "#1cc396"
+      }
+    ]
+  }
+}

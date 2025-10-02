@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "age0",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/azure_thistle_seeds_age0"
+        }
+      },
+      {
+        "when": "age1",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/azure_thistle_seeds_age1"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/azure_thistle_seeds"
+    }
+  }
+}

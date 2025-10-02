@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/protobean",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 7
+              },
+              "add": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/tangleroot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/bloomguard_seed"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/azure_thistle_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_block"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:chests/mossy_trail/vault"
+}

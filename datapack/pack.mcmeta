@@ -1,0 +1,35 @@
+  {
+    "pack": {
+      "min_format": [88,0],
+      "max_format": [88,0],
+      "description": [
+      {
+          "text": "Burgeon",
+          "color": "#1cc396"
+        },
+            {
+          "text": "\n"
+        },
+        {
+          "text": "DEV VERSION DON'T DISTRIBUTE",
+          "color": "#1cc396"
+        }
+      ]
+    },
+    "overlays": {
+      "entries": [
+        {
+          "formats": [45,87],
+          "min_format": [45,0],
+          "max_format": 87,
+          "directory": "invalid_version"
+        },
+        {
+          "formats": [89,2147483647],
+          "min_format": [89,1],
+          "max_format": 2147483647,
+          "directory": "invalid_version"
+        }
+      ]
+    }
+  }

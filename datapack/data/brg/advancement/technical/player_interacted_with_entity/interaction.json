@@ -1,0 +1,42 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[brg.interaction]}"
+            }
+          }
+        ]
+      }
+    },
+    "attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[brg.interaction]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack",
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "brg:entity/interaction/advancement"
+  }
+}

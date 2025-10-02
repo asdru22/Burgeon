@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "brg:block/bloomguard_seed_age1"
+  }
+}

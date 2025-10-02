@@ -1,0 +1,5 @@
+# Reset seed related data
+execute on passengers if entity @s[tag=brg.etched_vase.seed] run function brg:block/etched_vase/attack/remove_seed
+tag @s remove brg.etched_vase.has_seed
+scoreboard players set @s brg.seed_age 0
+tag @s remove brg.etched_vase.seed_grown

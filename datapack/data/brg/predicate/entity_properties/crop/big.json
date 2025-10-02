@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "components": {
+          "minecraft:custom_model_data": {
+            "strings": [
+              "age1"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

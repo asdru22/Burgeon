@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_lore",
+  "lore": [
+    {
+      "translate": "pack.brg.tooltip",
+      "color": "white",
+      "italic": false,
+      "font": "brg:tooltip"
+    }
+  ],
+  "mode": "append"
+}

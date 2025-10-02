@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{brg:{id:\"bloomguard_seed\",seed:{identifier:true,soil:{id:\"minecraft:dirt\"},stages:12}}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "brg:bloomguard_seed",
+                                "!minecraft:consumable": {},
+                                "!minecraft:food": {},
+                                "tooltip_style": "brg:default"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.brg.bloomguard_seed"
+                            },
+                            "target": "item_name"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "brg:add_tooltip_lore"
+                        }
+                    ],
+                    "name": "minecraft:poisonous_potato"
+                }
+            ]
+        }
+    ],
+    "random_sequence": "brg:items/bloomguard_seed"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "brg:block/azure_thistle_seeds_age0"
+  }
+}

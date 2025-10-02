@@ -1,0 +1,22 @@
+{
+  "parent":"brg:burgeon/use_pointerpod",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:block/etched_vase"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.collect_grown_plants"
+    },
+    "description": {
+      "translate": "advancements.brg.collect_grown_plants.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

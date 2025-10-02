@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{brg:{id:\"sour_kernel\",seed:{identifier:true,soil:{id:\"minecraft:pale_oak_log\"},stages:12}}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "brg:sour_kernel",
+                                "!minecraft:consumable": {},
+                                "!minecraft:food": {},
+                                "tooltip_style": "brg:default"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.brg.sour_kernel"
+                            },
+                            "target": "item_name"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "brg:add_tooltip_lore"
+                        }
+                    ],
+                    "name": "minecraft:poisonous_potato"
+                }
+            ]
+        }
+    ],
+    "random_sequence": "brg:items/sour_kernel"
+}

@@ -1,0 +1,37 @@
+name: Pack Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Extract repo and tag
+        id: vars
+        run: |
+          echo "repo_name=${GITHUB_REPOSITORY##*/}" >> $GITHUB_OUTPUT
+          echo "release_tag=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Zip datapack
+        run: |
+          zip -r "datapack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" datapack
+
+      - name: Zip resourcepack
+        run: |
+          zip -r "resourcepack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip" resourcepack
+
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            datapack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip
+            resourcepack-${{ steps.vars.outputs.repo_name }}-${{ steps.vars.outputs.release_tag }}.zip

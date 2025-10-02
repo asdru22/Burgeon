@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"wildstep_pods\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:wildstep_pods",
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "tooltip_style": "brg:default",
+                "max_stack_size": 1,
+                "enchantments": {
+                  "brg:hyperbloom": 1
+                },
+                "minecraft:damage":0,
+                "max_damage": 240,
+                "minecraft:equippable": {
+                  "equip_sound": {
+                    "sound_id": "brg:item.armor.equip_wildstep_pods"
+                  },
+                  "asset_id": "brg:wildstep",
+                  "slot": "feet"
+                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:armor",
+                    "amount": 1.0,
+                    "id": "minecraft:armor.boots",
+                    "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "type": "minecraft:armor_toughness",
+                    "amount": 0.0,
+                    "id": "minecraft:armor.boots",
+                    "operation": "add_value",
+                    "slot": "feet"
+                  }
+                ],
+                "minecraft:break_sound": "minecraft:entity.item.break"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.wildstep_pods"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/wildstep_pods"
+}

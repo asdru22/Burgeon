@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oxeye_daisy"
+    },
+    "title": {
+      "translate": "pack.brg"
+    },
+    "description": {
+      "translate": "advancements.brg.root.description"
+    },
+    "background": "minecraft:block/moss_block",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

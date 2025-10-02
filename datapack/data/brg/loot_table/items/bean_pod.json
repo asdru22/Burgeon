@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"bean_pod\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:bean_pod",
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "tooltip_style": "brg:default",
+                "minecraft:consumable": {
+                  "consume_seconds": 1,
+                  "animation": "eat",
+                  "sound": {
+                    "sound_id": "brg:item.bean_pod.open",
+                    "range": 8
+                  },
+                  "has_consume_particles": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.bean_pod"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/bean_pod"
+}

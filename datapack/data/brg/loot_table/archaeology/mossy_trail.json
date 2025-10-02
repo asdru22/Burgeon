@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/protobean",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/azure_thistle_seeds",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot_seeds",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:archaeology/mossy_trail"
+}

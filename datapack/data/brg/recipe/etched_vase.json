@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "B B",
+    "B B",
+    " B "
+  ],
+  "key": {
+    "B": [
+      "minecraft:nether_brick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "components": {
+      "!minecraft:equippable": {},
+      "minecraft:custom_data": "{brg:{custom_block:1b,id:\"etched_vase\"}}",
+      "minecraft:item_model": "brg:block/etched_vase",
+      "minecraft:item_name": {
+        "translate": "block.brg.etched_vase"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ],
+      "minecraft:profile": {
+        "id": [
+          66,
+          0,
+          0,
+          1
+        ],
+        "texture": "brg:block/etched_vase_soil/empty"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:profile"
+        ]
+      },
+      "minecraft:tooltip_style": "brg:default"
+    },
+    "count": 1
+  }
+}

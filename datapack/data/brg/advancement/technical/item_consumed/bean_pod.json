@@ -1,0 +1,18 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "consume_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{brg:{id:\"bean_pod\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/generic/consume_bean_pod"
+  }
+}

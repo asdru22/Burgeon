@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{brg:{id:\"glutted_log\",custom_block:1b}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "brg:block/glutted_log",
+                                "tooltip_style": "brg:default"
+                            
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "block.brg.glutted_log"
+                            },
+                            "target": "item_name"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "brg:add_tooltip_lore"
+                        }
+                    ],
+                    "name": "minecraft:blast_furnace"
+                }
+            ]
+        }
+    ],
+    "random_sequence": "brg:items/glutted_log"
+}

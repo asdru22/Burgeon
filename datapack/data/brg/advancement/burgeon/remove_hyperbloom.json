@@ -1,0 +1,23 @@
+{
+  "parent": "brg:burgeon/collect_grown_plant",
+  "display": {
+    "frame": "challenge",
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:wildstep_pods"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.remove_hyperbloom"
+    },
+    "description": {
+      "translate": "advancements.brg.remove_hyperbloom.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

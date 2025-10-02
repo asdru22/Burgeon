@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "brg:entity/player/initiate"
+  },
+  "parent": "brg:technical/root",
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "brg:burgeon/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:pointerpod"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.use_pointerpod"
+    },
+    "description": {
+      "translate": "advancements.brg.use_pointerpod.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

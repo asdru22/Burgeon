@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "ground",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/etched_vase"
+        }
+      },
+      {
+        "when": "wall",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/etched_vase_wall"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/etched_vase"
+    }
+  }
+}

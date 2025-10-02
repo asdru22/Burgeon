@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{brg:{id:\"scarlet_fang_root\",seed:{identifier:true,soil:{id:\"minecraft:soul_soil\"},stages:25}}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "brg:scarlet_fang_root",
+                                "!minecraft:consumable": {},
+                                "!minecraft:food": {},
+                                "tooltip_style": "brg:default"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.brg.scarlet_fang_root"
+                            },
+                            "target": "item_name"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "brg:add_tooltip_lore"
+                        }
+                    ],
+                    "name": "minecraft:poisonous_potato"
+                }
+            ]
+        }
+    ],
+    "random_sequence": "brg:items/scarlet_fang_root"
+}
