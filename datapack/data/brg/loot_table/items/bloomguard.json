@@ -30,6 +30,10 @@
                         {
                             "function": "minecraft:reference",
                             "name": "brg:add_tooltip_lore"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "brg:bloomguard/default"
                         }
                     ],
                     "name": "minecraft:poisonous_potato"

@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.mainhand": {
+        "components": {
+          "minecraft:custom_model_data": {
+            "strings": [
+              "blocking"
+            ]
+          }
+        },
+        "predicates": {
+          "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+        }
+      }
+    }
+  }
+}

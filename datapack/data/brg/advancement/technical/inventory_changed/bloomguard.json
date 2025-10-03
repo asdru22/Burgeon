@@ -1,0 +1,56 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "offhand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "predicates": {
+                "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+            }
+          }
+        ]
+      }
+    },
+    "mainhand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "offhand",
+      "mainhand"
+    ]
+  ],
+  "rewards": {
+    "function": "brg:item/bloomguard/switch/advancement"
+  }
+}

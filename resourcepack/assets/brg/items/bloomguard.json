@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "brg:item/bloomguard"
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "blocking",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:item/bloomguard_blocking"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/bloomguard"
+    }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "!minecraft:consumable": {},
+    "minecraft:custom_model_data": {
+      "strings": [
+        "blocking"
+      ]
+    },
+    "minecraft:blocks_attacks": {
+      "block_delay_seconds": 0,
+      "disable_cooldown_scale": 0.5,
+      "damage_reductions": [
+        {
+          "base": 6,
+          "factor": 0,
+          "horizontal_blocking_angle": 90
+        }
+      ],
+      "block_sound": {
+        "sound_id": "brg:item.bloomguard.block",
+        "range": 8
+      },
+      "bypassed_by": "#minecraft:is_fire"
+    }
+  }
+}

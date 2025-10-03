@@ -1,0 +1,25 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "blocked_attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "predicates": {
+                "minecraft:custom_data": "{brg:{id:\"bloomguard\"}}"
+              }
+            }
+          }
+        },
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/bloomguard/block/advancement"
+  }
+}

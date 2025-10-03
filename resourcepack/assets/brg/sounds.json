@@ -28,7 +28,7 @@
     ],
     "subtitle": "subtitles.brg.block.etched_vase.take_soil"
   },
-    "item.armor.equip_straw_hat": {
+  "item.armor.equip_straw_hat": {
     "sounds": [
       "item/armor/equip_leather1",
       "item/armor/equip_leather2",
@@ -68,66 +68,78 @@
     ],
     "subtitle": "subtitles.brg.item.armor.equip_wildstep_pods"
   },
-    "item.pointerpod.use": {
+  "item.pointerpod.use": {
     "sounds": [
       "brg:item/pointerpod_use"
     ],
     "subtitle": "subtitles.brg.item.pointerpod.use"
   },
-    "item.bean_pod.open": {
+  "item.bean_pod.open": {
     "sounds": [
       "brg:item/bean_pod_open"
     ],
     "subtitle": "subtitles.brg.item.bean_pod.open"
   },
-   "block.etched_vase.break":{
-      "sounds":[
-        {
-          "name":"brg:block/etched_vase/break",
-          "pitch":1.05
-        },
-        {
-          "name":"brg:block/etched_vase/break",
-          "pitch":1.1
-        },
-        {
-          "name":"brg:block/etched_vase/break",
-          "pitch":0.9
-        },
-        {
-          "name":"brg:block/etched_vase/break",
-          "pitch":0.95
-        },
-        {
-          "name":"brg:block/etched_vase/break",
-          "pitch":1
-        }
-      ],
-      "subtitle":"subtitles.brg.block.etched_vase.break"
-    },
-   "block.etched_vase.hit":{
-      "sounds":[
-        {
-          "name":"brg:block/etched_vase/hit",
-          "pitch":1.05
-        },
-        {
-          "name":"brg:block/etched_vase/hit",
-          "pitch":1.1
-        },
-        {
-          "name":"brg:block/etched_vase/hit",
-          "pitch":0.9
-        },
-        {
-          "name":"brg:block/etched_vase/hit",
-          "pitch":0.95
-        },
-        {
-          "name":"brg:block/etched_vase/hit",
-          "pitch":1
-        }
-      ],
-      "subtitle":"subtitles.brg.block.etched_vase.hit"
-    }
+  "block.etched_vase.break": {
+    "sounds": [
+      {
+        "name": "brg:block/etched_vase/break",
+        "pitch": 1.05
+      },
+      {
+        "name": "brg:block/etched_vase/break",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/etched_vase/break",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/etched_vase/break",
+        "pitch": 0.95
+      },
+      {
+        "name": "brg:block/etched_vase/break",
+        "pitch": 1
+      }
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.break"
+  },
+  "block.etched_vase.hit": {
+    "sounds": [
+      {
+        "name": "brg:block/etched_vase/hit",
+        "pitch": 1.05
+      },
+      {
+        "name": "brg:block/etched_vase/hit",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/etched_vase/hit",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/etched_vase/hit",
+        "pitch": 0.95
+      },
+      {
+        "name": "brg:block/etched_vase/hit",
+        "pitch": 1
+      }
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.hit"
+  },
+  "item.bloomguard.throw": {
+    "sounds": [
+      "brg:item/bloomguard/throw"
+    ],
+    "subtitle": "subtitles.brg.item.bloomguard.throw"
+  },
+  "item.bloomguard.block": {
+    "sounds": [
+      "brg:item/bloomguard/block"
+    ],
+    "subtitle": "subtitles.brg.item.bloomguard.block"
+  }
 }
