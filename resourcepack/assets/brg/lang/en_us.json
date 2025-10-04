@@ -31,6 +31,8 @@
   "advancements.brg.collect_grown_plants.description": "Collect a grown plant from an Etched Vase",
   "advancements.brg.remove_hyperbloom": "Why?? :(",
   "advancements.brg.remove_hyperbloom.description": "Remove the Hyperbloom enchantment from a pair of Wildstep Pods",
+
+  "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",
   "commands.brg.initiate.wrong_version.title": "WRONG VERSION",
