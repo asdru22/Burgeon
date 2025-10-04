@@ -132,7 +132,26 @@
   },
   "item.bloomguard.throw": {
     "sounds": [
-      "brg:item/bloomguard/throw"
+      {
+        "name": "brg:item/bloomguard/throw",
+        "pitch": 1.05
+      },
+      {
+        "name": "brg:item/bloomguard/throw",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:item/bloomguard/throw",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:item/bloomguard/throw",
+        "pitch": 0.95
+      },
+      {
+        "name": "brg:item/bloomguard/throw",
+        "pitch": 1
+      }
     ],
     "subtitle": "subtitles.brg.item.bloomguard.throw"
   },
@@ -141,5 +160,11 @@
       "brg:item/bloomguard/block"
     ],
     "subtitle": "subtitles.brg.item.bloomguard.block"
+  },
+  "item.bloomguard.break": {
+    "sounds": [
+      "brg:item/bloomguard/break"
+    ],
+    "subtitle": "subtitles.brg.item.bloomguard.break"
   }
 }

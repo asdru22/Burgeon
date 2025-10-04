@@ -2,3 +2,6 @@
 
 ## Blocks
 execute if entity @s[tag=brg.block] run return run function brg:block/tick
+
+## Bloomguard
+execute if entity @s[tag=brg.bloomguard] run function brg:item/bloomguard/tick
