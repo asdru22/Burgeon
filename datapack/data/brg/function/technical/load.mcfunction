@@ -12,6 +12,7 @@ scoreboard objectives add brg.used_warped_fungus_on_a_stick minecraft.used:minec
 scoreboard objectives add brg.break_hit_count dummy
 scoreboard objectives add brg.break_hit_timer dummy
 scoreboard objectives add brg.heal dummy
+scoreboard objectives add brg.consumed_beans dummy
 
 ## Gamerules
 gamerule logAdminCommands false
