@@ -2,7 +2,6 @@
 
 # Entities
 
-
 ## All blocks
 execute as @e[type=minecraft:item_display,tag=brg.block] at @s run function brg:block/ten_second_clock
 
