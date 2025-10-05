@@ -14,9 +14,17 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "!minecraft:potion_contents": {},
                 "minecraft:item_model": "brg:azure_thistle",
-                "tooltip_style": "brg:default"
+                "tooltip_style": "brg:default",
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:poison",
+                  "custom_name": "azure_thistle"
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                }
               }
             },
             {
