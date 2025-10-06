@@ -1,0 +1,6 @@
+{
+  "parent": "brg:block/murky_crevice",
+  "textures": {
+    "6": "brg:block/murky_crevice_eyes"
+  }
+}

@@ -4,7 +4,7 @@
 		"3": "brg:block/glutted_log_top",
 		"4": "block/pale_oak_log_top",
 		"5": "brg:block/empty",
-		"6": "brg:block/murky_crevice_eyes",
+		"6": "brg:block/empty",
 		"particle": "brg:block/glutted_log_side",
 		"side": "brg:block/glutted_log_side",
 		"face": "brg:block/murky_crevice_front"
