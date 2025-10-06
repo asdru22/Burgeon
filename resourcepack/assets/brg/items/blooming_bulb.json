@@ -1,6 +1,253 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "brg:item/blooming_bulb"
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "brg:item/blooming_bulb"
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+          {
+            "when": "gui",
+            "model": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:select",
+                  "property": "minecraft:component",
+                  "component": "minecraft:custom_data",
+                  "cases": [
+                    {
+                      "when": "{brg:{charge:0}}",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "brg:item/blooming_bulb/background"
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:1}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/1"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:2}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/2"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:3}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/3"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:4}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/4"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:5}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/5"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:6}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/6"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:7}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/7"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:8}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/8"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:9}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/9"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:10}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:11}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/11"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:12}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/12"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "{brg:{charge:13}}",
+                      "model": {
+                        "type": "minecraft:composite",
+                        "models": [
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/background"
+                          },
+                          {
+                            "type": "minecraft:model",
+                            "model": "brg:item/blooming_bulb/13"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:empty"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
   }
 }
