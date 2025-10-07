@@ -4,4 +4,4 @@ execute on passengers run kill
 
 function brg:technical/macros/loot/spawn with storage brg:macro root.item
 data merge entity @s {teleport_duration:15}
-tp @s ^ ^ ^-1.1
+tp @s ^ ^ ^-0.8
