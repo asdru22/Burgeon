@@ -172,5 +172,11 @@
       "brg:item/blooming_bulb_heal"
     ],
     "subtitle": "subtitles.brg.item.blooming_bulb.heal"
+  },
+  "block.glutted_log.convert": {
+    "sounds": [
+      "brg:block/glutted_log_convert"
+    ],
+    "subtitle": "subtitles.brg.block.glutted_log.convert"
   }
 }

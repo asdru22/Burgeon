@@ -34,7 +34,6 @@
   "advancements.brg.remove_hyperbloom.description": "Remove the Hyperbloom enchantment from a pair of Wildstep Pods",
   "advancements.brg.convert_glutted_log": "Mmmm... Beans...",
   "advancements.brg.convert_glutted_log.description": "Lure a mysterious creature into a Glutted Log using Beans",
-
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",
@@ -51,7 +50,8 @@
   "subtitles.brg.item.bloomguard.throw": "Bloomguard whooshes",
   "subtitles.brg.item.bloomguard.block": "Bloomguard snaps",
   "subtitles.brg.item.bloomguard.break": "Bloomguard cracks",
-  "subtitles.brg.item.blooming_bulb.heal": "Blooming Bulb heals",
+  "subtitles.brg.item.blooming_bulb.heal": "Blooming Bulb resonates",
+  "subtitles.brg.block.glutted_log.convert": "Glutted Log gurgles",
   "death.attack.brg.bloomguard": "%1$s was skewered by %2$s's Bloomguard",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"

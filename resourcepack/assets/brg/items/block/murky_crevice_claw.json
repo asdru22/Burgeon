@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "bean",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/murky_crevice_claw"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:item/bean"
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/murky_crevice_claw"
+    }
+  }
+}
