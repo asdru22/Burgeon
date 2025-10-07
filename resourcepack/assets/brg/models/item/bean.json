@@ -2,12 +2,5 @@
 	"parent": "item/generated",
 	"textures": {
 		"layer0": "brg:item/bean"
-	},
-	"display": {
-		"head": {
-			"rotation": [93, 9, 127],
-			"translation": [0, -6.75, -2.75],
-			"scale": [0.4, 0.4, 0.4]
-		}
 	}
 }

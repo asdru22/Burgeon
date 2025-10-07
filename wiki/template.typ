@@ -29,6 +29,4 @@
     }
   }
   doc
-  pagebreak()
-  include "graph.typ"
 }

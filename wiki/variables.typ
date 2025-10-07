@@ -49,3 +49,4 @@
 #let wheat_seeds = mc-item("wheat_seeds", "Wheat Seeds")
 #let wheat = mc-item("wheat", "Wheat")
 #let string = mc-item("string", "String")
+#let eyeblossom = mc-item("eyeblossom", "Eyeblossom")

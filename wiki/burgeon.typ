@@ -68,7 +68,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     bloom_bud,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
 
 #top_grid(col: 2, item-tooltip(
     azure_thistle_seeds,
@@ -78,12 +78,12 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     scarlet_fang_root,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
 
 #top_grid(col: 2, item-tooltip(
     wildstep_seed,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
 
 #top_grid(
     col: 2,
@@ -139,7 +139,8 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
 #top_grid(col: 2, item-tooltip(
     scarlet_fang,
     type: "Tool",
-))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Holding #inputs.use will drain #health(2)[health] from the player to release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
+    max_stack: 1
+))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Holding #inputs.use will drain #health(2)[health] from the player and release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
 
 
 #top_grid(col: 2, item-tooltip(
@@ -159,12 +160,18 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     item-tooltip(
         straw_hat,
         type: "Equipment",
-        max_stack: 1
+        max_stack: 1,
     ),
     recipe3x3(
-        none,wheat,none,
-        wheat,string,wheat,
-        none,none,none,
+        none,
+        wheat,
+        none,
+        wheat,
+        string,
+        wheat,
+        none,
+        none,
+        none,
         result: straw_hat,
     ),
     pb: false,
@@ -176,7 +183,7 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 #top_grid(col: 2, item-tooltip(
     bean_pod,
     type: "Item",
-))[Obtained from fully grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 3-6 #(bean.txt-param)[Beans].]
+))[Obtained from grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 3-6 #(bean.txt-param)[Beans].]
 
 #top_grid(col: 2, item-tooltip(
     bean,
@@ -222,7 +229,7 @@ Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-pa
     pb: false,
 )
 
-Can be filled up with various "soil" blocks to grow different plants. Click #inputs.use to place soil and seeds. Click #inputs.attack to remove them.
+Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it.
 #table(
     columns: 3,
     align: horizon,
@@ -266,7 +273,16 @@ Can be filled up with various "soil" blocks to grow different plants. Click #inp
     murky_crevice,
     type: "Block",
 ))[
-    Created when a mysterious creature takes residence within a #glutted_log.txt. If #(bean.txt-param)[Beans] are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.]
+    Created when a mysterious creature takes residence within a #glutted_log.txt. If #(bean.txt-param)[Beans] are left at the entrance, a clawed limb will emerge from the crevice to seize the offering, returning after some time to deposit a reward.
+    #table(
+        columns: 2,
+        [Reward], [Weight],
+        wildstep_seed.txt, [3],
+        scarlet_fang_root.txt, [3],
+        bloom_bud.txt, [3],
+        eyeblossom.txt, [2],
+    )
+]
 
 = Structures
 

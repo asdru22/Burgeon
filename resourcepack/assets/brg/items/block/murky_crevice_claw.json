@@ -22,7 +22,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "brg:item/murky_crevice_claw"
+      "model": "brg:block/murky_crevice_claw"
     }
   }
 }

@@ -5,16 +5,15 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/bean",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 5
-              }
-            }
-          ]
+          "value": "brg:items/bloom_bud"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/scarlet_fang_root"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/wildstep_seed"
         }
       ]
     }
