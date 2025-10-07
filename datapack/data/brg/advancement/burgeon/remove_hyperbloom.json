@@ -1,5 +1,5 @@
 {
-  "parent": "brg:burgeon/collect_grown_plant",
+  "parent": "brg:burgeon/convert_glutted_log",
   "display": {
     "frame": "challenge",
     "icon": {

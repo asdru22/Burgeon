@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "brg:item/charge_background"
+    "layer0": "brg:item/blooming_bulb/background"
   }
 }

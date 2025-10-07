@@ -15,3 +15,5 @@ execute if score #temp_0 brg.dummy matches -4500..4499 run return run rotate @s 
 execute if score #temp_0 brg.dummy matches 4500..13499 run return run rotate @s 90 0
 # north/2
 rotate @s 180 0
+
+$advancement grant @p[nbt={UUID:$(owner)}] only brg:burgeon/convert_glutted_log

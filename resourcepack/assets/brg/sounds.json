@@ -166,5 +166,11 @@
       "brg:item/bloomguard/break"
     ],
     "subtitle": "subtitles.brg.item.bloomguard.break"
+  },
+  "item.blooming_bulb.heal": {
+    "sounds": [
+      "brg:item/blooming_bulb_heal"
+    ],
+    "subtitle": "subtitles.brg.item.blooming_bulb.heal"
   }
 }

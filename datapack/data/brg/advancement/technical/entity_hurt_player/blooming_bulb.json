@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "slots": {
+            "container.*": {
+              "items": "minecraft:poisonous_potato",
+              "components": {},
+              "predicates": {
+                "minecraft:custom_data": "{brg:{id:\"blooming_bulb\"}}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/blooming_bulb/advancement"
+  }
+}

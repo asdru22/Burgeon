@@ -1,0 +1,25 @@
+{
+  "parent":"brg:burgeon/collect_grown_plant",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:block/murky_crevice",
+        "custom_model_data": {
+          "strings": ["eyes"]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.convert_glutted_log"
+    },
+    "description": {
+      "translate": "advancements.brg.convert_glutted_log.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
