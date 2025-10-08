@@ -5,7 +5,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/stairs/1",
         "processors": "brg:stairs",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     },
@@ -14,7 +15,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/stairs/2",
         "processors": "brg:stairs",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     },
@@ -23,7 +25,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/stairs/3",
         "processors": "brg:stairs",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     },
@@ -32,7 +35,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/stairs/4",
         "processors": "brg:stairs",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     },
@@ -41,7 +45,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/stairs/5",
         "processors": "brg:stairs",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     }

@@ -4,7 +4,7 @@
     "!minecraft:blocks_attacks": {},
     "!minecraft:custom_model_data": {},
     "minecraft:consumable": {
-      "consume_seconds": 1,
+      "consume_seconds": 0.75,
       "animation": "spear",
       "sound": {
         "sound_id": "",

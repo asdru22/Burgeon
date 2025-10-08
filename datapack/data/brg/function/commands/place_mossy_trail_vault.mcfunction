@@ -1,4 +1,4 @@
-setblock ~ ~ ~ minecraft:vault[facing=south]{config:{loot_table:"brg:chests/mossy_trail/vault"}}
+setblock ~ ~ ~ minecraft:vault[facing=south,vault_state=active]{config:{loot_table:"brg:chests/mossy_trail/vault"}}
 
 summon item_display ~ ~ ~ {Tags:["brg.temp"]}
 loot replace entity @n[type=item_display,tag=brg.temp] contents loot brg:items/twining_tendril

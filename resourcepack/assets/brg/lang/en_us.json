@@ -61,6 +61,7 @@
   "subtitles.brg.item.scarlet_fang.use": "Scarlet Fang drains",
   "death.attack.brg.bloomguard": "%1$s was skewered by %2$s's Bloomguard",
   "death.attack.brg.scarlet_fang": "%1$s ran out of life juice",
+  "death.attack.brg.scarlet_fang.player": "%1$s ran out of life juice",
   "death.attack.brg.scarlet_spore": "%1$s's life force was depleted by %2$s's Scarlet Spore",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"

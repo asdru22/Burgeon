@@ -5,7 +5,8 @@
         "element_type": "minecraft:single_pool_element",
         "location": "brg:mossy_trail/rooms/basement",
         "processors": "brg:corridors",
-        "projection": "rigid"
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging"
       },
       "weight": 1
     }
