@@ -36,6 +36,8 @@
   "advancements.brg.remove_hyperbloom.description": "Remove the Hyperbloom enchantment from a pair of Wildstep Pods",
   "advancements.brg.convert_glutted_log": "Mmmm... Beans...",
   "advancements.brg.convert_glutted_log.description": "Lure a mysterious creature into a Glutted Log using Beans",
+  "advancements.brg.scarlet_spore_clutch_heal": "Rekless behaviour",
+  "advancements.brg.scarlet_spore_clutch_heal.description": "Get healed by a Scarlet Spore at or below 1 health",
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",

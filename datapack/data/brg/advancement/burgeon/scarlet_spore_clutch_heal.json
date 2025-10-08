@@ -1,0 +1,23 @@
+{
+  "parent": "brg:burgeon/convert_glutted_log",
+  "display": {
+    "frame": "challenge",
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:scarlet_fang"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.scarlet_spore_clutch_heal"
+    },
+    "description": {
+      "translate": "advancements.brg.scarlet_spore_clutch_heal.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
