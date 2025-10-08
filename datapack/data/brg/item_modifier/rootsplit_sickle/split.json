@@ -6,6 +6,13 @@
     }
   },
   {
+    "function": "minecraft:set_name",
+    "name": {
+      "translate": "item.brg.rootsplit_sickle"
+    },
+    "target": "item_name"
+  },
+  {
     "function": "minecraft:set_attributes",
     "modifiers": [
       {

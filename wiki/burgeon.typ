@@ -123,7 +123,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     type: "Tool",
     durability: 145,
     alt: "/resourcepack/assets/brg/textures/item/rootsplit_sickle_combined_small.png",
-))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6) and has 2 attack speed. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(8) and has 1 attack speed. The durability of the stuff is the sum of the durability from the two sickles. Holding #inputs.use-sprint will split the staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6), has 2.8 attack speed, and -1 attack range. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(7), has 0.8 attack speed and +1 attack range. The durability of the Staff is the sum of the durability from the two sickles. Pressing #inputs.use while your offhand is empty will split the Staff back in the two sickles. The durability will also be split equally among the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
     blooming_bulb,
@@ -140,7 +140,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     scarlet_fang,
     type: "Tool",
     max_stack: 1
-))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Holding #inputs.use will drain #health(2)[health] from the player and release homing spores that target the nearest entity. The spores deal #damage(6) and decay after 10 seconds]
+))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Pressing #inputs.use will drain #health(4)[health] from the player and release a homing Crimson Spore that targets the nearest entity. The spores deal #damage(4) and decay after 1 second. If a spore hits an entity, the owner will be healed for #health(4)[health].]
 
 
 #top_grid(col: 2, item-tooltip(
