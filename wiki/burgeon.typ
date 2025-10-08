@@ -105,13 +105,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
 #pagebreak()
 
 == Tools & Weapons
-/*
-#top_grid(col: 2, item-tooltip(
-    sap_bucket,
-    max_stack: 1,
-    type: "Tool",
-))[Obtained from #(spile.txt-param)[Spiles]  attached to #(creaking_heart.txt-param)[Active Creaking Hearts].]
-*/
+
 #top_grid(col: 2, item-tooltip(
     bloomguard,
     type: "Tool",
@@ -194,21 +188,7 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 
 
 = Blocks
-/*
-#top_grid(
-    col: 2,
-    item-tooltip(
-        spile,
-        type: "Block",
-    ),
-    recipe3x3(none, iron_ingot, none, iron_ingot, iron_ingot, iron_ingot, iron_ingot, none, none, spile),
-    pb: false
-)
-Used to extract #(sap_bucket.txt-param)[Sap] from active #(creaking_heart.txt-param)[Creaking Hearts]. Each time a #bucket.txt is filled, there is a 10% chance the Heart turns into a #pale_oak_log.txt.
-#pagebreak()
-
-*/
-
+== Functional
 
 #top_grid(
     col: 2,
@@ -290,12 +270,9 @@ Can be filled up with various "soil" blocks to grow different plants. Press #inp
 
 == Mossy Trail <mossy_trail>
 Found in the #inline_content("plains", "Plains") biome.
-
-#pagebreak()
-= Rituals
-== Ideas
-Use special type of plant in etched vase. The plant overruns the vase turning it into a wishing well of sorts. Plant found via archaeology? Sniffer in special biome? Crafted?
-
-- More beans when opening pods or convert bean back to protobean
-- Summon the thing that accepts beans as Currency
-- Summon cat or dog variant
+Obtainable loot:
+- #protobean.txt
+- #bloomguard.txt
+- #azure_thistle_seeds.txt
+- #etched_vase.txt
+- #tangleroot.txt
