@@ -22,6 +22,7 @@ gamerule maxCommandChainLength 1073741824
 ## Constants
 scoreboard players set #0 brg.dummy 0
 scoreboard players set #1 brg.dummy 1
+scoreboard players set #2 brg.dummy 2
 scoreboard players set #3 brg.dummy 3
 scoreboard players set #12 brg.dummy 12
 

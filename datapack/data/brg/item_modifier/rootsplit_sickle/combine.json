@@ -1,0 +1,50 @@
+[
+  {
+    "function": "set_components",
+    "components": {
+      "minecraft:max_damage": 930
+    }
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "id": "minecraft:base_attack_damage",
+        "attribute": "minecraft:attack_damage",
+        "amount": 6,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "id": "minecraft:base_attack_speed",
+        "attribute": "minecraft:attack_speed",
+        "amount": -3.2,
+        "operation": "add_value",
+        "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "brg:entity_interaction_range",
+        "amount": 1,
+        "operation": "add_value",
+        "slot": "mainhand"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_model_data",
+    "strings": {
+      "values": [
+        "combined"
+      ],
+      "mode": "replace_all"
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "brg:shredding": 1
+    },
+    "add": false
+  }
+]

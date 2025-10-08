@@ -6,3 +6,5 @@ execute if predicate brg:entity_properties/slots/weapon/anything run function br
 
 ## Reset scores
 scoreboard players reset @s brg.used_warped_fungus_on_a_stick
+
+advancement revoke @s only brg:technical/player_hurt_entity/weapon

@@ -178,5 +178,17 @@
       "brg:block/glutted_log_convert"
     ],
     "subtitle": "subtitles.brg.block.glutted_log.convert"
+  },
+  "item.rootsplit_sickle.combine": {
+    "sounds": [
+      "brg:item/rootsplit_sickle/combine"
+    ],
+    "subtitle": "subtitles.brg.item.rootsplit_sickle.combine"
+  },
+  "item.rootsplit_sickle.separate": {
+    "sounds": [
+      "brg:item/rootsplit_sickle/separate"
+    ],
+    "subtitle": "subtitles.brg.item.rootsplit_sickle.separate"
   }
 }

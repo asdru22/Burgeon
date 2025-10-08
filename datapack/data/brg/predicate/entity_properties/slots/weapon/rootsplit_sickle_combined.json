@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "brg:entity_properties/slots/weapon.mainhand/rootsplit_sickle_combined"
+    },
+    {
+      "condition": "reference",
+      "name": "brg:entity_properties/slots/weapon.offhand/rootsplit_sickle_combined"
+    }
+  ]
+}
