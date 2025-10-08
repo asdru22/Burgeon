@@ -5,3 +5,6 @@ execute if entity @s[predicate=brg:entity_properties/slots/weapon/pointerpod] if
 
 # Rootsplit sickle
 execute if predicate brg:entity_properties/slots/weapon/rootsplit_sickle_generic run function brg:item/rootsplit_sickle/main
+
+# Rootsplit sickle
+execute if entity @s[predicate=brg:entity_properties/slots/weapon/scarlet_fang,nbt={HurtTime:0s}] run function brg:item/scarlet_fang/main

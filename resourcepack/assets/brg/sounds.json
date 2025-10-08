@@ -190,5 +190,30 @@
       "brg:item/rootsplit_sickle/separate"
     ],
     "subtitle": "subtitles.brg.item.rootsplit_sickle.separate"
+  },
+  "item.scarlet_fang.use": {
+    "sounds": [
+      {
+        "name": "brg:item/scarlet_fang_use",
+        "pitch": 1.05
+      },
+      {
+        "name": "brg:item/scarlet_fang_use",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:item/scarlet_fang_use",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:item/scarlet_fang_use",
+        "pitch": 0.95
+      },
+      {
+        "name": "brg:item/scarlet_fang_use",
+        "pitch": 1
+      }
+    ],
+    "subtitle": "subtitles.brg.item.scarlet_fang.use"
   }
 }

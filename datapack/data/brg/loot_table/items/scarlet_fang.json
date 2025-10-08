@@ -15,9 +15,9 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "brg:scarlet_fang",
-                                "!minecraft:consumable": {},
-                                "!minecraft:food": {},
                                 "tooltip_style": "brg:default",
+                                "minecraft:max_damage": 142,
+                                "minecraft:damage": 0,
                                 "minecraft:max_stack_size": 1
                             }
                         },
@@ -33,7 +33,7 @@
                             "name": "brg:add_tooltip_lore"
                         }
                     ],
-                    "name": "minecraft:poisonous_potato"
+                    "name": "minecraft:warped_fungus_on_a_stick"
                 }
             ]
         }
