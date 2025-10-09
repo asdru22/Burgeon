@@ -215,5 +215,11 @@
       }
     ],
     "subtitle": "subtitles.brg.item.scarlet_fang.use"
+  },
+  "block.etched_vase.drop": {
+    "sounds": [
+      "random/click"
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.drop"
   }
 }

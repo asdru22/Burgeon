@@ -30,24 +30,6 @@
                     "value": "brg:items/scarlet_fang"
                   }
                 ]
-              },
-              {
-                "rolls": 1,
-                "entries": [
-                  {
-                    "type": "minecraft:loot_table",
-                    "value": "brg:items/scarlet_fang_root",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_count",
-                        "count": {
-                          "min": 0,
-                          "max": 1
-                        }
-                      }
-                    ]
-                  }
-                ]
               }
             ]
           }
