@@ -1,3 +1,5 @@
+# Commands ran as the newly summoned seed
+
 ride @s mount @n[type=item_display,tag=brg.temp,distance=..2]
 item replace entity @s contents from entity @p[advancements={brg:technical/player_interacted_with_entity/interaction={interact=true}}] weapon.mainhand
 tag @s add brg.etched_vase.seed

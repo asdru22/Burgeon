@@ -1,3 +1,4 @@
+# Commands ran when a glutted log converts to murky crevice
 tag @s add brg.murky_crevice
 tag @s remove brg.glutted_log
 scoreboard players reset @s brg.consumed_beans

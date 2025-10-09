@@ -1,4 +1,4 @@
-# Commands to break a soul seer
+# Commands to break a glutted log
 
 execute as @n[tag=!smithed.entity,type=minecraft:item,distance=..2,nbt={PickupDelay:10s,Item:{components:{"minecraft:custom_name":{"font":"brg:technical","translate":"block.brg.glutted_log.name"}},id:"minecraft:blast_furnace"}}] at @s run function brg:block/glutted_log/break/kill_item
 function brg:block/break_particles/spawn_generic

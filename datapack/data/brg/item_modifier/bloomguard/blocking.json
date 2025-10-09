@@ -2,6 +2,7 @@
   "function": "minecraft:set_components",
   "components": {
     "!minecraft:consumable": {},
+    "!use_effects": {},
     "minecraft:custom_model_data": {
       "strings": [
         "blocking"

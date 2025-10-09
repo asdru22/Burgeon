@@ -1,3 +1,5 @@
+# Remove block and spawn loot, then run the break function
+
 setblock ~ ~ ~ air replace
 loot spawn ~ ~ ~ loot brg:items/etched_vase
 function brg:block/etched_vase/break/main

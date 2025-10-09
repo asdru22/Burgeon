@@ -1,3 +1,5 @@
+# Commands to run as the item display
+
 tag @s remove brg.etched_vase.initiate
 
 # Handle rotations and wall placement
