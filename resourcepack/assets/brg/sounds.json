@@ -185,11 +185,11 @@
     ],
     "subtitle": "subtitles.brg.item.rootsplit_sickle.combine"
   },
-  "item.rootsplit_sickle.separate": {
+  "item.rootsplit_sickle.snap": {
     "sounds": [
-      "brg:item/rootsplit_sickle/separate"
+      "brg:item/rootsplit_sickle/snap"
     ],
-    "subtitle": "subtitles.brg.item.rootsplit_sickle.separate"
+    "subtitle": "subtitles.brg.item.rootsplit_sickle.snap"
   },
   "item.scarlet_fang.use": {
     "sounds": [

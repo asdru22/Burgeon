@@ -4,11 +4,6 @@
   "predicate": {
     "slots": {
       "weapon.mainhand": {
-        "components": {
-          "minecraft:custom_model_data": {
-            "strings": []
-          }
-        },
         "predicates": {
           "minecraft:custom_data": "{brg:{id:\"rootsplit_sickle\"}}"
         }

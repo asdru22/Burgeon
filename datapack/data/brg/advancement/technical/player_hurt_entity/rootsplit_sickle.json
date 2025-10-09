@@ -1,0 +1,39 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "player_hurt_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "minecraft:player",
+                      "gamemode": [
+                        "creative"
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:reference",
+                "name": "brg:entity_properties/slots/weapon.mainhand/rootsplit_sickle"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/rootsplit_sickle/staff/advancement"
+  }
+}

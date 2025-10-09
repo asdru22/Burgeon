@@ -9,5 +9,3 @@ execute if entity @s[scores={brg.using_item=1..}] run function brg:item/usable/t
 
 ## Reset scores
 scoreboard players reset @s brg.used_warped_fungus_on_a_stick
-
-advancement revoke @s only brg:technical/player_hurt_entity/weapon

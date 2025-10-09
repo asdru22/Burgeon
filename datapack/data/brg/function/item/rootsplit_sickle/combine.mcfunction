@@ -2,16 +2,18 @@ execute store result score #temp_0 brg.dummy run data get entity @s SelectedItem
 #offhand item damage
 execute store result score #temp_1 brg.dummy run data get entity @s equipment.offhand.components."minecraft:damage"
 
-data remove storage brg:macro root
-execute store result storage brg:macro root.damage int 1 run scoreboard players operation #temp_0 brg.dummy += #temp_1 brg.dummy
+scoreboard players add #temp_0 brg.dummy 20
 
-data modify storage brg:macro root.slot set value "weapon.mainhand"
-item replace entity @s weapon.offhand with air
+execute if score #temp_0 brg.dummy matches 465.. run return run function brg:item/rootsplit_sickle/break_on_combine
+
+# get total damage
+data remove storage brg:temp root
+execute store result storage brg:temp root.damage int 1 run scoreboard players operation #temp_0 brg.dummy += #temp_1 brg.dummy
 
 playsound brg:item.rootsplit_sickle.combine player @a[distance=..16]
 
+item replace entity @s weapon.offhand with air
 item modify entity @s weapon.mainhand brg:rootsplit_sickle/combine
-function brg:technical/macros/damage_slot/damage with storage brg:macro root
 
 effect give @s speed 10 0
-effect give @s hunger 25 2
+effect give @s hunger 20 1

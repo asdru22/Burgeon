@@ -118,7 +118,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     max_stack: 1,
     durability: 465,
     alt: "/resourcepack/assets/brg/textures/item/rootsplit_staff_small.png",
-))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6), has 2.8 attack speed, and -1 attack range. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. The Staff deals #damage(7), has 0.8 attack speed and +1 attack range. It also ignores 50% of the armor of hit mobs. The durability of the Staff is the sum of the durability from the two sickles. Pressing #inputs.use while your offhand is empty will split the Staff back in the two sickles. The durability will also be split equally among the two Sickles.]
+))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6), has 2.8 attack speed, and -1 attack range. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. When fusing the Sickles you gain Speed I for 10 seconds and Hunger II for 20 seconds. The Staff deals #damage(8), has 0.8 attack speed and +1 attack range. The Staff has 20 durability, and will break into two sickles, dealing #health(5)[splinter Damage] to the wielder. The durability will also be split equally between the two Sickles.]
 
 #top_grid(col: 2, item-tooltip(
     blooming_bulb,

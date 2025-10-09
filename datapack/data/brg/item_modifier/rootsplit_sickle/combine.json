@@ -2,7 +2,8 @@
   {
     "function": "set_components",
     "components": {
-      "minecraft:max_damage": 930,
+      "!minecraft:damage": {},
+      "!minecraft:max_damage": {},
       "!minecraft:consumable": {}
     }
   },
@@ -49,9 +50,23 @@
     },
     "floats": {
       "values": [
-        16
+        20
       ],
       "mode": "replace_all"
     }
-  }
+  },
+  {
+  "function": "minecraft:copy_custom_data",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "brg:temp"
+  },
+  "ops": [
+    {
+      "source": "root.damage",
+      "target": "brg.sickle_damage",
+      "op": "replace"
+    }
+  ]
+}
 ]

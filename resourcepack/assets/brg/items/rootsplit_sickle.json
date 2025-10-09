@@ -28,10 +28,143 @@
                     "property": "minecraft:custom_model_data",
                     "entries": [
                       {
+                        "threshold": 1,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/1"
+                        }
+                      },
+                      {
+                        "threshold": 2,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/2"
+                        }
+                      },
+                      {
+                        "threshold": 3,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/3"
+                        }
+                      },
+                      {
+                        "threshold": 4,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/4"
+                        }
+                      },
+                      {
+                        "threshold": 5,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/5"
+                        }
+                      },
+                      {
+                        "threshold": 6,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/6"
+                        }
+                      },
+                      {
+                        "threshold": 7,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/7"
+                        }
+                      },
+                      {
+                        "threshold": 8,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/8"
+                        }
+                      },
+                      {
+                        "threshold": 9,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/9"
+                        }
+                      },
+                      {
+                        "threshold": 10,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/10"
+                        }
+                      },
+                      {
+                        "threshold": 11,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/11"
+                        }
+                      },
+                      {
+                        "threshold": 12,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/12"
+                        }
+                      },
+                      {
+                        "threshold": 13,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/13"
+                        }
+                      },
+                      {
+                        "threshold": 14,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/14"
+                        }
+                      },
+                      {
+                        "threshold": 15,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/15"
+                        }
+                      },
+                      {
                         "threshold": 16,
                         "model": {
                           "type": "minecraft:model",
-                          "model": "brg:item/blooming_bulb/6"
+                          "model": "brg:item/rootsplit_staff/16"
+                        }
+                      },
+                      {
+                        "threshold": 17,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/17"
+                        }
+                      },
+                      {
+                        "threshold": 18,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/18"
+                        }
+                      },
+                      {
+                        "threshold": 19,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/19"
+                        }
+                      },
+                      {
+                        "threshold": 20,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/rootsplit_staff/20"
                         }
                       }
                     ],
