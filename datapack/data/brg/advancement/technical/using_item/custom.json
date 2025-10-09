@@ -1,0 +1,11 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "custom": {
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "function": "brg:item/usable/advancement"
+  }
+}

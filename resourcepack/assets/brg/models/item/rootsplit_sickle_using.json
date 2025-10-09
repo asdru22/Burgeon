@@ -1,0 +1,21 @@
+{
+    "parent": "brg:item/rootsplit_sickle",
+    "display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, -135],
+			"translation": [0, -10.25, 0]
+		},
+    "thirdperson_lefthand": {
+			"rotation": [0, 90, -135],
+			"translation": [0, -10.25, 0]
+		},
+    "firstperson_righthand": {
+			"rotation": [0, 90, -135],
+			"translation": [0, -10.25, 0]
+		},
+    "firstperson_lefthand": {
+			"rotation": [0, 90, -135],
+			"translation": [0, -10.25, 0]
+		}
+	}
+}

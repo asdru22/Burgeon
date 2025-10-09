@@ -44,12 +44,5 @@
       "values": [],
       "mode": "replace_all"
     }
-  },
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "brg:shredding": 0
-    },
-    "add": false
   }
 ]

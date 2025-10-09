@@ -12,3 +12,6 @@ playsound brg:item.rootsplit_sickle.combine player @a[distance=..16]
 
 item modify entity @s weapon.mainhand brg:rootsplit_sickle/combine
 function brg:technical/macros/damage_slot/damage with storage brg:macro root
+
+effect give @s speed 10 0
+effect give @s hunger 25 2

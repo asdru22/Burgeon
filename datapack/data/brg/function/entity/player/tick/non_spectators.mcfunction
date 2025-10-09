@@ -3,6 +3,9 @@
 ## Commands for holding items
 execute if predicate brg:entity_properties/slots/weapon/anything run function brg:entity/player/tick/holding_item
 
+# Usable item
+execute if entity @s[scores={brg.using_item=1..}] run function brg:item/usable/tick
+
 
 ## Reset scores
 scoreboard players reset @s brg.used_warped_fungus_on_a_stick

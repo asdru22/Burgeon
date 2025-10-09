@@ -13,6 +13,9 @@ scoreboard objectives add brg.break_hit_count dummy
 scoreboard objectives add brg.break_hit_timer dummy
 scoreboard objectives add brg.heal dummy
 scoreboard objectives add brg.consumed_beans dummy
+scoreboard objectives add brg.using_item dummy
+scoreboard objectives add brg.using_item_prev dummy
+
 
 ## Gamerules
 gamerule logAdminCommands false

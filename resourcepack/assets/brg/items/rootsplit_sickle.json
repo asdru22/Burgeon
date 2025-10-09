@@ -45,10 +45,18 @@
           }
         }
       }
-  ],
-  "fallback": {
-    "type": "minecraft:model",
-    "model": "brg:item/rootsplit_sickle"
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:using_item",
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "brg:item/rootsplit_sickle_using"
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "brg:item/rootsplit_sickle"
+      }
+    }
   }
-}
 }

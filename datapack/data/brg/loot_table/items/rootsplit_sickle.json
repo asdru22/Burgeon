@@ -9,13 +9,15 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{brg:{id:\"rootsplit_sickle\"}}"
+              "tag": "{brg:{id:\"rootsplit_sickle\",usable:true}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "brg:rootsplit_sickle",
                 "tooltip_style": "brg:default",
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 465,
                 "!minecraft:enchantable": {},
@@ -63,7 +65,7 @@
               "name": "brg:add_tooltip_lore"
             }
           ],
-          "name": "minecraft:warped_fungus_on_a_stick"
+          "name": "minecraft:poisonous_potato"
         }
       ]
     }
