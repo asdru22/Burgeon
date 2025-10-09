@@ -2,7 +2,8 @@
   {
     "function": "set_components",
     "components": {
-      "minecraft:max_damage": 465
+      "minecraft:max_damage": 465,
+      "!minecraft:swing_animation": {}
     }
   },
   {

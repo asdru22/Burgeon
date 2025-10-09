@@ -19,14 +19,14 @@
     "overlays": {
       "entries": [
         {
-          "formats": [45,87],
+          "formats": [45,88],
           "min_format": [45,0],
-          "max_format": 87,
+          "max_format": 88,
           "directory": "invalid_version"
         },
         {
-          "formats": [89,2147483647],
-          "min_format": [89,1],
+          "formats": [90,2147483647],
+          "min_format": [90,1],
           "max_format": 2147483647,
           "directory": "invalid_version"
         }
