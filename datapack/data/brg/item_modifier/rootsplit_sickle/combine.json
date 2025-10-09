@@ -46,6 +46,12 @@
         "combined"
       ],
       "mode": "replace_all"
+    },
+    "floats": {
+      "values": [
+        16
+      ],
+      "mode": "replace_all"
     }
   }
 ]

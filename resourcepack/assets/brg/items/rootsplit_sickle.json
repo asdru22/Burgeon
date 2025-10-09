@@ -13,35 +13,61 @@
             {
               "when": "gui",
               "model": {
-                "type": "minecraft:model",
-                "model": "brg:item/rootsplit_sickle_combined_small"
+                "type": "minecraft:composite",
+                "models": [
+                  {
+                    "type": "minecraft:model",
+                    "model": "brg:item/rootsplit_staff_small"
+                  },
+                  {
+                    "type": "minecraft:model",
+                    "model": "brg:item/rootsplit_staff/background"
+                  },
+                  {
+                    "type": "minecraft:range_dispatch",
+                    "property": "minecraft:custom_model_data",
+                    "entries": [
+                      {
+                        "threshold": 16,
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "brg:item/blooming_bulb/6"
+                        }
+                      }
+                    ],
+                    "fallback": {
+                      "type": "minecraft:model",
+                      "model": "brg:item/rootsplit_staff/background"
+                    }
+                  }
+                ]
               }
             },
             {
               "when": "ground",
               "model": {
                 "type": "minecraft:model",
-                "model": "brg:item/rootsplit_sickle_combined_small"
+                "model": "brg:item/rootsplit_staff_small"
               }
             },
             {
               "when": "head",
               "model": {
                 "type": "minecraft:model",
-                "model": "brg:item/rootsplit_sickle_combined_small"
+                "model": "brg:item/rootsplit_staff_small"
               }
             },
             {
               "when": "fixed",
               "model": {
                 "type": "minecraft:model",
-                "model": "brg:item/rootsplit_sickle_combined_small"
+                "model": "brg:item/rootsplit_staff_small"
               }
             }
           ],
           "fallback": {
             "type": "minecraft:model",
-            "model": "brg:item/rootsplit_sickle_combined"
+            "model": "brg:item/rootsplit_staff"
           }
         }
       }
