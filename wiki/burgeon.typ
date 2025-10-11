@@ -211,7 +211,8 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
     pb: false,
 )
 
-Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it.
+Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it.\
+#align(center,[*In order for the seeds to to grow, the Vase has to be in direct skylight*])
 #table(
     columns: 3,
     align: horizon,
