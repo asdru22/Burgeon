@@ -2,4 +2,3 @@ data merge entity @s {Tags:["brg.item_display","brg.scarlet_spore","smithed.enti
 
 data modify entity @s item.components."minecraft:custom_data".brg.macro_input.UUID set from storage brg:temp root.scarlet_spore.UUID
 tp @s ~ ~ ~ ~ ~
-
