@@ -1,1 +1,1 @@
-$execute anchored eyes facing entity @n[type=!#brg:projectile_ignore,distance=..20,nbt=!{Health:0f},nbt=!{UUID:$(UUID)},nbt=!{Owner:$(UUID)}] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
+$execute anchored eyes facing entity @n[type=!#brg:scarlet_spore_ignore,distance=..20,nbt=!{Health:0f},nbt=!{Owner:$(UUID)}] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~

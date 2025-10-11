@@ -267,12 +267,22 @@ Can be filled up with various "soil" blocks to grow different plants. Press #inp
 ]
 
 = Structures
+#let feature_content(columns, title, ..children) = grid(
 
+  columns: columns,
+  align: center,
+  inset: 3pt,
+  grid.cell(colspan: columns,text(weight: "bold",title)),..children
+)
+
+#table()
 == Mossy Trail <mossy_trail>
 Found in the #inline_content("plains", "Plains") biome.
-Obtainable loot:
-- #protobean.txt
-- #bloomguard.txt
-- #azure_thistle_seeds.txt
-- #etched_vase.txt
-- #tangleroot.txt
+
+#feature_content(3,[Obtainable Loot],
+  protobean.txt,
+  bloomguard.txt,
+  azure_thistle_seeds.txt,
+  etched_vase.txt,
+  tangleroot.txt
+)
