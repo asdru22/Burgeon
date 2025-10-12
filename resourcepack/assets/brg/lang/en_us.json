@@ -1,5 +1,7 @@
 {
   "pack.brg": "Burgeon",
+  "pack.brg.version": "0.1.1",
+  "pack.brg.version.name": "Perilous Plantations",
   "pack.brg.hover_event": "Click here to go to the official website",
   "pack.brg.tooltip": "\ua000 Burgeon",
   "item.brg.bloomguard_seed": "Bloomguard Seed",
@@ -27,7 +29,7 @@
   "block.brg.glutted_log": "Glutted Log",
   "enchantment.brg.hyperbloom": "Hyperbloom",
   "enchantment.brg.shredding": "Shredding",
-  "advancements.brg.root.description": "Wild Overgrowth!",
+  "advancements.brg.root.description": "V%s - %s",
   "advancements.brg.use_pointerpod": "That-a-way!",
   "advancements.brg.use_pointerpod.description": "Use a Pointerpod, where could it lead?",
   "advancements.brg.collect_grown_plants": "Darth Vaser",
@@ -65,6 +67,7 @@
   "death.attack.brg.scarlet_fang.player": "%1$s ran out of life juice",
   "death.attack.brg.scarlet_spore": "%1$s's life force was depleted by %2$s's Scarlet Spore",
   "death.attack.brg.rootsplit_staff": "%1$s didn't mind the splinters",
+  "death.attack.brg.rootsplit_staff.player": "%1$s didn't mind the splinters",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"
 }

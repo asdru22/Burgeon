@@ -29,12 +29,12 @@
 #top_grid(col: 2, item-tooltip(
     bloomguard_seed,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
 #top_grid(col: 2, item-tooltip(
     protobean,
     type: "Item",
-))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #dirt.txt. When fully grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
+))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When fully grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
 
 #top_grid(
     col: 2,
@@ -63,12 +63,12 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     tangleroot,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
 #top_grid(col: 2, item-tooltip(
     bloom_bud,
     type: "Item",
-))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vaeses] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
 
 #top_grid(col: 2, item-tooltip(
     azure_thistle_seeds,
@@ -179,7 +179,7 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 #top_grid(col: 2, item-tooltip(
     bean_pod,
     type: "Item",
-))[Obtained from grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 3-6 #(bean.txt-param)[Beans].]
+))[Obtained from grown #(protobean.txt-param)[Protobeans]. Can be opened to obtain 3-5 #(bean.txt-param)[Beans].]
 
 #top_grid(col: 2, item-tooltip(
     bean,

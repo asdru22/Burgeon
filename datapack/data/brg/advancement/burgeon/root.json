@@ -4,7 +4,15 @@
       "id": "minecraft:oxeye_daisy"
     },
     "title": {
-      "translate": "pack.brg"
+      "translate": "pack.brg",
+      "with": [
+        {
+          "translate": "pack.brg.version"
+        },
+        {
+          "translate": "pack.brg.version.name"
+        }
+      ]
     },
     "description": {
       "translate": "advancements.brg.root.description"
