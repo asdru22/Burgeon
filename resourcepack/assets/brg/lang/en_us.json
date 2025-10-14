@@ -30,7 +30,7 @@
   "block.brg.spile": "Spile",
   "enchantment.brg.hyperbloom": "Hyperbloom",
   "enchantment.brg.shredding": "Shredding",
-  "advancements.brg.root.description": "V%s - %s",
+  "advancements.brg.root.description": "Version %s\n%s",
   "advancements.brg.use_pointerpod": "That-a-way!",
   "advancements.brg.use_pointerpod.description": "Use a Pointerpod, where could it lead?",
   "advancements.brg.collect_grown_plants": "Darth Vaser",
@@ -41,6 +41,9 @@
   "advancements.brg.convert_glutted_log.description": "Lure a mysterious creature into a Glutted Log using Beans",
   "advancements.brg.scarlet_spore_clutch_heal": "Rekless behaviour",
   "advancements.brg.scarlet_spore_clutch_heal.description": "Get healed by a Scarlet Spore at or below 1 health",
+  "advancements.brg.make_suspicious_bush": "Suspicious Bush",
+  "advancements.brg.make_suspicious_bush.description": "Place a spile on top of %s",
+
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",

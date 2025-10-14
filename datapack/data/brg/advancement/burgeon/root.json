@@ -4,18 +4,20 @@
       "id": "minecraft:oxeye_daisy"
     },
     "title": {
-      "translate": "pack.brg",
+      "translate": "pack.brg"
+    },
+    "description": {
+      "translate": "advancements.brg.root.description",
       "with": [
         {
           "translate": "pack.brg.version"
         },
         {
-          "translate": "pack.brg.version.name"
+          "translate": "pack.brg.version.name",
+          "color": "#1cc396"
         }
-      ]
-    },
-    "description": {
-      "translate": "advancements.brg.root.description"
+      ],
+      "color": "white"
     },
     "background": "minecraft:block/moss_block",
     "announce_to_chat": false,
