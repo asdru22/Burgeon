@@ -16,7 +16,6 @@ scoreboard objectives add brg.consumed_beans dummy
 scoreboard objectives add brg.using_item dummy
 scoreboard objectives add brg.using_item_prev dummy
 
-
 ## Gamerules
 gamerule logAdminCommands false
 gamerule commandBlockOutput false

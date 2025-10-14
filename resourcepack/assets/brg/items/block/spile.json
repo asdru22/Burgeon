@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "ground",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/spile"
+        }
+      },
+      {
+        "when": "wall",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/spile_wall"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/spile"
+    }
+  }
+}

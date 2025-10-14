@@ -7,6 +7,10 @@ execute if entity @s[tag=!brg.glow_in_the_dark,tag=!brg.nonsolid_base] run funct
 ## Etched Vase
 execute if entity @s[tag=brg.etched_vase] run return run function brg:block/etched_vase/second_clock
 
+## Etched Vase
+execute if entity @s[tag=brg.spile] run return run function brg:block/spile/second_clock
+
+
 ## Glutted Log
 execute if entity @s[tag=brg.glutted_log] run return run function brg:block/glutted_log/second_clock
 

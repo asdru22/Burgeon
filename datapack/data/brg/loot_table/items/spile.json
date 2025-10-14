@@ -9,17 +9,17 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"etched_vase\",custom_block:1b}}"
+                            "tag": "{brg:{id:\"spile\",custom_block:1b}}"
                         },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:block/etched_vase",
+                                "minecraft:item_model": "brg:block/spile",
                                 "!minecraft:equippable": {},
                                 "tooltip_style": "brg:default",
                                 "profile": {
                                     "texture": "brg:block/empty",
-                                    "id": [66,0,0,1]
+                                    "id": [66,0,0,2]
                                 },
                                 "minecraft:rarity": "common",
                                 "tooltip_display": {
@@ -32,7 +32,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "block.brg.etched_vase"
+                                "translate": "block.brg.spile"
                             },
                             "target": "item_name"
                         },
@@ -46,5 +46,5 @@
             ]
         }
     ],
-    "random_sequence": "brg:items/etched_vase"
+    "random_sequence": "brg:items/spile"
 }
