@@ -1,41 +1,63 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "functions": [
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"goop_bottle\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:goop_bottle",
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "consume_seconds": 2.0,
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
                         {
-                            "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"goop_bottle\"}}"
-                        },
-                        {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:item_model": "brg:goop_bottle",
-                                "!minecraft:consumable": {},
-                                "!minecraft:food": {},
-                                "tooltip_style": "brg:default"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.brg.goop_bottle"
-                            },
-                            "target": "item_name"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "brg:add_tooltip_lore"
+                          "id": "minecraft:nausea",
+                          "duration": 600
                         }
-                    ],
-                    "name": "minecraft:poisonous_potato"
-                }
-            ]
+                      ]
+                    }
+                  ],
+                  "sound":{
+                    "sound_id":  "brg:item.goop_bottle.drink"
+                  }
+                },
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 4,
+                  "saturation": 1.8
+                },
+                "tooltip_style": "brg:default"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.goop_bottle"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
         }
-    ],
-    "random_sequence": "brg:items/goop_bottle"
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/goop_bottle"
 }

@@ -26,7 +26,9 @@ scoreboard players set #0 brg.dummy 0
 scoreboard players set #1 brg.dummy 1
 scoreboard players set #2 brg.dummy 2
 scoreboard players set #3 brg.dummy 3
+scoreboard players set #5 brg.dummy 5
 scoreboard players set #12 brg.dummy 12
+scoreboard players set #80 brg.dummy 80
 
 # Load message
 tellraw @a[predicate=brg:entity_properties/is_developer] [{"translate":"debug.prefix","color":"yellow","bold":true},{"translate":"commands.brg.reload.success","color":"white","bold":false}]

@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"appalling_shinguards\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:appalling_shinguards",
+                "minecraft:attribute_modifiers": [],
+                "max_stack_size": 1,
+                "minecraft:damage": 0,
+                "minecraft:max_damage": 506,
+                "minecraft:equippable": {
+                  "asset_id": "brg:appalling",
+                  "equip_sound": {
+                    "sound_id": "brg:item.armor.equip_appalling_shinguards"
+                  },
+                  "slot": "legs"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.appalling_shinguards"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/appalling_shinguards"
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "brg:burgeon/collect_grown_plant",
+  "parent": "brg:burgeon/root",
   "display": {
     "icon": {
       "id": "minecraft:stone",

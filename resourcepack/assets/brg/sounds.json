@@ -256,5 +256,30 @@
       "brg:block/spile/break"
     ],
     "subtitle": "subtitles.block.generic.break"
+  },
+  "item.goop_bottle.drink": {
+    "sounds": [
+      "item/bottle/drink_honey1",
+      "item/bottle/drink_honey2",
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.35
+      },
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.75
+      }
+    ],
+    "subtitle": "subtitles.brg.item.goop_bottle.drink"
+  },
+  "item.armor.equip_appalling_shinguards": {
+    "sounds": [
+      {
+        "name": "mob/creaking/creaking_attack1",
+        "pitch": 1.5,
+        "volume":0.5
+      }
+    ],
+    "subtitle": "subtitles.brg.item.appalling_shinguards.equip"
   }
 }
