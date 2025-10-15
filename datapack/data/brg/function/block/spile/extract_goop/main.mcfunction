@@ -1,5 +1,6 @@
 execute if entity @s[tag=!brg.spile.bottle] run return run execute positioned ^ ^ ^0.25 positioned ~ ~-0.1 ~ run particle minecraft:dripping_lava ~ ~ ~ 0 0 0 0 1
 
+execute unless block ^ ^ ^-1 creaking_heart[creaking_heart_state=awake] run return fail 
 
 execute unless predicate brg:random_chance/0.05 run return fail
 # There is a 5% chance this code will be ran

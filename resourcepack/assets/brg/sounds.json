@@ -222,11 +222,38 @@
     ],
     "subtitle": "subtitles.brg.block.etched_vase.drop"
   },
-  "block.spile.break": {
+  "block.spile.place_bottle": {
     "sounds": [
       "block/copper_statue/break1",
       "block/copper_statue/break2",
       "block/copper_statue/break3"
+    ],
+    "subtitle": "subtitles.brg.block.spile.place_bottle"
+  },
+  "item.goop_bottle.use": {
+    "sounds": [
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.8
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.85
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.75
+      }
+    ],
+    "subtitle": "subtitles.brg.item.goop_bottle.use"
+  },
+  "block.spile.break": {
+    "sounds": [
+      "brg:block/spile/break"
     ],
     "subtitle": "subtitles.block.generic.break"
   }

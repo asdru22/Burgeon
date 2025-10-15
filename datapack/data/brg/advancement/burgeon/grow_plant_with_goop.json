@@ -1,0 +1,22 @@
+{
+  "parent": "brg:burgeon/collect_grown_plant",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:goop_bottle"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.grow_plant_with_goop"
+    },
+    "description": {
+      "translate": "advancements.brg.grow_plant_with_goop.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Commands to break an etched vase
+# Commands to break a spile
 
 execute as @n[tag=!smithed.entity,type=minecraft:item,distance=..5,nbt={Item:{components:{"minecraft:profile":{id:[I;66,0,0,2]}},id:"minecraft:player_head"}}] run function brg:block/spile/break/item
 

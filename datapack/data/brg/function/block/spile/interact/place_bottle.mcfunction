@@ -3,3 +3,4 @@ tag @s add brg.temp
 execute summon item_display run function brg:block/spile/interact/initiate_bottle with storage brg:macro root
 tag @s remove brg.temp
 tag @s add brg.spile.bottle
+playsound brg:block.spile.place_bottle block @a[distance=..8]
