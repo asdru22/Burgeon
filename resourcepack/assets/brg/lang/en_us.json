@@ -24,6 +24,7 @@
   "item.brg.wildstep_pods": "Wildstep Pods",
   "item.brg.pointerpod": "Pointerpod",
   "item.brg.twining_tendril": "Twining Tendril",
+  "item.brg.goop_bottle": "Goop Bottle",
   "item.minecraft.tipped_arrow.effect.azure_thistle": "Azure Thistle",
   "block.brg.etched_vase": "Etched Vase",
   "block.brg.glutted_log": "Glutted Log",
@@ -43,7 +44,6 @@
   "advancements.brg.scarlet_spore_clutch_heal.description": "Get healed by a Scarlet Spore at or below 1 health",
   "advancements.brg.make_suspicious_bush": "Suspicious Bush",
   "advancements.brg.make_suspicious_bush.description": "Place a spile on top of %s",
-
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",

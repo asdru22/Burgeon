@@ -4,7 +4,6 @@
 item modify entity @s contents {function:"minecraft:set_custom_model_data",strings:{values:["wall"],mode:"replace_all"}}
 
 tag @s add brg.spile.wall
-execute on passengers if entity @s[type=interaction] run data modify entity @s width set value 0.3
 
 # prepare macro
 data remove storage brg:macro root

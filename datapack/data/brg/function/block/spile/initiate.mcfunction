@@ -1,6 +1,6 @@
 # Commands to run as the item display
 
-tag @s remove brg.etched_vase.initiate
+tag @s remove brg.spile.initiate
 
 # Handle rotations and wall placement
 execute if block ~ ~ ~ player_wall_head positioned ~ ~0.25 ~ run return run function brg:block/spile/wall_placement

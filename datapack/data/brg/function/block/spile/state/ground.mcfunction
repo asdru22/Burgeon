@@ -3,7 +3,7 @@ item modify entity @s contents {function:"minecraft:set_custom_model_data",strin
 
 # entity data
 data modify entity @s transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.3125f,0f],scale:[1f,1f,1f]}
-execute on passengers if entity @s[type=interaction] run data modify entity @s width set value 0.55
+
 execute positioned ^ ^ ^0.25 positioned ~ ~-0.25 ~ run tp @s ~ ~ ~
 tag @s remove brg.spile.wall
 
@@ -15,5 +15,7 @@ execute if block ~ ~ ~ player_wall_head[facing=north] run data modify storage br
 execute if block ~ ~ ~ player_wall_head[facing=east] run data modify storage brg:macro root.rotation set value 4
 execute if block ~ ~ ~ player_wall_head[facing=south] run data modify storage brg:macro root.rotation set value 8
 execute if block ~ ~ ~ player_wall_head[facing=west] run data modify storage brg:macro root.rotation set value 12
-#setblock 
+#setblock
 function brg:block/spile/state/ground_macro with storage brg:macro root
+
+execute if entity @s[tag=brg.spile.bottle] on passengers if entity @s[type=item_display] run function brg:block/spile/drop_bottle
