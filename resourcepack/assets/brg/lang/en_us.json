@@ -49,6 +49,8 @@
   "advancements.brg.grow_plant_with_goop.description": "Use Goop to grow a seed in an Etched Vase",
   "advancements.brg.appalling_shinguards_max_armor": "Upper Armour",
   "advancements.brg.appalling_shinguards_max_armor.description": "Wear a pair of Appalling Shinguards that grant 8 armor",
+  "advancements.brg.equip_straw_hat": "Going Bale Mode",
+  "advancements.brg.equip_straw_hat.description": "Equip a Straw Hat",
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",

@@ -1,16 +1,17 @@
-#import "minecraft.typ": *
+#import "../minecraft.typ": *
 
-#let etched_vase = mc-block("etched_vase", "Etched Vase", custom: true)
+#let etched_vase = mc-item("etched_vase", "Etched Vase", custom: true)
+#let glutted_log = mc-block("glutted_log", "Glutted Log", custom: true)
+#let murky_crevice = mc-block("murky_crevice", "Murky Crevice", custom: true)
+#let spile = mc-item("spile", "Spile", custom: true)
+
 #let bloomguard = mc-item("bloomguard", "Bloomguard", custom: true)
 #let bloomguard_open = mc-item("bloomguard", "Bloomguard", custom: true)
 #let bloomguard_seed = mc-item("bloomguard_seed", "Bloomguard Seed", custom: true)
-//#let sap_bucket = item("sap_bucket", "Sap Bucket", custom: true)
-#let spile = mc-block("spile", "Spile", custom: true)
+#let goop_bottle = mc-item("goop_bottle", "Goop Bottle", custom: true)
 #let protobean = mc-item("protobean", "Protobean", custom: true)
 #let bean_pod = mc-item("bean_pod", "Bean Pod", custom: true)
 #let bean = mc-item("bean", "Bean", custom: true)
-#let glutted_log = mc-block("glutted_log", "Glutted Log", custom: true)
-#let murky_crevice = mc-block("murky_crevice", "Murky Crevice", custom: true)
 #let sour_kernel = mc-item("sour_kernel", "Sour Kernel", custom: true)
 #let tangleroot = mc-item("tangleroot", "Tangleroot", custom: true)
 #let rootsplit_sickle = mc-item("rootsplit_sickle", "Rootsplit Sickle", custom: true)
@@ -25,6 +26,7 @@
 #let pointerpod = mc-item("pointerpod", "Pointerpod", custom: true,auto-img: false)
 #let twining_tendril = mc-item("twining_tendril", "Twining Tendril", custom: true)
 #let straw_hat = mc-item("straw_hat", "Straw Hat", custom: true,auto-img: false)
+#let appalling_shinguards = mc-item("appalling_shinguards", "Appalling Shinguards", custom: true)
 
 
 #let mud = mc-block("mud", "Mud")
@@ -50,3 +52,4 @@
 #let wheat = mc-item("wheat", "Wheat")
 #let string = mc-item("string", "String")
 #let eyeblossom = mc-item("eyeblossom", "Eyeblossom")
+#let glass_bottle = mc-item("glass_bottle", "Glass Bottle")

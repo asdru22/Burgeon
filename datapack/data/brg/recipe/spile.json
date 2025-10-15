@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " I ",
+    "III",
+    "I  "
+  ],
+  "key": {
+    "I": [
+      "minecraft:iron_ingot"
+    ]
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "components": {
+      "!minecraft:equippable": {},
+      "minecraft:custom_data": {
+        "brg": {
+          "custom_block": true,
+          "id": "spile"
+        }
+      },
+      "minecraft:item_model": "brg:block/spile",
+      "minecraft:item_name": {
+        "translate": "block.brg.spile"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ],
+      "minecraft:profile": {
+        "id": [
+          66,
+          0,
+          0,
+          2
+        ],
+        "texture": "brg:block/empty"
+      },
+      "minecraft:rarity": "common",
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "minecraft:profile"
+        ]
+      },
+      "minecraft:tooltip_style": "brg:default"
+    },
+    "count": 1
+  }
+}

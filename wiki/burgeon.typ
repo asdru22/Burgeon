@@ -1,5 +1,5 @@
-#import "variables.typ": *
-#import "template.typ": template
+#import "utils/variables.typ": *
+#import "utils/template.typ": template
 
 
 #rarity.insert("currency", (id: "Currency", color: rgb("#55FF55")))
@@ -135,7 +135,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     scarlet_fang,
     type: "Tool",
     max_stack: 1,
-    durability: 142
+    durability: 142,
 ))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Pressing #inputs.use will drain #health(4)[health] from the player and release a homing Crimson Spore that targets the nearest entity. The spores deal #damage(4) and decay after 1 second. If a spore hits an entity, the owner will be healed for #health(4)[health].]
 
 
@@ -144,7 +144,7 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     type: "Tool",
 ))[Obtained from grown #(pointerpod.txt-param)[Pointerpods]. Used to open #(vault.txt-param)[Vaults] located in  #inline_content("mossy_trail", "Mossy Trails", custom: true).]
 
-= Equipment
+== Equipment
 #top_grid(col: 2, item-tooltip(
     wildstep_pods,
     type: "Armor",
@@ -175,6 +175,11 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
 Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param)[Etched Vases] will grow slightly faster.
 #pagebreak()
 
+#top_grid(col: 2, item-tooltip(
+    appalling_shinguards,
+    type: "Armor",
+))[Obtained from grown #(murky_crevice.txt-param)[Murky Crevices]. When worn, it increases armor by  1.5 for every mob that is currently targeting the wearer. Caps at 8 armor.]
+
 == Other
 #top_grid(col: 2, item-tooltip(
     bean_pod,
@@ -186,6 +191,10 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
     type: "Currency",
 ))[Obtained from opening #(bean_pod.txt-param)[Bean Pods]. Used as currency by the creature inside the #glutted_log.txt. Cannot be planted.]
 
+#top_grid(col: 2, item-tooltip(
+    goop_bottle,
+    type: "Item",
+))[Obtained from opening #(spile.txt-param)[Spiles]. When used on a seed in an #etched_vase.txt, it will increase its growth stage by 2.]
 
 = Blocks
 == Functional
@@ -212,37 +221,38 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 )
 
 Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it.\
-#align(center,[*In order for the seeds to to grow, the Vase has to be in direct skylight*])
-#table(
-    columns: 3,
+Each second there's a 5% chance for the seeds growth stage to be increased by 1.
+#align(center, [*In order for the seeds to to grow, the Vase has to be in direct skylight*])
+#align(center,table(
+    columns: 4,
     align: horizon,
     inset: 4pt,
     [Soil],
     [Seed],
     [Result],
+    [Stages],
     // dirt
     table.cell(rowspan: 2, dirt.txt),
-    protobean.txt, bean_pod.txt,
-    bloomguard_seed.txt, bloomguard.txt,
+    protobean.txt, bean_pod.txt, [14],
+    bloomguard_seed.txt, bloomguard.txt, [17],
     // moss block
     table.cell(rowspan: 3, moss_block.txt),
-    azure_thistle_seeds.txt, azure_thistle.txt,
-    tangleroot.txt, rootsplit_sickle.txt,
-    wildstep_seed.txt, wildstep_pods.txt,
+    azure_thistle_seeds.txt, azure_thistle.txt,[19],
+    tangleroot.txt, rootsplit_sickle.txt,[16],
+    wildstep_seed.txt, wildstep_pods.txt,[20],
     // pale oak log
     pale_oak_log.txt,
-    sour_kernel.txt, glutted_log.txt,
+    sour_kernel.txt, glutted_log.txt,[24],
     // mud
     mud.txt,
-    bloom_bud.txt, blooming_bulb.txt,
+    bloom_bud.txt, blooming_bulb.txt,[16],
     // soul soil
     soul_soil.txt,
-    scarlet_fang_root.txt, scarlet_fang.txt,
+    scarlet_fang_root.txt, scarlet_fang.txt,[25],
     // sand
     sand.txt,
-    pointerpod.txt, twining_tendril.txt,
-)
-
+    pointerpod.txt, twining_tendril.txt,[14],
+))
 #pagebreak()
 
 #top_grid(col: 2, item-tooltip(
@@ -261,29 +271,56 @@ Can be filled up with various "soil" blocks to grow different plants. Press #inp
         columns: 2,
         [Reward], [Weight],
         wildstep_seed.txt, [3],
-        scarlet_fang_root.txt, [3],
+        scarlet_fang_root.txt, [2],
         bloom_bud.txt, [3],
-        eyeblossom.txt, [2],
+        eyeblossom.txt, [3],
+        appalling_shinguards.txt,[2]
     )
 ]
 
-= Structures
-#let feature_content(columns, title, ..children) = grid(
-
-  columns: columns,
-  align: center,
-  inset: 3pt,
-  grid.cell(colspan: columns,text(weight: "bold",title)),..children
+#top_grid(
+    col: 2,
+    item-tooltip(
+        spile,
+        type: "Block",
+    ),
+    recipe3x3(
+        none,
+        iron_ingot,
+        none,
+        iron_ingot,
+        iron_ingot,
+        iron_ingot,
+        iron_ingot,
+        none,
+        none,
+        result: spile,
+    ),
+    pb: false,
 )
+Click #inputs.use when holding a #glass_bottle.txt to attach it to the Spile. Click #input with any other item to collect the item attached to the Spile.  When the spile is placed on the side of an #(creaking_heart.txt-param)[Awake Creaking Heart], it will fill the bottle with #(goop_bottle.txt-param)[Goop], with a chance to deplete the Creaking Heart's Goop, converting it into a #pale_oak_log.txt.
+
+If there is no block for the Spile to hold on to, the model will appear on the ground with no knob.
+#pagebreak()
+
+= Structures
+#let feature_content(columns, title, ..children) = align(center, grid(
+    columns: columns,
+    align: center,
+    inset: 3pt,
+    grid.cell(colspan: columns, text(weight: "bold", title)), ..children
+))
 
 #table()
 == Mossy Trail <mossy_trail>
 Found in the #inline_content("plains", "Plains") biome.
 
-#feature_content(3,[Obtainable Loot],
-  protobean.txt,
-  bloomguard.txt,
-  azure_thistle_seeds.txt,
-  etched_vase.txt,
-  tangleroot.txt
+#feature_content(
+    4,
+    [Obtainable Loot],
+    protobean.txt,
+    bloomguard.txt,
+    azure_thistle_seeds.txt,
+    etched_vase.txt,
+    tangleroot.txt,
 )

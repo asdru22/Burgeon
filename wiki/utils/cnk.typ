@@ -1,4 +1,4 @@
-#import "minecraft.typ": *
+#import "../minecraft.typ": *
 
 
 #let pot(s1, s2, s3, s4, s5, result: none) = {

@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"sour_kernel\",seed:{identifier:true,soil:{id:\"minecraft:pale_oak_log\"},stages:12}}}"
+                            "tag": "{brg:{id:\"sour_kernel\",seed:{identifier:true,soil:{id:\"minecraft:pale_oak_log\"},stages:24}}}"
                         },
                         {
                             "function": "minecraft:set_components",
