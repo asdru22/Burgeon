@@ -20,19 +20,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": {
-            "pools": [
-              {
-                "rolls": 1,
-                "entries": [
-                  {
-                    "type": "minecraft:loot_table",
-                    "value": "brg:items/blooming_bulb"
-                  }
-                ]
-              }
-            ]
-          }
+          "value": "brg:items/blooming_bulb"
         }
       ],
       "conditions": [

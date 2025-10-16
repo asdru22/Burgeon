@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "age0",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/bursting_bud_age0"
+        }
+      },
+      {
+        "when": "age1",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/bursting_bud_age1"
+        }
+      },
+      {
+        "when": "entity",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:entity/bursting_blossom"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/bursting_bud"
+    }
+  }
+}

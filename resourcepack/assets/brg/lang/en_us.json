@@ -26,6 +26,8 @@
   "item.brg.twining_tendril": "Twining Tendril",
   "item.brg.goop_bottle": "Goop Bottle",
   "item.brg.appalling_shinguards": "Appalling Shinguards",
+  "item.brg.bursting_bud": "Bursting Bud",
+  "item.brg.bursting_blossom": "Bursting Blossom",
   "item.minecraft.tipped_arrow.effect.azure_thistle": "Azure Thistle",
   "block.brg.etched_vase": "Etched Vase",
   "block.brg.glutted_log": "Glutted Log",
@@ -49,7 +51,7 @@
   "advancements.brg.grow_plant_with_goop.description": "Use Goop to grow a seed in an Etched Vase",
   "advancements.brg.appalling_shinguards_max_armor": "Upper Armour",
   "advancements.brg.appalling_shinguards_max_armor.description": "Wear a pair of Appalling Shinguards that grant 8 armor",
-  "advancements.brg.equip_straw_hat": "Going Bale Mode",
+  "advancements.brg.equip_straw_hat": "Going Haywire!",
   "advancements.brg.equip_straw_hat.description": "Equip a Straw Hat",
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
@@ -83,6 +85,8 @@
   "death.attack.brg.scarlet_spore": "%1$s's life force was depleted by %2$s's Scarlet Spore",
   "death.attack.brg.rootsplit_staff": "%1$s didn't mind the splinters",
   "death.attack.brg.rootsplit_staff.player": "%1$s didn't mind the splinters",
+  "death.attack.brg.bursting_blossom_petal": "%1$s was clipped by a Bursting Petal",
+  "death.attack.brg.bursting_blossom_petal.player": "%1$s was clipped by %2$s's Bursting Petal",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"
 }

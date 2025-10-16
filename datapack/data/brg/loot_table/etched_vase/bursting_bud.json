@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/pointerpod"
+          "value": "brg:items/bursting_bud"
         }
       ],
       "conditions": [
@@ -20,7 +20,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/twining_tendril"
+          "value": "brg:items/bursting_blossom"
         }
       ],
       "conditions": [
@@ -31,5 +31,5 @@
       ]
     }
   ],
-  "random_sequence": "brg:etched_vase/pointerpod"
+  "random_sequence": "brg:etched_vase/bursting_bud"
 }

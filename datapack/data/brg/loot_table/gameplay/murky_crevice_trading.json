@@ -27,6 +27,11 @@
           "type": "minecraft:item",
           "name": "minecraft:closed_eyeblossom",
           "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/bursting_bud",
+          "weight": 2
         }
       ]
     }
