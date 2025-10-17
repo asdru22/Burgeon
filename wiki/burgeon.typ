@@ -29,12 +29,12 @@
 #top_grid(col: 2, item-tooltip(
     bloomguard_seed,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When fully grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When grown, it can be harvested to obtain #bloomguard.txt and can also drop 1-3 Seeds.]
 
 #top_grid(col: 2, item-tooltip(
     protobean,
     type: "Item",
-))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When fully grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
+))[Obtained from #inline_content("mossy_trail", "Mossy Trail", custom: true) loot. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #dirt.txt. When grown, it can be harvested to obtain #(bean_pod.txt-param)[Bean Pods].]
 
 #top_grid(
     col: 2,
@@ -63,27 +63,32 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 #top_grid(col: 2, item-tooltip(
     tangleroot,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When grown, it can be harvested to obtain #(rootsplit_sickle.txt-param)[Rootsplit Sickles].]
 
 #top_grid(col: 2, item-tooltip(
     bloom_bud,
     type: "Item",
-))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #mud.txt. When fully grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #mud.txt. When grown, it can be harvested to obtain #(blooming_bulb.txt-param)[Blooming Bulbs].]
 
 #top_grid(col: 2, item-tooltip(
     azure_thistle_seeds,
     type: "Item",
-))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #(azure_thistle.txt-param)[Azure Thistles].]
+))[Found in #inline_content("mossy_trail", "Mossy Trail", custom: true) Vaults. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When grown, it can be harvested to obtain #(azure_thistle.txt-param)[Azure Thistles].]
 
 #top_grid(col: 2, item-tooltip(
     scarlet_fang_root,
     type: "Item",
-))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When fully grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When grown, it can be harvested to obtain #(scarlet_fang.txt-param)[Scarlet Fangs].]
 
 #top_grid(col: 2, item-tooltip(
     wildstep_seed,
     type: "Item",
-))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When fully grown, it can be harvested to obtain #wildstep_pods.txt.]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #moss_block.txt. When grown, it can be harvested to obtain #wildstep_pods.txt.]
+
+#top_grid(col: 2, item-tooltip(
+    bursting_bud,
+    type: "Item",
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #mud.txt. When grown, it can be harvested to obtain #bursting_blossom.txt.]
 
 #top_grid(
     col: 2,
@@ -101,7 +106,7 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
     ),
     pb: false,
 )
-Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When fully grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].
+Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].
 #pagebreak()
 
 == Tools & Weapons
@@ -178,7 +183,7 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 #top_grid(col: 2, item-tooltip(
     appalling_shinguards,
     type: "Armor",
-))[Obtained from grown #(murky_crevice.txt-param)[Murky Crevices]. When worn, it increases armor by  1.5 for every mob that is currently targeting the wearer. Caps at 8 armor.]
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. When worn, it increases armor by  1.5 for every mob that is currently targeting the wearer. Caps at 8 armor.]
 
 == Other
 #top_grid(col: 2, item-tooltip(
@@ -195,6 +200,30 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
     goop_bottle,
     type: "Item",
 ))[Obtained from opening #(spile.txt-param)[Spiles]. When used on a seed in an #etched_vase.txt, it will increase its growth stage by 2.]
+
+#top_grid(col: 2, item-tooltip(
+    bursting_blossom,
+    type: "Item",
+))[Obtained from grown #(bursting_bud.txt-param)[Bursting Buds]. Can be replanted in #(etched_vase.txt-param)[Etched Vases] by clicking #inputs.use. If the vase its planted in gets powered by redstone, the blossom will start floating in the air, and will pop after 5 seconds. After it pops, it will shoot 6 homing petals target entities in a 20 block radius. When hitting an entity, the petal deals #damage(6) and has a 5% chance to spawn a #bursting_bud.txt. If hit by a projectile, the blossom will pop and its petals won't target the owner of that projectile.]
+
+#top_grid(
+    col: 2,
+    item-tooltip(
+        seedbook,
+        type: "Item",
+        max_stack: 1,
+    ),
+    recipe2x2(
+        book,
+        wheat_seeds,
+        none,
+        none,
+        result: seedbook,
+    ),
+    pb: false,
+)
+When opened, the user can view the soil required by seeds to grown in an #etched_vase.txt. The pages unlock as the user collects the seeds.
+#pagebreak()
 
 = Blocks
 == Functional
@@ -220,7 +249,7 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
     pb: false,
 )
 
-Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it.\
+Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it. Vases can be powered with redstone to immediately make them drop the seed/plant they were holding.\
 Each second there's a 5% chance for the seeds growth stage to be increased by 1.
 #align(center, [*In order for the seeds to to grow, the Vase has to be in direct skylight*])
 #align(center,table(
@@ -298,7 +327,7 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
     ),
     pb: false,
 )
-Click #inputs.use when holding a #glass_bottle.txt to attach it to the Spile. Click #input with any other item to collect the item attached to the Spile.  When the spile is placed on the side of an #(creaking_heart.txt-param)[Awake Creaking Heart], it will fill the bottle with #(goop_bottle.txt-param)[Goop], with a chance to deplete the Creaking Heart's Goop, converting it into a #pale_oak_log.txt.
+Click #inputs.use when holding a #glass_bottle.txt to attach it to the Spile. Click #input with any other item to collect the item attached to the Spile.  When the spile is placed on the side of an #(creaking_heart.txt-param)[Awake Creaking Heart], it will fill the bottle with #(goop_bottle.txt-param)[Goop], with a %5% chance to deplete the Creaking Heart's Goop, converting it into a #pale_oak_log.txt.
 
 If there is no block for the Spile to hold on to, the model will appear on the ground with no knob.
 #pagebreak()

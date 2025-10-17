@@ -17,3 +17,5 @@ scoreboard players enable @s brg.seedbook
 
 playsound minecraft:item.book.page_turn player @s
 stopsound @s * minecraft:ui.button.click
+
+advancement grant @s only brg:burgeon/open_seedbook

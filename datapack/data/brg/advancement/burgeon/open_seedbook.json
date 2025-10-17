@@ -1,0 +1,22 @@
+{
+  "parent": "brg:burgeon/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:goop_bottle"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.open_seedbook"
+    },
+    "description": {
+      "translate": "advancements.brg.open_seedbook.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

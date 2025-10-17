@@ -27,6 +27,9 @@
 #let twining_tendril = mc-item("twining_tendril", "Twining Tendril", custom: true)
 #let straw_hat = mc-item("straw_hat", "Straw Hat", custom: true,auto-img: false)
 #let appalling_shinguards = mc-item("appalling_shinguards", "Appalling Shinguards", custom: true)
+#let bursting_bud = mc-item("bursting_bud", "Bursting Bud", custom: true)
+#let bursting_blossom = mc-item("bursting_blossom", "Bursting Blossom", custom: true)
+#let seedbook = mc-item("seedbook", "Floriculture Notes", custom: true)
 
 
 #let mud = mc-block("mud", "Mud")
@@ -53,3 +56,4 @@
 #let string = mc-item("string", "String")
 #let eyeblossom = mc-item("eyeblossom", "Eyeblossom")
 #let glass_bottle = mc-item("glass_bottle", "Glass Bottle")
+#let book = mc-item("book", "Book")

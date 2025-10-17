@@ -54,6 +54,8 @@
   "advancements.brg.appalling_shinguards_max_armor.description": "Wear a pair of Appalling Shinguards that grant 8 armor",
   "advancements.brg.equip_straw_hat": "Going Haywire!",
   "advancements.brg.equip_straw_hat.description": "Equip a Straw Hat",
+  "advancements.brg.open_seedbook": "Lol nerd",
+  "advancements.brg.open_seedbook.description": "Read Floriculture Notes",
   "block.brg.glutted_log.name": " ",
   "commands.brg.reload.success": " Updated datapacks and Burgeon scoreboards",
   "commands.brg.wrong_version": "\nYou are using Burgeon on the incorrect Minecraft version. Check the version you downloaded the pack for and try again.",
