@@ -10,5 +10,4 @@ execute if entity @s[scores={brg.using_item=1..}] run function brg:item/usable/t
 ## Reset scores
 scoreboard players reset @s brg.used_warped_fungus_on_a_stick
 
-# Return placed spiles
-execute if entity @s[tag=brg.return_item.spile] run function brg:block/spile/return_item/main
+execute if score @s brg.seedbook matches 1.. run function brg:item/seedbook/tick

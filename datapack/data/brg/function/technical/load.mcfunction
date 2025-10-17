@@ -15,7 +15,8 @@ scoreboard objectives add brg.heal dummy
 scoreboard objectives add brg.consumed_beans dummy
 scoreboard objectives add brg.using_item dummy
 scoreboard objectives add brg.using_item_prev dummy
-
+scoreboard objectives add brg.seedbook_page dummy
+scoreboard objectives add brg.seedbook trigger
 ## Gamerules
 gamerule logAdminCommands false
 gamerule commandBlockOutput false
@@ -29,6 +30,8 @@ scoreboard players set #3 brg.dummy 3
 scoreboard players set #5 brg.dummy 5
 scoreboard players set #12 brg.dummy 12
 scoreboard players set #80 brg.dummy 80
+
+function brg:item/seedbook/load
 
 # Load message
 tellraw @a[predicate=brg:entity_properties/is_developer] [{"translate":"debug.prefix","color":"yellow","bold":true},{"translate":"commands.brg.reload.success","color":"white","bold":false}]

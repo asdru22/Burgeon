@@ -1,0 +1,10 @@
+{
+  "seedbook.brg.title": "Cool book",
+  "seedbook.brg.done": "Done",
+  "seedbook.brg.next": "Next",
+  "seedbook.brg.previous": "Previous",
+  "seedbook.brg.ui.arrow_up": "\ua000",
+  "seedbook.brg.ui.arrow_down": "\ua001",
+  "seedbook.brg.ui.time": "%s\ua002\n%s",
+  "seedbook.brg.ui.result": "\ua003"
+}
