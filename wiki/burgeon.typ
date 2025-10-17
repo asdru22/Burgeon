@@ -252,7 +252,7 @@ When opened, the user can view the soil required by seeds to grown in an #etched
 Can be filled up with various "soil" blocks to grow different plants. Press #inputs.use to place soil and seeds. Press #inputs.attack to remove them. Pressing #inputs.attack 4 times quickly when the vase is empty will break it. Vases can be powered with redstone to immediately make them drop the seed/plant they were holding.\
 Each second there's a 5% chance for the seeds growth stage to be increased by 1.
 #align(center, [*In order for the seeds to to grow, the Vase has to be in direct skylight*])
-#align(center,table(
+#align(center, table(
     columns: 4,
     align: horizon,
     inset: 4pt,
@@ -266,21 +266,23 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
     bloomguard_seed.txt, bloomguard.txt, [17],
     // moss block
     table.cell(rowspan: 3, moss_block.txt),
-    azure_thistle_seeds.txt, azure_thistle.txt,[19],
-    tangleroot.txt, rootsplit_sickle.txt,[16],
-    wildstep_seed.txt, wildstep_pods.txt,[20],
+    azure_thistle_seeds.txt, azure_thistle.txt, [19],
+    tangleroot.txt, rootsplit_sickle.txt, [16],
+    wildstep_seed.txt, wildstep_pods.txt, [20],
     // pale oak log
     pale_oak_log.txt,
-    sour_kernel.txt, glutted_log.txt,[24],
+    sour_kernel.txt, glutted_log.txt, [24],
     // mud
-    mud.txt,
-    bloom_bud.txt, blooming_bulb.txt,[16],
+    table.cell(rowspan: 2, mud.txt),
+    bloom_bud.txt, blooming_bulb.txt, [16],
+    bursting_bud.txt, bursting_blossom.txt, [18],
+
     // soul soil
     soul_soil.txt,
-    scarlet_fang_root.txt, scarlet_fang.txt,[25],
+    scarlet_fang_root.txt, scarlet_fang.txt, [25],
     // sand
     sand.txt,
-    pointerpod.txt, twining_tendril.txt,[14],
+    pointerpod.txt, twining_tendril.txt, [14],
 ))
 #pagebreak()
 
@@ -303,7 +305,7 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
         scarlet_fang_root.txt, [2],
         bloom_bud.txt, [3],
         eyeblossom.txt, [3],
-        appalling_shinguards.txt,[2]
+        appalling_shinguards.txt, [2],
     )
 ]
 
