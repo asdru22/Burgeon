@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "brg.seedbook:item/unknown/scarlet_fang"
+  }
+}

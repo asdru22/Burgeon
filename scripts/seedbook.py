@@ -59,19 +59,17 @@ print(f"Wrote function file: {function_file}")
 base_textures_dir = r"resourcepack/assets/brg"
 unknown_dir = r"resourcepack/assets/brg.seedbook"
 
-textures_out_item_dir = os.path.join(unknown_dir, "textures", "item")
-textures_out_block_dir = os.path.join(unknown_dir, "textures", "block")
-items_out_item_dir = os.path.join(unknown_dir, "items")
-items_out_block_dir = os.path.join(unknown_dir, "items", "block")
-models_out_item_dir = os.path.join(unknown_dir, "models", "item")
-models_out_block_dir = os.path.join(unknown_dir, "models", "block")
+textures_out_item_dir = os.path.join(unknown_dir, "textures", "item","unknown")
+textures_out_block_dir = os.path.join(unknown_dir, "textures", "block","unknown")
+items_out_item_dir = os.path.join(unknown_dir, "items","unknown")
+models_out_item_dir = os.path.join(unknown_dir, "models", "item","unknown")
+models_out_block_dir = os.path.join(unknown_dir, "models", "block","unknown")
 
 # Make sure all needed directories exist
 for d in [
     textures_out_item_dir,
     textures_out_block_dir,
     items_out_item_dir,
-    items_out_block_dir,
     models_out_item_dir,
     models_out_block_dir,
 ]:
@@ -99,9 +97,9 @@ for item_name in all_items:
 
     # === Texture handling ===
     if src_type == "item":
-        dst_path = os.path.join(textures_out_item_dir,"unknown", f"{item_name}.png")
+        dst_path = os.path.join(textures_out_item_dir, f"{item_name}.png")
     else:
-        dst_path = os.path.join(textures_out_block_dir,"unknown", f"{item_name}.png")
+        dst_path = os.path.join(textures_out_block_dir, f"{item_name}.png")
 
     # Make non-transparent pixels black (preserving alpha)
     img = Image.open(src_path).convert("RGBA")
@@ -119,30 +117,39 @@ for item_name in all_items:
     print(f"🖼️  Created darkened texture: {dst_path}")
 
     # === Model handling ===
-    # Copy the model if it exists
     assert src_type in ("item", "block"), f"Unexpected src_type for {item_name}: {src_type}"
-    model_src = os.path.join(base_textures_dir, "models", src_type, f"{item_name}.json")
 
-    if os.path.exists(model_src):
-        if src_type == "item":
-            model_dst = os.path.join(models_out_item_dir, "unknown",  f"{item_name}.json")
-        else:
-            model_dst = os.path.join(models_out_block_dir, "unknown", f"{item_name}.json")
-        os.makedirs(os.path.dirname(model_dst), exist_ok=True)
-        with open(model_src, "r", encoding="utf-8") as src_file:
-            with open(model_dst, "w", encoding="utf-8") as dst_file:
-                dst_file.write(src_file.read())
-        print(f"📦 Copied model: {model_dst}")
+    if src_type == "item":
+        model_dst = os.path.join(models_out_item_dir, f"{item_name}.json")
+        model_data = {
+            "parent": "item/generated",
+            "textures": {
+                "layer0": f"brg.seedbook:item/unknown/{item_name}"
+            }
+        }
     else:
-        print(f"⚠️  Model not found for {item_name} at {model_src}")
+        model_dst = os.path.join(models_out_block_dir, f"{item_name}.json")
+        model_data = {
+          "parent": "minecraft:block/cube_all",
+          "textures": {
+            "all": "brg.seedbook:block/unknown"
+          }
+        }
+
+
+    os.makedirs(os.path.dirname(model_dst), exist_ok=True)
+    with open(model_dst, "w", encoding="utf-8") as f:
+        json.dump(model_data, f, indent=2)
+
+    print(f"📦 Created generated model: {model_dst}")
 
     # === Item JSON (points to the model) ===
     if src_type == "item":
-        item_json_path = os.path.join(items_out_item_dir, "unknown", f"{item_name}.json")
-        model_ref = f"brg.seedbook:item/{item_name}"
+        item_json_path = os.path.join(items_out_item_dir, f"{item_name}.json")
+        model_ref = f"brg.seedbook:item/unknown/{item_name}"
     else:
-        item_json_path = os.path.join(items_out_block_dir, "unknown", f"{item_name}.json")
-        model_ref = f"brg.seedbook:block/{item_name}"
+        item_json_path = os.path.join(items_out_item_dir, f"{item_name}.json")
+        model_ref = f"brg.seedbook:block/unknown/{item_name}"
 
     item_json = {
         "model": {
