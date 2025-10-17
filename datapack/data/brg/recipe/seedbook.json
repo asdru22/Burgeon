@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "book",
+    [
+      "minecraft:wheat_seeds"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "components": {
+      "!minecraft:max_damage": {},
+      "minecraft:custom_data": {
+        "brg": {
+          "id": "seedbook"
+        }
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:item_model": "brg:seedbook",
+      "minecraft:item_name": {
+        "translate": "item.brg.seedbook"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ],
+      "minecraft:max_stack_size": 64,
+      "minecraft:tooltip_style": "brg:default"
+    },
+    "count": 1
+  }
+}

@@ -281,5 +281,25 @@
       }
     ],
     "subtitle": "subtitles.brg.item.appalling_shinguards.equip"
+  },
+   "entity.bursting_blossom.pop": {
+    "sounds": [
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 0.9,
+        "volume": 0.8
+      },
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 1.1,
+        "volume": 0.8
+      },
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 1,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.brg.entity.bursting_blossom.pop"
   }
 }

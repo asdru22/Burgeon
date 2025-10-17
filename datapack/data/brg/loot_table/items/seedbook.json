@@ -9,13 +9,13 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{brg:{id:\"pointerpod\",seed:{identifier:true,soil:{id:\"minecraft:sand\"},stages:14}}}"
+              "tag": "{brg:{id:\"seedbook\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "brg:pointerpod",
-                "!minecraft:enchantable": {},
+                "minecraft:item_model": "brg:seedbook",
+                "!minecraft:enchantable":{},
                 "!minecraft:consumable": {},
                 "!minecraft:food": {},
                 "!minecraft:max_damage": {},
@@ -27,7 +27,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.brg.pointerpod"
+                "translate": "item.brg.seedbook"
               },
               "target": "item_name"
             },
@@ -41,5 +41,5 @@
       ]
     }
   ],
-  "random_sequence": "brg:items/pointerpod"
+  "random_sequence": "brg:items/seedbook"
 }
