@@ -7,7 +7,7 @@
         "items": [
           {
             "predicates": {
-              "minecraft:custom_data": "{brg:{id:\"azure_thistle_seeds\"}}"
+              "minecraft:custom_data": "{brg:{id:\"scarlet_fang_root\"}}"
             }
           }
         ]

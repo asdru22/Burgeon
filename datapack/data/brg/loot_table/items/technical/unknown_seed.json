@@ -9,12 +9,11 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{brg:{id:\"unknown\",seed:{identifier:true, soil:{id:\"minecraft:moss_block\",components:{\"minecraft:item_name\":\"???\",\"minecraft:item_model\":\"brg.seedbook:block/unknown\"}},stages:\"?\"}}}"
+              "tag": "{brg:{id:\"unknown_seed\",seed:{identifier:true, soil:{id:\"minecraft:moss_block\",components:{\"minecraft:item_name\":\"???\",\"minecraft:item_model\":\"brg.seedbook:block/unknown\"}},stages:\"?\"}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "brg.seedbook:unknown",
                 "tooltip_style": "brg:default"
               }
             },
@@ -29,5 +28,5 @@
       ]
     }
   ],
-  "random_sequence": "brg:items/technical/unknown"
+  "random_sequence": "brg:items/technical/unknown_seed"
 }
