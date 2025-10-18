@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/baby_cobbler"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:etched_vase/baby_cobbler"
+}

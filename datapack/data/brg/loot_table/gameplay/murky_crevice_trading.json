@@ -24,13 +24,18 @@
           "weight": 2
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:closed_eyeblossom",
+          "type": "minecraft:loot_table",
+          "value": "brg:items/intwine",
           "weight": 3
         },
         {
           "type": "minecraft:loot_table",
           "value": "brg:items/bursting_bud",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/baby_cobbler",
           "weight": 2
         }
       ]
