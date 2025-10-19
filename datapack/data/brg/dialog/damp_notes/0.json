@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "item.brg.damp_notes"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:stone",
+        "count": 5
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "+"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:diamond"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "seedbook.brg.ui.result",
+        "font": "brg.seedbook:main"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:stone_pickaxe",
+        "components": {
+          "minecraft:item_model": "brg:bean"
+        }
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "seedbook.brg.done"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger brg.seedbook set 102"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "translate": "seedbook.brg.previous"
+      },
+      "width": 80
+    },
+    {
+      "label": {
+        "translate": "seedbook.brg.next"
+      },
+      "width": 80
+    }
+  ]
+}

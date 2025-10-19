@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"damp_notes\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "brg:damp_notes",
+                "!minecraft:enchantable":{},
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 64,
+                "minecraft:enchantment_glint_override": false,
+                "tooltip_style": "brg:default"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.brg.damp_notes"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:warped_fungus_on_a_stick"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/damp_notes"
+}

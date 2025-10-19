@@ -1,0 +1,19 @@
+{
+  "entries":[
+    {
+      "ingredient1":{
+        "id":"minecraft:stone",
+        "count": 5
+      },
+      "ingredient2":{
+        "id":"minecraft:diamond"
+      },
+      "result":{
+        "id":"minecraft:stone_pickaxe",
+        "components":{
+          "minecraft:item_model": "brg:bean"
+        }
+      }
+    }
+  ]
+}

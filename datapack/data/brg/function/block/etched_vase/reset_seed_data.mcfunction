@@ -1,5 +1,5 @@
 # Reset interaction height if it has a cobbler
-execute if function brg:block/etched_vase/cobbler_check on passengers if entity @s[type=interaction] run data modify entity @s height set value 0.55
+execute if function brg:block/etched_vase/cobbler_check run function brg:block/cobbler/vase_powered
 
 # Reset seed related data
 execute on passengers if entity @s[tag=brg.etched_vase.seed] run function brg:block/etched_vase/remove_seed

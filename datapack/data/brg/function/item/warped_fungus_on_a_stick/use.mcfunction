@@ -3,7 +3,9 @@
 # Pointerpods
 execute if entity @s[predicate=brg:entity_properties/slots/weapon/pointerpod] if dimension minecraft:overworld run function brg:item/pointerpod/use_item
 
-# Pointerpods
+# Seedbook
 execute if entity @s[predicate=brg:entity_properties/slots/weapon/seedbook] run function brg:item/seedbook/open
+# Damp Notes
+execute if entity @s[predicate=brg:entity_properties/slots/weapon/damp_notes] run function brg:item/damp_notes/open
 # Scarlet Fang
 execute if entity @s[predicate=brg:entity_properties/slots/weapon/scarlet_fang,nbt={HurtTime:0s}] run function brg:item/scarlet_fang/main

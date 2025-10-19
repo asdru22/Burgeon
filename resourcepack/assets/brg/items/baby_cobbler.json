@@ -13,8 +13,33 @@
       {
         "when": "age1",
         "model": {
-          "type": "minecraft:model",
-          "model": "brg:block/cobbler"
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/cobbler/body"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/cobbler/head_open"
+            }
+          ]
+        }
+      },
+      {
+        "when": "closed",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/cobbler/body"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/cobbler/head"
+            }
+          ]
         }
       }
     ],
