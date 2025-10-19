@@ -6,6 +6,6 @@ execute if entity @s[predicate=brg:entity_properties/slots/weapon/pointerpod] if
 # Seedbook
 execute if entity @s[predicate=brg:entity_properties/slots/weapon/seedbook] run function brg:item/seedbook/open
 # Damp Notes
-execute if entity @s[predicate=brg:entity_properties/slots/weapon/damp_notes] run function brg:item/damp_notes/open
+execute if entity @s[predicate=brg:entity_properties/slots/weapon/damp_notes] run dialog show @s brg:damp_notes/0
 # Scarlet Fang
 execute if entity @s[predicate=brg:entity_properties/slots/weapon/scarlet_fang,nbt={HurtTime:0s}] run function brg:item/scarlet_fang/main

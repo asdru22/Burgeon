@@ -1,5 +1,4 @@
 {
-	"format_version": "1.21.6",
 	"textures": {
 		"0": "brg:block/cobbler",
 		"particle": "brg:block/cobbler"
@@ -69,21 +68,6 @@
 				"up": {"uv": [9, 4, 7, 3], "texture": "#0"},
 				"down": {"uv": [9, 4, 7, 5], "texture": "#0"}
 			}
-		}
-	],
-	"groups": [
-		0,
-		{
-			"name": "mouth 1",
-			"origin": [6, 20, 8],
-			"color": 0,
-			"children": [1, 2]
-		},
-		{
-			"name": "mouth 2",
-			"origin": [6, 20, 8],
-			"color": 0,
-			"children": [3, 4]
 		}
 	]
 }

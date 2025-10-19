@@ -1,6 +1,19 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "brg:item/bean"
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "sugarcoated",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:item/sugarcoated_bean"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/bean"
+    }
   }
 }

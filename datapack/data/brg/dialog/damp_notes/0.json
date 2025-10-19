@@ -7,8 +7,13 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:stone",
-        "count": 5
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.bean"
+          }
+        }
       }
     },
     {
@@ -20,7 +25,8 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:diamond"
+        "id": "minecraft:sugar",
+        "count": 3
       }
     },
     {
@@ -33,9 +39,17 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:stone_pickaxe",
+        "id": "minecraft:poisonous_potato",
         "components": {
-          "minecraft:item_model": "brg:bean"
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.sugarcoated_bean"
+          },
+          "minecraft:custom_model_data": {
+            "strings": [
+              "sugarcoated"
+            ]
+          }
         }
       }
     }
