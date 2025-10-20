@@ -1,6 +1,6 @@
 ride @s mount @n[type=item_display,tag=brg.temp,distance=..2]
 
-loot replace entity @s contents loot brg:items/damp_notes
+$loot replace entity @s contents loot $(result)
 
 tag @s add brg.cobbler_item
 

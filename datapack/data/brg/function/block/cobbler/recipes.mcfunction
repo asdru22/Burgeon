@@ -1,0 +1,1 @@
+execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"bean"}}] if items block ~ ~ ~ container.* sugar run data modify storage brg:temp root.result set value "brg:items/sugarcoated_bean"
