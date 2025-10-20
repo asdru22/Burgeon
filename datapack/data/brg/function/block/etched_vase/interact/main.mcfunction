@@ -1,3 +1,6 @@
+# Handle interactions
+execute if entity @s[tag=brg.etched_vase.has_seed] if function brg:block/etched_vase/cobbler_check run return run function brg:block/cobbler/interact/main
+
 # If no seed or soil, allow soil placement
 execute if entity @s[tag=!brg.etched_vase.has_soil, tag=!brg.etched_vase.has_seed] if function brg:block/etched_vase/interact/soil/place_check run function brg:block/etched_vase/interact/soil/place_success
 

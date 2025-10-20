@@ -20,7 +20,6 @@ scoreboard objectives add brg.seedbook trigger
 ## Gamerules
 gamerule logAdminCommands false
 gamerule commandBlockOutput false
-gamerule maxCommandChainLength 1073741824
 
 ## Constants
 scoreboard players set #0 brg.dummy 0
@@ -32,6 +31,7 @@ scoreboard players set #12 brg.dummy 12
 scoreboard players set #80 brg.dummy 80
 
 function brg:item/seedbook/load
+execute positioned -29999966 0 -29999966 run function brg:technical/forceload_chunk
 
 # Load message
 tellraw @a[predicate=brg:entity_properties/is_developer] [{"translate":"debug.prefix","color":"yellow","bold":true},{"translate":"commands.brg.reload.success","color":"white","bold":false}]
