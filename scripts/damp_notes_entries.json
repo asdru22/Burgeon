@@ -50,6 +50,32 @@
           }
         }
       }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:crossbow"
+      },
+      "result": {
+        "id": "minecraft:crossbow",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/crossbow",
+          "minecraft:item_name": {
+            "translate": "item.minecraft.crossbow"
+          },
+          "minecraft:enchantments":{
+            "brg:intertwined_crossbow":1
+          }
+        }
+      }
     }
   ]
 }

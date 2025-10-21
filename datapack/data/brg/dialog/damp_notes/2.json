@@ -9,9 +9,9 @@
       "item": {
         "id": "minecraft:poisonous_potato",
         "components": {
-          "minecraft:item_model": "brg:bean",
+          "minecraft:item_model": "brg:intwine",
           "minecraft:item_name": {
-            "translate": "item.brg.bean"
+            "translate": "item.brg.intwine"
           }
         }
       }
@@ -25,7 +25,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:gold_block"
+        "id": "minecraft:crossbow"
       }
     },
     {
@@ -38,11 +38,14 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:poisonous_potato",
+        "id": "minecraft:crossbow",
         "components": {
-          "minecraft:item_model": "brg:protobean",
+          "minecraft:item_model": "brg:intertwined/crossbow",
           "minecraft:item_name": {
-            "translate": "item.brg.protobean"
+            "translate": "item.minecraft.crossbow"
+          },
+          "minecraft:enchantments": {
+            "brg:intertwined_crossbow": 1
           }
         }
       }
@@ -69,18 +72,14 @@
       "width": 80,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "brg:damp_notes/0"
+        "dialog": "brg:damp_notes/1"
       }
     },
     {
       "label": {
         "translate": "seedbook.brg.next"
       },
-      "width": 80,
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "brg:damp_notes/2"
-      }
+      "width": 80
     }
   ]
 }
