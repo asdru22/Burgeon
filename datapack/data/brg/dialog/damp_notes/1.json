@@ -25,7 +25,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:sugar"
+        "id": "minecraft:gold_block"
       }
     },
     {
@@ -40,14 +40,9 @@
       "item": {
         "id": "minecraft:poisonous_potato",
         "components": {
-          "minecraft:item_model": "brg:bean",
+          "minecraft:item_model": "brg:protobean",
           "minecraft:item_name": {
-            "translate": "item.brg.sugarcoated_bean"
-          },
-          "minecraft:custom_model_data": {
-            "strings": [
-              "sugarcoated"
-            ]
+            "translate": "item.brg.protobean"
           }
         }
       }
@@ -71,17 +66,17 @@
       "label": {
         "translate": "seedbook.brg.previous"
       },
-      "width": 80
+      "width": 80,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "brg:damp_notes/0"
+      }
     },
     {
       "label": {
         "translate": "seedbook.brg.next"
       },
-      "width": 80,
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "brg:damp_notes/1"
-      }
+      "width": 80
     }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "function": "set_components",
   "components": {
-    "minecraft:item_model": "brg:bean_pod"
+    "minecraft:item_model": "brg:intertwined/crossbow",
+    "minecraft:enchantments": {
+      "brg:intertwined_crossbow": 1
+    }
   }
 }

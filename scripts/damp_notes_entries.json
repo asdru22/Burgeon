@@ -11,8 +11,7 @@
         }
       },
       "ingredient2": {
-        "id": "minecraft:sugar",
-        "count": 3
+        "id": "minecraft:sugar"
       },
       "result": {
         "id": "minecraft:poisonous_potato",
@@ -22,7 +21,32 @@
             "translate": "item.brg.sugarcoated_bean"
           },
           "minecraft:custom_model_data": {
-            "strings": ["sugarcoated"]
+            "strings": [
+              "sugarcoated"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.bean"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:gold_block"
+      },
+      "result": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:protobean",
+          "minecraft:item_name": {
+            "translate": "item.brg.protobean"
           }
         }
       }
