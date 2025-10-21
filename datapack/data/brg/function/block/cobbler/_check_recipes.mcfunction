@@ -11,8 +11,11 @@ item modify entity @s contents {function:"minecraft:set_custom_model_data",strin
 # set vase data
 execute on vehicle if entity @s[tag=brg.etched_vase] run function brg:block/cobbler/tag_etched_vase
 
-# special crafting
+# modifier crafting
 execute if data storage brg:temp root.result.modifier on vehicle if entity @s[tag=brg.etched_vase] run function brg:block/cobbler/modifier_recipe with storage brg:temp root.result
+
+# function
+execute if data storage brg:temp root.result.function on vehicle if entity @s[tag=brg.etched_vase] run function brg:block/cobbler/function_recipe with storage brg:temp root.result
 
 # reduce count from items
 execute positioned -29999966 0 -29999966 run function brg:block/cobbler/reduce_count

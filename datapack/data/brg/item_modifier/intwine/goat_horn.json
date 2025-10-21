@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{brg:{intertwined:true,id:\"intertwined_goat_horn\"}}"
+  },
+  {
+    "function": "set_components",
+    "components": {
+      "minecraft:item_model": "brg:intertwined/goat_horn",
+      "minecraft:enchantments": {
+        "brg:intertwined_goat_horn": 1
+      },
+      "!minecraft:instrument": {},
+      "minecraft:enchantment_glint_override": false,
+      "!minecraft:damage": {}
+    }
+  }
+]
