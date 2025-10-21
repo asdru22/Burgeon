@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{intertwined:true}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/intertwined/advancement"
+  }
+}

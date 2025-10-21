@@ -3,8 +3,8 @@
     "translate": "enchantment.brg.intertwined",
     "color": "white"
   },
-  "supported_items": "minecraft:crossbow",
-  "primary_items": "#minecraft:enchantable/crossbow",
+  "supported_items": "#minecraft:spears",
+  "primary_items": "#minecraft:spears",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -17,15 +17,14 @@
   },
   "anvil_cost": 0,
   "slots": [
-    "mainhand",
-    "offhand"
+    "mainhand"
   ],
   "effects": {
-    "minecraft:projectile_spawned": [
+    "minecraft:post_piercing_attack": [
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "brg:item/intertwined/crossbow/as_arrow"
+          "function": "brg:item/intertwined/spear/main"
         }
       }
     ]

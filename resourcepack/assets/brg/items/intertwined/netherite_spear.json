@@ -1,0 +1,67 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:select",
+        "cases": [
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/netherite_spear"
+            },
+            "when": [
+              "gui",
+              "ground",
+              "fixed",
+              "on_shelf"
+            ]
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_spear_in_hand"
+        },
+        "property": "minecraft:display_context"
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:component",
+        "component": "minecraft:enchantments",
+        "cases": [
+          {
+            "when": {
+              "brg:intertwined_spear": 1
+            },
+            "model": {
+              "type": "minecraft:select",
+              "cases": [
+                {
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "brg:item/intertwined/spear"
+                  },
+                  "when": [
+                    "gui",
+                    "ground",
+                    "fixed",
+                    "on_shelf"
+                  ]
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "brg:item/intertwined/spear_in_hand"
+              },
+              "property": "minecraft:display_context"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  },
+  "swap_animation_scale": 1.9
+}
