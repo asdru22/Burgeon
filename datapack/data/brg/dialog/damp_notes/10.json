@@ -25,7 +25,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:netherite_spear"
+        "id": "minecraft:goat_horn"
       }
     },
     {
@@ -38,12 +38,13 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:netherite_spear",
+        "id": "minecraft:goat_horn",
         "components": {
-          "minecraft:item_model": "brg:intertwined/netherite_spear",
+          "minecraft:item_model": "brg:intertwined/goat_horn",
           "minecraft:enchantments": {
-            "brg:intertwined_spear": 1
+            "brg:intertwined_goat_horn": 1
           },
+          "!minecraft:instrument": {},
           "minecraft:enchantment_glint_override": false
         }
       }
@@ -70,18 +71,14 @@
       "width": 80,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "brg:damp_notes/8"
+        "dialog": "brg:damp_notes/9"
       }
     },
     {
       "label": {
         "translate": "seedbook.brg.next"
       },
-      "width": 80,
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "brg:damp_notes/10"
-      }
+      "width": 80
     }
   ]
 }

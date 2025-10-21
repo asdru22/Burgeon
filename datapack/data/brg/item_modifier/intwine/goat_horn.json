@@ -12,7 +12,8 @@
       },
       "!minecraft:instrument": {},
       "minecraft:enchantment_glint_override": false,
-      "!minecraft:damage": {}
+      "!minecraft:damage": {},
+      "minecraft:rarity": "uncommon"
     }
   }
 ]
