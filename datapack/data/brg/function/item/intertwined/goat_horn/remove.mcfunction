@@ -6,6 +6,7 @@ data modify storage brg:macro root.item.id set value "minecraft:goat_horn"
 
 # default name
 data remove storage brg:macro root.item.components."minecraft:item_name"
+data remove storage brg:macro root.item.components."minecraft:rarity"
 
 # restore instrument
 data modify storage brg:macro root.item.components."minecraft:instrument" set from storage brg:macro root.item.components."minecraft:custom_data".brg.instrument

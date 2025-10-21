@@ -109,6 +109,11 @@ Can be inserted in a #pale_oak_log.txt placed in an #etched_vase.txt. After some
 Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. When grown, it can be harvested to obtain #(twining_tendril.txt-param)[Twining Tendrils].
 #pagebreak()
 
+#top_grid(col: 2, item-tooltip(
+    baby_cobbler,
+    type: "Item",
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #soul_soil.txt. When grown, it will become a #cobbler.txt.]
+
 == Tools & Weapons
 
 #top_grid(col: 2, item-tooltip(
@@ -225,6 +230,21 @@ Can be dyed. When worn, #link(<seeds>)[Seeds] planted in #(etched_vase.txt-param
 When opened, the user can view the soil required by seeds to grown in an #etched_vase.txt. The pages unlock as the user collects the seeds.
 #pagebreak()
 
+#top_grid(
+    col: 2,
+    item-tooltip(
+        damp_notes,
+        type: "Item",
+        max_stack: 1,
+    ),
+    [These notes are collected from the mouth of a #cobbler.txt. They contain information of all the combinations a Cobbler can do.],
+)
+
+#top_grid(col: 2, item-tooltip(
+    sugarcoated_bean,
+    type: "Item",
+))[Obtained from #cobbler.txt crafting.]
+
 = Blocks
 == Functional
 
@@ -278,8 +298,9 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
     bursting_bud.txt, bursting_blossom.txt, [18],
 
     // soul soil
-    soul_soil.txt,
+    table.cell(rowspan: 2, soul_soil.txt),
     scarlet_fang_root.txt, scarlet_fang.txt, [25],
+    baby_cobbler.txt, cobbler.txt, [32],
     // sand
     sand.txt,
     pointerpod.txt, twining_tendril.txt, [14],
@@ -306,6 +327,7 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
         bloom_bud.txt, [3],
         eyeblossom.txt, [3],
         appalling_shinguards.txt, [2],
+        baby_cobbler.txt,[2]
     )
 ]
 
@@ -332,6 +354,29 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
 Click #inputs.use when holding a #glass_bottle.txt to attach it to the Spile. Click #input with any other item to collect the item attached to the Spile.  When the spile is placed on the side of an #(creaking_heart.txt-param)[Awake Creaking Heart], it will fill the bottle with #(goop_bottle.txt-param)[Goop], with a %5% chance to deplete the Creaking Heart's Goop, converting it into a #pale_oak_log.txt.
 
 If there is no block for the Spile to hold on to, the model will appear on the ground with no knob.
+#pagebreak()
+
+#top_grid(
+    col: 2,
+    item-tooltip(
+        cobbler,
+        type: "Block",
+    ),
+    pb: false,
+)[
+    A Cobbler grows from a #baby_cobbler.txt placed in an #etched_vase.txt. When they grow, they will have a #damp_notes.txt in their mouth. Items in the Cobbler's mouth can be removed with #inputs.attack. Cobblers can't be removed from their vase by clicking #inputs.attack, they can only be removed if the vase is broken or powered by redstone. You can feed it items with #inputs.use to combine them into new ones. Cobblers only have 2 slots. Items can be removed by tickling it with a #feather.txt.\
+]
+If items corresponding to a recipe are in its mouth, it will start combining them.
+#align(
+    center,
+    table(
+        columns: 2,
+        [Ingredients], [Result],
+        [#bean.txt + #sugar.txt], [#sugarcoated_bean.txt],
+        [#bean.txt + #gold_block.txt], [#protobean.txt],
+    ),
+)
+
 #pagebreak()
 
 = Structures

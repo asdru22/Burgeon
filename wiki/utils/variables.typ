@@ -30,6 +30,10 @@
 #let bursting_bud = mc-item("bursting_bud", "Bursting Bud", custom: true)
 #let bursting_blossom = mc-item("bursting_blossom", "Bursting Blossom", custom: true)
 #let seedbook = mc-item("seedbook", "Floriculture Notes", custom: true)
+#let damp_notes = mc-item("damp_notes", "Damp Notes", custom: true)
+#let baby_cobbler = mc-item("baby_cobbler", "Baby Cobbler", custom: true)
+#let cobbler = mc-item("cobbler", "Cobbler", custom: true)
+#let sugarcoated_bean = mc-item("sugarcoated_bean", "Sugarcoated Bean", custom: true)
 
 
 #let mud = mc-block("mud", "Mud")
@@ -42,6 +46,7 @@
 #let sand = mc-block("sand", "Sand")
 #let vault = mc-block("vault", "Vault")
 #let crafting_table = mc-block("crafting_table", "Crafting Table")
+#let gold_block = mc-block("gold_block", "Gold Block")
 
 
 #let bucket = mc-item("bucket", "Bucket")
@@ -57,3 +62,6 @@
 #let eyeblossom = mc-item("eyeblossom", "Eyeblossom")
 #let glass_bottle = mc-item("glass_bottle", "Glass Bottle")
 #let book = mc-item("book", "Book")
+#let feather = mc-item("feather", "Feather")
+#let sugar = mc-item("sugar", "Sugar")
+#let goat_horn = mc-item("goat_horn", "Goat Horn")
