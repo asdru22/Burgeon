@@ -14,7 +14,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "brg:block/crackle",
+                                "minecraft:item_model": "brg:crackle",
                                 "!minecraft:equippable": {},
                                 "tooltip_style": "brg:default",
                                 "profile": {
