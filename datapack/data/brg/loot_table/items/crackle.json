@@ -16,10 +16,11 @@
               "components": {
                 "!minecraft:consumable": {},
                 "!minecraft:food": {},
+                "minecraft:note_block_sound" :"brg:block.crackle.noteblock",
                 "minecraft:item_model": "brg:crackle",
                 "minecraft:equippable": {
                   "equip_sound": {
-                    "sound_id": "brg:item.armor.equip_straw_hat"
+                    "sound_id": "brg:item.armor.equip_crackle"
                   },
                   "slot": "head"
                 },

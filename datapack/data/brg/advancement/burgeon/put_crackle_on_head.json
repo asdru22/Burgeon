@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:crackle"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.put_crackle_on_head"
+    },
+    "description": {
+      "translate": "advancements.brg.put_crackle_on_head.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "brg:burgeon/convert_murky_crevice",
+  "criteria": {
+    "equip_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "predicates": {
+                "custom_data": {
+                  "brg": {
+                    "id": "crackle"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:player_head"
+            ],
+            "predicates": {
+              "custom_data": {
+                "brg": {
+                  "id": "crackle"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -7,3 +7,5 @@ data remove storage brg:temp root.items[-1]
 
 data modify entity @s data.brg.cobbler_items set from storage brg:temp root.items
 execute positioned ~ ~0.8 ~ run function brg:technical/macros/spawn_item with storage brg:temp root
+
+playsound brg:block.cobbler.regurgitate block @a[distance=..16]

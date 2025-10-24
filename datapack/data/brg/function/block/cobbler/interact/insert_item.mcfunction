@@ -20,7 +20,7 @@ data modify storage brg:temp root.items set from block ~ ~ ~ Items
 execute if data storage brg:temp root.items[2] run function brg:block/cobbler/interact/overflowing_items
 
 # remove items from player
-
+execute at @s run playsound brg:block.cobbler.put_item block @a[distance=..16]
 # dont remove any items if they overflow
 execute if score #temp_1 brg.dummy matches 0 run return fail
 

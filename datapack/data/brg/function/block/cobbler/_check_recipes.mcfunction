@@ -19,3 +19,5 @@ execute if data storage brg:temp root.result.function on vehicle if entity @s[ta
 
 # reduce count from items
 execute positioned -29999966 0 -29999966 run function brg:block/cobbler/reduce_count
+
+playsound brg:block.cobbler.start_cobbling block @a[distance=..16]

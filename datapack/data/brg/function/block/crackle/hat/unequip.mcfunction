@@ -1,4 +1,3 @@
-advancement revoke @s only brg:technical/inventory_changed/crackle_unequip
 data remove storage brg:storage root.temp.item
 
 execute if items entity @s container.0 poisonous_potato[minecraft:custom_data~{brg:{id:"crackle"}}] run item modify entity @s container.0 brg:crackle/unequip
@@ -38,3 +37,5 @@ execute if items entity @s container.33 poisonous_potato[minecraft:custom_data~{
 execute if items entity @s container.34 poisonous_potato[minecraft:custom_data~{brg:{id:"crackle"}}] run item modify entity @s container.34 brg:crackle/unequip
 execute if items entity @s container.35 poisonous_potato[minecraft:custom_data~{brg:{id:"crackle"}}] run item modify entity @s container.35 brg:crackle/unequip
 execute if items entity @s weapon.offhand poisonous_potato[minecraft:custom_data~{brg:{id:"crackle"}}] run item modify entity @s weapon.offhand brg:crackle/unequip
+
+advancement revoke @s only brg:technical/inventory_changed/crackle_unequip

@@ -277,12 +277,12 @@
       {
         "name": "mob/creaking/creaking_attack1",
         "pitch": 1.5,
-        "volume":0.5
+        "volume": 0.5
       }
     ],
     "subtitle": "subtitles.brg.item.appalling_shinguards.equip"
   },
-   "entity.bursting_blossom.pop": {
+  "entity.bursting_blossom.pop": {
     "sounds": [
       {
         "name": "brg:entity/bursting_blossom_pop",
@@ -301,5 +301,98 @@
       }
     ],
     "subtitle": "subtitles.brg.entity.bursting_blossom.pop"
+  },
+  "item.armor.equip_crackle": {
+    "sounds": [
+      {
+        "name": "brg:item/crackle_equip",
+        "pitch": 1.4,
+        "volume": 0.6
+      }
+    ],
+    "subtitle": "subtitles.brg.item.armor.equip_equip_crackle"
+  },
+  "block.cobbler.put_item": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 1
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 0.8
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.put_item"
+  },
+  "block.cobbler.start_cobbling": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/start_cobbling"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.start_cobbling"
+  },
+  "block.cobbler.take_item": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/take_item"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.take_item"
+  },
+  "block.cobbler.regurgitate": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/regurgitate"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.regurgitate"
+  },
+  "block.crackle.break": {
+    "sounds": [
+      "brg:block/crackle/break"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.crackle.squeal": {
+    "sounds": [
+      "brg:block/crackle/squeal"
+    ],
+    "subtitle": "subtitles.brg.block.crackle.squeal"
+  },
+  "block.crackle.noteblock": {
+    "sounds": [
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 0.8
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1.2
+      }
+
+    ],
+    "subtitle": "subtitles.brg.block.crackle.noteblock"
   }
 }

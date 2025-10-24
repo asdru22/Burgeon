@@ -8,3 +8,5 @@ data merge block ~ ~ ~ {CustomName:{"font":"brg:technical","translate":"block.br
 loot spawn ^ ^ ^1.4 loot brg:items/crackle
 
 execute if data storage brg:temp root.owner run function brg:block/murky_crevice/sugarcoated_bean/convert_advancement with storage brg:temp root
+
+playsound brg:block.crackle.squeal player @a[distance=..16]
