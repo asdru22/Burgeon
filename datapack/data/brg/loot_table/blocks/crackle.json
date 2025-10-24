@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#count"
+        },
+        "score": "brg.dummy"
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/crackle"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:blocks/crackle"
+}

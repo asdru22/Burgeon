@@ -1,5 +1,5 @@
 # Commands to run as the item display
-
+scoreboard players set @s brg.dummy2 0
 tag @s remove brg.crackle.initiate
 
 # Prevent wall placement
