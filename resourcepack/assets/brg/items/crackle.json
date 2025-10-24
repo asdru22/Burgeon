@@ -53,8 +53,21 @@
       }
     ],
     "fallback": {
-      "type": "minecraft:model",
-      "model": "brg:item/crackle"
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "brg:item/crackle_head"
+          },
+          "when": "head"
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "brg:item/crackle"
+      }
     }
   }
 }

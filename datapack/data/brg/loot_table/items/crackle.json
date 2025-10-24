@@ -1,50 +1,62 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"crackle\",custom_block:1b}}"
-                        },
-                        {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:item_model": "brg:crackle",
-                                "!minecraft:equippable": {},
-                                "tooltip_style": "brg:default",
-                                "profile": {
-                                    "texture": "brg:block/empty",
-                                    "id": [66,0,0,3]
-                                },
-                                "minecraft:rarity": "common",
-                                "tooltip_display": {
-                                    "hidden_components": [
-                                        "minecraft:profile"
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "block.brg.crackle"
-                            },
-                            "target": "item_name"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "brg:add_tooltip_lore"
-                        }
-                    ],
-                    "name": "minecraft:player_head"
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{id:\"crackle\",custom_block:1b}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "minecraft:item_model": "brg:crackle",
+                "minecraft:equippable": {
+                  "equip_sound": {
+                    "sound_id": "brg:item.armor.equip_straw_hat"
+                  },
+                  "slot": "head"
+                },
+                "tooltip_style": "brg:default",
+                "profile": {
+                  "texture": "brg:block/empty",
+                  "id": [
+                    66,
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                "minecraft:rarity": "uncommon",
+                "tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:profile"
+                  ]
                 }
-            ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "block.brg.crackle"
+              },
+              "target": "item_name"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:add_tooltip_lore"
+            }
+          ],
+          "name": "minecraft:player_head"
         }
-    ],
-    "random_sequence": "brg:items/crackle"
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/crackle"
 }
