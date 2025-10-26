@@ -1,8 +1,8 @@
 {
-    "values": [
-        "brg:technical/load",
-        "brg:technical/second_clock",
-            "brg:technical/ten_second_clock"
-
-    ]
+  "values": [
+    "brg:technical/load",
+    "brg:technical/second_clock",
+    "brg:technical/ten_second_clock",
+    "brg:technical/ten_tick_clock"
+  ]
 }

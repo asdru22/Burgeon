@@ -391,8 +391,24 @@
         "name": "brg:block/crackle/noteblock",
         "pitch": 1.2
       }
-
     ],
     "subtitle": "subtitles.brg.block.crackle.noteblock"
+  },
+  "entity.intertwined_spear_thorn": {
+    "sounds": [
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 1
+      },
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 0.9
+      }
+    ],
+    "subtitle": "subtitles.brg.entity.intertwined_spear_thorn"
   }
 }

@@ -103,6 +103,7 @@
   "subtitles.brg.block.cobbler.regurgitate": "Cobbler regurgitates",
   "subtitles.brg.block.crackle.squeal": "Crackle squeals",
   "subtitles.brg.block.crackle.noteblock": "Crackle chips",
+  "subtitles.brg.entity.intertwined_spear_thorn": "Thorn tangles",
   "death.attack.brg.bloomguard": "%1$s was skewered by %2$s's Bloomguard",
   "death.attack.brg.scarlet_fang": "%1$s ran out of life juice",
   "death.attack.brg.scarlet_fang.player": "%1$s ran out of life juice",
@@ -111,6 +112,8 @@
   "death.attack.brg.rootsplit_staff.player": "%1$s didn't mind the splinters",
   "death.attack.brg.bursting_blossom_petal": "%1$s was clipped by a Bursting Petal",
   "death.attack.brg.bursting_blossom_petal.player": "%1$s was clipped by %2$s's Bursting Petal",
+    "death.attack.brg.intertwined_spear_thorn": "%1$s was prickled to death",
+  "death.attack.brg.intertwined_spear_thorn.player": "%1$s was prickled to death by %2$s's Intertwined Spear Thorns",
   "brg.resource_pack_validation.check_installed": "%s",
   "brg.resource_pack_validation.check_version.dev_version_do_not_distribute": "%s"
 }
