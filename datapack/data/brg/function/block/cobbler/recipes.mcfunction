@@ -14,7 +14,7 @@ execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"intwi
 
 execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"intwine"}}] if items block ~ ~ ~ container.* minecraft:iron_spear run return run data modify storage brg:temp root.result set value {modifier:"brg:intwine/spear/iron",target:{id:"minecraft:iron_spear"}}
 
-execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"intwine"}}] if items block ~ ~ ~ container.* minecraft:golden_spear run return run data modify storage brg:temp root.result set value {modifier:"brg:intwine/spear/gold",target:{id:"minecraft:golden_spear"}}
+execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"intwine"}}] if items block ~ ~ ~ container.* minecraft:golden_spear run return run data modify storage brg:temp root.result set value {modifier:"brg:intwine/spear/golden",target:{id:"minecraft:golden_spear"}}
 
 execute if items block ~ ~ ~ container.* *[minecraft:custom_data~{brg:{id:"intwine"}}] if items block ~ ~ ~ container.* minecraft:diamond_spear run return run data modify storage brg:temp root.result set value {modifier:"brg:intwine/spear/diamond",target:{id:"minecraft:diamond_spear"}}
 
