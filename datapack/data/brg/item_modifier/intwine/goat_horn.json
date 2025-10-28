@@ -24,14 +24,14 @@
       "!minecraft:instrument": {},
       "minecraft:consumable": {
         "animation": "toot_horn",
-        "consume_seconds": 2,
+        "consume_seconds": 1.2,
         "has_consume_particles": false,
         "sound": {
           "sound_id": ""
         }
       },
       "minecraft:use_cooldown": {
-        "seconds": 1,
+        "seconds": 18,
         "cooldown_group": "brg:intertwined_goat_horn"
       }
     }

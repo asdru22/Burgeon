@@ -19,3 +19,7 @@ data modify storage brg:macro root.UUID set from entity @s data.brg.owner
 
 execute as @e[type=!#brg:intertwined_crossbow_vine_ignore,distance=..3,predicate=!brg:entity_properties/in_vehicle] at @s run function brg:item/intertwined/crossbow/entity_interaction with storage brg:macro root
 tag @s remove brg.temp
+
+scoreboard players set #temp_0 brg.dummy 0
+execute on passengers run scoreboard players add #temp_0 brg.dummy 1
+execute if score #temp_0 brg.dummy matches 5.. run function brg:item/intertwined/crossbow/advancement with storage brg:macro root
