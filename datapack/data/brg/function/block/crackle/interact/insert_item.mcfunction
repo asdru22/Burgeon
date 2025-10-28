@@ -1,3 +1,6 @@
+data remove storage brg:temp root.rotation
+data modify storage brg:temp root.rotation set from entity @s Rotation
+
 tag @s add brg.temp
 execute summon item_display run function brg:block/crackle/interact/item_setup
 tag @s remove brg.temp

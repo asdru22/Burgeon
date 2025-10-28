@@ -3,6 +3,8 @@ execute if score @s brg.seedbook matches 102 run return run dialog clear @s
 # previous
 execute if score @s brg.seedbook_page matches 1.. if score @s brg.seedbook matches 100 run scoreboard players remove @s brg.seedbook_page 1
 
+execute unless score @s brg.seedbook_page matches -2147483648..2147483647 run scoreboard players set @s brg.seedbook_page 0
+
 # next
 execute store result score #temp_0 brg.dummy if data storage brg:storage root.seedbook[]
 scoreboard players remove #temp_0 brg.dummy 1
