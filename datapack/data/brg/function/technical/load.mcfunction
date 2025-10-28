@@ -18,8 +18,8 @@ scoreboard objectives add brg.using_item_prev dummy
 scoreboard objectives add brg.seedbook_page dummy
 scoreboard objectives add brg.seedbook trigger
 ## Gamerules
-gamerule logAdminCommands false
-gamerule commandBlockOutput false
+gamerule log_admin_commands false
+gamerule command_block_output false
 
 ## Constants
 scoreboard players set #0 brg.dummy 0
