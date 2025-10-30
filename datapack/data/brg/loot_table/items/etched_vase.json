@@ -18,7 +18,7 @@
                                 "!minecraft:equippable": {},
                                 "tooltip_style": "brg:default",
                                 "profile": {
-                                    "texture": "brg:block/etched_vase_soil/empty",
+                                    "texture": "brg:block/empty",
                                     "id": [66,0,0,1]
                                 },
                                 "minecraft:rarity": "common",

@@ -1,0 +1,15 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{brg:{intertwined:true}}"
+  },
+  {
+    "function": "set_components",
+    "components": {
+      "minecraft:enchantments": {
+        "brg:intertwined_spear": 1
+      },
+      "minecraft:enchantment_glint_override": false
+    }
+  }
+]

@@ -215,5 +215,208 @@
       }
     ],
     "subtitle": "subtitles.brg.item.scarlet_fang.use"
+  },
+  "block.etched_vase.drop": {
+    "sounds": [
+      "random/click"
+    ],
+    "subtitle": "subtitles.brg.block.etched_vase.drop"
+  },
+  "block.spile.place_bottle": {
+    "sounds": [
+      "block/copper_statue/break1",
+      "block/copper_statue/break2",
+      "block/copper_statue/break3"
+    ],
+    "subtitle": "subtitles.brg.block.spile.place_bottle"
+  },
+  "item.goop_bottle.use": {
+    "sounds": [
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.8
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.85
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:item/goop_bottle_use",
+        "pitch": 0.75
+      }
+    ],
+    "subtitle": "subtitles.brg.item.goop_bottle.use"
+  },
+  "block.spile.break": {
+    "sounds": [
+      "brg:block/spile/break"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "item.goop_bottle.drink": {
+    "sounds": [
+      "item/bottle/drink_honey1",
+      "item/bottle/drink_honey2",
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.35
+      },
+      {
+        "name": "item/bottle/drink_honey3",
+        "volume": 0.75
+      }
+    ],
+    "subtitle": "subtitles.brg.item.goop_bottle.drink"
+  },
+  "item.armor.equip_appalling_shinguards": {
+    "sounds": [
+      {
+        "name": "mob/creaking/creaking_attack1",
+        "pitch": 1.5,
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.brg.item.appalling_shinguards.equip"
+  },
+  "entity.bursting_blossom.pop": {
+    "sounds": [
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 0.9,
+        "volume": 0.8
+      },
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 1.1,
+        "volume": 0.8
+      },
+      {
+        "name": "brg:entity/bursting_blossom_pop",
+        "pitch": 1,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.brg.entity.bursting_blossom.pop"
+  },
+  "item.armor.equip_crackle": {
+    "sounds": [
+      {
+        "name": "brg:item/crackle_equip",
+        "pitch": 1.4,
+        "volume": 0.6
+      }
+    ],
+    "subtitle": "subtitles.brg.item.armor.equip_equip_crackle"
+  },
+  "block.cobbler.put_item": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 1
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/cobbler/put_item",
+        "pitch": 0.8
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.put_item"
+  },
+  "block.cobbler.start_cobbling": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/start_cobbling"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.start_cobbling"
+  },
+  "block.cobbler.take_item": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/take_item"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.take_item"
+  },
+  "block.cobbler.regurgitate": {
+    "sounds": [
+      {
+        "name": "brg:block/cobbler/regurgitate"
+      }
+    ],
+    "subtitle": "subtitles.brg.block.cobbler.regurgitate"
+  },
+  "block.crackle.break": {
+    "sounds": [
+      "brg:block/crackle/break"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.crackle.squeal": {
+    "sounds": [
+      "brg:block/crackle/squeal"
+    ],
+    "subtitle": "subtitles.brg.block.crackle.squeal"
+  },
+  "block.crackle.noteblock": {
+    "sounds": [
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 0.8
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 0.9
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:block/crackle/noteblock",
+        "pitch": 1.2
+      }
+    ],
+    "subtitle": "subtitles.brg.block.crackle.noteblock"
+  },
+  "entity.intertwined_spear_thorn": {
+    "sounds": [
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 1
+      },
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 1.1
+      },
+      {
+        "name": "brg:entity/intertwined_spear_thorn",
+        "pitch": 0.9
+      }
+    ],
+    "subtitle": "subtitles.brg.entity.intertwined_spear_thorn"
+  },
+  "item.intertwined_goat_horn.use": {
+    "sounds": [
+      {
+        "name": "brg:item/intertwined_goat_horn_use"
+      }
+    ],
+    "subtitle": "subtitles.brg.item.intertwined_goat_horn.use"
   }
 }

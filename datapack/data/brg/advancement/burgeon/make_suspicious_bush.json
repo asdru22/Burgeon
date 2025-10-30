@@ -1,0 +1,28 @@
+{
+  "parent": "brg:burgeon/root",
+  "display": {
+    "frame": "challenge",
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:block/spile"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.make_suspicious_bush"
+    },
+    "description": {
+      "translate": "advancements.brg.make_suspicious_bush.description",
+      "with": [
+        {
+          "translate": "block.minecraft.flowering_azalea_leaves"
+        }
+      ]
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

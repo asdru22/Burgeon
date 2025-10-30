@@ -1,0 +1,12 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "brg.seedbook:ui/icons.png",
+      "ascent": 7,
+      "chars": [
+        "\ua000\ua001\ua002\ua003"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{brg:{intertwined:false}}"
+  },
+  {
+    "function": "set_components",
+    "components": {
+      "!minecraft:enchantment_glint_override": {}
+    }
+  }
+]

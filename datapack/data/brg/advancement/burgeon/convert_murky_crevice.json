@@ -1,0 +1,25 @@
+{
+  "parent":"brg:burgeon/get_cobbler_mouth_item",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:bean",
+        "custom_model_data": {
+          "strings": ["sugarcoated"]
+        }
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.convert_murky_crevice"
+    },
+    "description": {
+      "translate": "advancements.brg.convert_murky_crevice.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

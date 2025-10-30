@@ -1,0 +1,43 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "equip_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "minecraft:player_head"
+              ],
+              "predicates": {
+                "custom_data": {
+                  "brg": {
+                    "id": "crackle"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:player_head"
+            ],
+            "predicates": {
+              "custom_data": {
+                "brg": {
+                  "id": "crackle"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:block/crackle/hat/equip"
+  }
+}

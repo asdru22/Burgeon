@@ -1,0 +1,36 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": "brg:intertwined_goat_horn"
+      }
+    ],
+    "on_true": {
+     "type": "minecraft:condition",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "brg:item/intertwined/goat_horn"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "brg:item/intertwined/tooting_goat_horn"
+          },
+          "property": "minecraft:using_item"
+    },
+    "on_false": {
+      "type": "minecraft:condition",
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/goat_horn"
+      },
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/tooting_goat_horn"
+      },
+      "property": "minecraft:using_item"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "brg:burgeon/convert_glutted_log",
+  "display": {
+    "frame": "challenge",
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:appalling_shinguards"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.appalling_shinguards_max_armor"
+    },
+    "description": {
+      "translate": "advancements.brg.appalling_shinguards_max_armor.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

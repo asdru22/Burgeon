@@ -15,19 +15,25 @@ scoreboard objectives add brg.heal dummy
 scoreboard objectives add brg.consumed_beans dummy
 scoreboard objectives add brg.using_item dummy
 scoreboard objectives add brg.using_item_prev dummy
-
-
+scoreboard objectives add brg.seedbook_page dummy
+scoreboard objectives add brg.seedbook trigger
 ## Gamerules
-gamerule logAdminCommands false
-gamerule commandBlockOutput false
-gamerule maxCommandChainLength 1073741824
+gamerule log_admin_commands false
+gamerule command_block_output false
 
 ## Constants
 scoreboard players set #0 brg.dummy 0
 scoreboard players set #1 brg.dummy 1
 scoreboard players set #2 brg.dummy 2
 scoreboard players set #3 brg.dummy 3
+scoreboard players set #4 brg.dummy 4
+scoreboard players set #5 brg.dummy 5
+scoreboard players set #8 brg.dummy 8
 scoreboard players set #12 brg.dummy 12
+scoreboard players set #80 brg.dummy 80
+
+function brg:item/seedbook/load
+execute positioned -29999966 0 -29999966 run function brg:technical/forceload_chunk
 
 # Load message
 tellraw @a[predicate=brg:entity_properties/is_developer] [{"translate":"debug.prefix","color":"yellow","bold":true},{"translate":"commands.brg.reload.success","color":"white","bold":false}]

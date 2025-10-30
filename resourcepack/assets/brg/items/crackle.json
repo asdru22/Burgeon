@@ -1,0 +1,73 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "default",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/body"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/claw"
+            }
+          ]
+        }
+      },
+      {
+        "when": "holding",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/body"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/claw_holding"
+            }
+          ]
+        }
+      },
+      {
+        "when": "powered",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/body"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "brg:block/crackle/claw_powered"
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "brg:item/crackle_head"
+          },
+          "when": "head"
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "brg:item/crackle"
+      }
+    }
+  }
+}

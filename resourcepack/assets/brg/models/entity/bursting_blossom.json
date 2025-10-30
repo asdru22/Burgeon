@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "brg:entity/bursting_blossom"
+  },
+  "display": {
+    "head": {
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "consume_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{brg:{id:\"intertwined_goat_horn\"}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:item/intertwined/goat_horn/use"
+  }
+}

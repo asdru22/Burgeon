@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "brg:intwine/spear/golden"
+            }
+          ],
+          "name": "minecraft:golden_spear"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/intertwined/golden_spear"
+}

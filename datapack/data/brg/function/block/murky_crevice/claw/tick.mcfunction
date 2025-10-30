@@ -1,3 +1,5 @@
+# Handle claw lifecycle
+
 scoreboard players add @s brg.dummy2 1
 # move forward
 execute if score @s brg.dummy2 matches 1 run tp @s ^ ^ ^1.1

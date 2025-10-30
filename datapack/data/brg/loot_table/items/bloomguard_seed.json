@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{brg:{id:\"bloomguard_seed\",seed:{identifier:true,soil:{id:\"minecraft:dirt\"},stages:12}}}"
+                            "tag": "{brg:{id:\"bloomguard_seed\",seed:{identifier:true,soil:{id:\"minecraft:dirt\"},stages:19}}}"
                         },
                         {
                             "function": "minecraft:set_components",

@@ -1,0 +1,27 @@
+{
+  "parent": "brg:technical/root",
+  "criteria": {
+    "unequip_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "custom_data": {
+                "brg": {
+                  "id": "crackle"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "brg:block/crackle/hat/unequip"
+  }
+}

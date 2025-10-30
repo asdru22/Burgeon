@@ -3,7 +3,7 @@ data remove storage brg:macro root
 execute store result storage brg:macro root.damage double 0.5 run data get entity @s SelectedItem.components."minecraft:custom_data".brg.sickle_damage
 
 # apply modifier to mainhand
-item modify entity @s weapon.mainhand brg:rootsplit_sickle/split
+item modify entity @s weapon.mainhand brg:rootsplit_sickle/snap
 
 #apply damage to mainhand
 data modify storage brg:macro root.slot set value "weapon.mainhand"

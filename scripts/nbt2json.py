@@ -2,7 +2,7 @@ import re
 import json
 import nbtlib
 import pyperclip
-from nbtlib.tag import Byte, Short, Int, Long, Float, Double, String, List, Compound
+from nbtlib.tag import Byte, Short, Int, Long, Float, Double, String, List, Compound, ByteArray, IntArray, LongArray
 
 
 def extract_braced_section(text: str, start_index: int) -> str:
@@ -32,13 +32,12 @@ def extract_components(command: str) -> str:
 def nbt_to_python(obj):
     # Recursively convert nbtlib tags into plain Python types
     if isinstance(obj, Byte):
-        # Interpret 0b/1b as False/True, otherwise keep as int
         if int(obj) == 0:
             return False
         elif int(obj) == 1:
             return True
         return int(obj)
-    if isinstance(obj, (Short, Int, Long)):
+    elif isinstance(obj, (Short, Int, Long)):
         return int(obj)
     elif isinstance(obj, (Float, Double)):
         return float(obj)
@@ -48,6 +47,8 @@ def nbt_to_python(obj):
         return [nbt_to_python(x) for x in obj]
     elif isinstance(obj, Compound):
         return {str(k): nbt_to_python(v) for k, v in obj.items()}
+    elif isinstance(obj, (ByteArray, IntArray, LongArray)):
+        return list(obj)  # Convert NBT arrays to plain Python lists
     else:
         return obj
 

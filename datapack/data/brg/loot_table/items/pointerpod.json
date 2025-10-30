@@ -15,6 +15,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "brg:pointerpod",
+                "!minecraft:enchantable": {},
                 "!minecraft:consumable": {},
                 "!minecraft:food": {},
                 "!minecraft:max_damage": {},
