@@ -4,6 +4,7 @@
 #let glutted_log = mc-block("glutted_log", "Glutted Log", custom: true)
 #let murky_crevice = mc-block("murky_crevice", "Murky Crevice", custom: true)
 #let spile = mc-item("spile", "Spile", custom: true)
+#let crackle = mc-item("crackle", "Crackle", custom: true)
 
 #let bloomguard = mc-item("bloomguard", "Bloomguard", custom: true)
 #let bloomguard_open = mc-item("bloomguard", "Bloomguard", custom: true)
@@ -30,11 +31,14 @@
 #let bursting_bud = mc-item("bursting_bud", "Bursting Bud", custom: true)
 #let bursting_blossom = mc-item("bursting_blossom", "Bursting Blossom", custom: true)
 #let seedbook = mc-item("seedbook", "Floriculture Notes", custom: true)
-#let damp_notes = mc-item("damp_notes", "Damp Notes", custom: true)
+#let damp_notes = mc-item("damp_notes", "Damp Journal", custom: true)
 #let baby_cobbler = mc-item("baby_cobbler", "Baby Cobbler", custom: true)
 #let cobbler = mc-item("cobbler", "Cobbler", custom: true)
 #let sugarcoated_bean = mc-item("sugarcoated_bean", "Sugarcoated Bean", custom: true)
-
+#let intwine = mc-item("intwine", "Intwine", custom: true)
+#let intertwined_goat_horn = mc-item("intertwined_goat_horn", "Intertwined Goat Horn", custom: true,auto-img: false)
+#let intertwined_crossbow = mc-item("intertwined_crossbow", "Intertwined Crossbow", custom: true,auto-img: false)
+#let intertwined_spear = mc-item("intertwined_spear", "Intertwined Spear", custom: true,auto-img: false)
 
 #let mud = mc-block("mud", "Mud")
 #let dirt = mc-block("dirt", "Dirt")
@@ -47,6 +51,7 @@
 #let vault = mc-block("vault", "Vault")
 #let crafting_table = mc-block("crafting_table", "Crafting Table")
 #let gold_block = mc-block("gold_block", "Gold Block")
+#let grindstone = mc-block("grindstone", "Grindstone")
 
 
 #let bucket = mc-item("bucket", "Bucket")
@@ -65,3 +70,5 @@
 #let feather = mc-item("feather", "Feather")
 #let sugar = mc-item("sugar", "Sugar")
 #let goat_horn = mc-item("goat_horn", "Goat Horn")
+#let crossbow = mc-item("crossbow", "Crossbow")
+#let wooden_spear = mc-item("wooden_spear", "Wooden Spear")

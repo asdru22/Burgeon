@@ -148,6 +148,25 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     durability: 142,
 ))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Pressing #inputs.use will drain #health(4)[health] from the player and release a homing Crimson Spore that targets the nearest entity. The spores deal #damage(4) and decay after 1 second. If a spore hits an entity, the owner will be healed for #health(4)[health].]
 
+#top_grid(col: 2, item-tooltip(
+    intertwined_goat_horn,
+    type: "Tool",
+    max_stack: 1,
+))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. Holding #inputs.use will launch the player. There is a 25 second cooldown.]
+
+#top_grid(col: 2, item-tooltip(
+    intertwined_crossbow,
+    type: "Tool",
+    max_stack: 1,
+))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. Consumes 10 durability to shoot an arrow that binds mobs near the one that it hits together for 2.5 seconds.]
+
+#top_grid(col: 2, item-tooltip(
+    intertwined_spear,
+    type: "Tool",
+    max_stack: 1,
+))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. When attacking it looses 3 durability to cast a torny vine that deals #damage(2) to entities that come in cotact with it.
+Can be crafted from any spear.
+]
 
 #top_grid(col: 2, item-tooltip(
     twining_tendril,
@@ -243,7 +262,12 @@ When opened, the user can view the soil required by seeds to grown in an #etched
 #top_grid(col: 2, item-tooltip(
     sugarcoated_bean,
     type: "Item",
-))[Obtained from #cobbler.txt crafting.]
+))[Obtained from #cobbler.txt crafting. When left in front of a #murky_crevice.txt, it will cause the creature that inhabits the crevice to leave it, dropping a #crackle.txt in the process.]
+
+#top_grid(col: 2, item-tooltip(
+    intwine,
+    type: "Item",
+))[Obtained from #(murky_crevice.txt-param)[Murky Crevices]. Used in #cobbler.txt crafting recipes to make intertwined items. Using a #grindstone.txt will remove the intertwined upgrade.]
 
 = Blocks
 == Functional
@@ -322,12 +346,13 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
     #table(
         columns: 2,
         [Reward], [Weight],
-        wildstep_seed.txt, [3],
+        wildstep_seed.txt, [2],
         scarlet_fang_root.txt, [2],
-        bloom_bud.txt, [3],
-        eyeblossom.txt, [3],
+        bloom_bud.txt, [2],
         appalling_shinguards.txt, [2],
-        baby_cobbler.txt,[2]
+        baby_cobbler.txt,[3],
+        intwine.txt,[4],
+        bursting_bud.txt,[2]
     )
 ]
 
@@ -364,7 +389,7 @@ If there is no block for the Spile to hold on to, the model will appear on the g
     ),
     pb: false,
 )[
-    A Cobbler grows from a #baby_cobbler.txt placed in an #etched_vase.txt. When they grow, they will have a #damp_notes.txt in their mouth. Items in the Cobbler's mouth can be removed with #inputs.attack. Cobblers can't be removed from their vase by clicking #inputs.attack, they can only be removed if the vase is broken or powered by redstone. You can feed it items with #inputs.use to combine them into new ones. Cobblers only have 2 slots. Items can be removed by tickling it with a #feather.txt.\
+    Obtained from grown #(baby_cobbler.txt-param)[Baby Cobblers] placed in an #etched_vase.txt. When they grow, they will have a #damp_notes.txt in their mouth. Items in the Cobbler's mouth can be removed with #inputs.attack. Cobblers can't be removed from their vase by clicking #inputs.attack, they can only be removed if the vase is broken or powered by redstone. You can feed it items with #inputs.use to combine them into new ones. Cobblers only have 2 slots. Items can be removed by tickling it with a #feather.txt.\
 ]
 If items corresponding to a recipe are in its mouth, it will start combining them.
 #align(
@@ -374,10 +399,22 @@ If items corresponding to a recipe are in its mouth, it will start combining the
         [Ingredients], [Result],
         [#bean.txt + #sugar.txt], [#sugarcoated_bean.txt],
         [#bean.txt + #gold_block.txt], [#protobean.txt],
+        [#goat_horn.txt + #intwine.txt], [#intertwined_goat_horn.txt],
+        [#crossbow.txt + #intwine.txt], [#intertwined_crossbow.txt],
+        [#wooden_spear.txt + #intwine.txt], [#intertwined_spear.txt],
     ),
 )
 
 #pagebreak()
+
+#top_grid(col: 2, item-tooltip(
+    crackle,
+    type: "Block",
+    rarity: rarity.uncommon,
+    max_stack: 1
+))[
+    A Crackle is obtained when a #murky_crevice.txt takes a #sugarcoated_bean.txt, instead of a normal #bean.txt. When placed, pressing #inputs.use will display the held item with its claw. If it's powered by redstone, its claw will spin. A Crackle can be equipped in the head slot, and has no effect whatsoever other than looking cute.
+]
 
 = Structures
 #let feature_content(columns, title, ..children) = align(center, grid(
