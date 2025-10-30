@@ -5,15 +5,38 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/bloom_bud"
+          "value": "brg:items/bloom_bud",
+          "weight": 2
         },
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/scarlet_fang_root"
+          "value": "brg:items/scarlet_fang_root",
+          "weight": 2
         },
         {
           "type": "minecraft:loot_table",
-          "value": "brg:items/wildstep_seed"
+          "value": "brg:items/wildstep_seed",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/appalling_shinguards",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/intwine",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/bursting_bud",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "brg:items/baby_cobbler",
+          "weight": 3
         }
       ]
     }

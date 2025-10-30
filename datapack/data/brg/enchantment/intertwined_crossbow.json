@@ -1,0 +1,43 @@
+{
+    "description": {
+        "translate": "enchantment.brg.intertwined",
+        "color": "white"
+    },
+    "supported_items": "minecraft:crossbow",
+    "primary_items": "#minecraft:enchantable/crossbow",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "direct_entity": {
+                            "type": "#minecraft:arrows"
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "brg:item/intertwined/crossbow/as_hit_entity"
+                },
+                "enchanted": "attacker",
+                "affected": "victim"
+            }
+        ]
+    }
+}

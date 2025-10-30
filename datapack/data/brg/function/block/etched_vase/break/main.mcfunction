@@ -10,7 +10,7 @@ data modify storage brg:temp root.item.count set value 1
 execute unless data storage brg:temp root.item.components run data modify storage brg:temp root.item.components set value {}
 execute if entity @s[tag=brg.etched_vase.has_soil] run function brg:technical/macros/loot/spawn with storage brg:temp root.item
 
-execute if entity @s[tag=brg.etched_vase.has_seed] on passengers if entity @s[tag=brg.etched_vase.seed] run function brg:block/etched_vase/attack/remove_seed
+execute if entity @s[tag=brg.etched_vase.has_seed] on passengers if entity @s[tag=brg.etched_vase.seed] run function brg:block/etched_vase/remove_seed
 
 
 execute on passengers run kill

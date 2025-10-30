@@ -8,3 +8,9 @@ execute if entity @s[tag=brg.bloomguard] run return run function brg:item/bloomg
 
 ## Scarlet Spore
 execute if entity @s[tag=brg.scarlet_spore] run return run function brg:item/scarlet_fang/spore/tick
+
+## Bursting Blossom
+execute if entity @s[tag=brg.bursting_blossom] run return run function brg:entity/bursting_blossom/tick
+
+## Bursting Blossom Petal
+execute if entity @s[tag=brg.bursting_blossom_petal] run return run function brg:entity/bursting_blossom/petal/tick

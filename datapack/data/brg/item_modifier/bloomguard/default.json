@@ -2,10 +2,14 @@
   "function": "minecraft:set_components",
   "components": {
     "!minecraft:blocks_attacks": {},
+    "use_effects": {
+      "can_sprint": true,
+      "speed_multiplier": 0.6
+    },
     "!minecraft:custom_model_data": {},
     "minecraft:consumable": {
       "consume_seconds": 0.75,
-      "animation": "spear",
+      "animation": "trident",
       "sound": {
         "sound_id": "",
         "range": 0

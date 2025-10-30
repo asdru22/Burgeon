@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "brg:item/generic/consume_bean_pod"
+    "function": "brg:item/other/consume_bean_pod"
   }
 }

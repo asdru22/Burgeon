@@ -1,0 +1,21 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "attribute": "minecraft:armor",
+      "id": "minecraft:armor",
+      "amount": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#temp_0"
+        },
+        "score": "brg.dummy",
+        "scale": 0.1
+      },
+      "operation": "add_value",
+      "slot": "legs"
+    }
+  ],
+  "replace": true
+}

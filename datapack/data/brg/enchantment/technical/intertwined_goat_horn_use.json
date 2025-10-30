@@ -1,0 +1,46 @@
+{
+  "description": "",
+  "supported_items": "minecraft:crossbow",
+  "primary_items": "#minecraft:enchantable/crossbow",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "brg:item/intertwined/goat_horn/remove_technical_enchantment"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0.3,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            1,
+            1
+          ],
+          "magnitude": 3.5
+        }
+      }
+    ]
+  }
+}

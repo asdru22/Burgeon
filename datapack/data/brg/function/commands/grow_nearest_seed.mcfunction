@@ -1,1 +1,1 @@
-data modify entity @n[tag=brg.etched_vase.seed] item.components."minecraft:custom_model_data".strings[0] set value "age1"
+execute as @n[tag=brg.etched_vase] at @s run function brg:block/etched_vase/seed_grown

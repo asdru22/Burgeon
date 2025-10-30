@@ -4,7 +4,11 @@
     "components": {
       "!minecraft:damage": {},
       "!minecraft:max_damage": {},
-      "!minecraft:consumable": {}
+      "!minecraft:consumable": {},
+      "minecraft:swing_animation": {
+        "type": "stab",
+        "duration": 20
+      }
     }
   },
   {

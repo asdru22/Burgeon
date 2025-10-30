@@ -1,0 +1,65 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:select",
+        "cases": [
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/copper_spear"
+            },
+            "when": [
+              "gui",
+              "ground",
+              "fixed",
+              "on_shelf"
+            ]
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/copper_spear_in_hand"
+        },
+        "property": "minecraft:display_context"
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "brg:intertwined_spear"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:select",
+          "cases": [
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "brg:item/intertwined/spear"
+              },
+              "when": [
+                "gui",
+                "ground",
+                "fixed",
+                "on_shelf"
+              ]
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "brg:item/intertwined/spear_in_hand"
+          },
+          "property": "minecraft:display_context"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  },
+  "swap_animation_scale": 1.9
+}

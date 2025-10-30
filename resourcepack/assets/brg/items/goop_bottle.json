@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "bottle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "brg:block/spile_bottle/goop"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "brg:item/goop_bottle"
+    }
+  }
+}

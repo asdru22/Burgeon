@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "item.brg.damp_notes"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "+"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:diamond_spear"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "seedbook.brg.ui.result",
+        "font": "brg.seedbook:main"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:diamond_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/diamond_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "seedbook.brg.done"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger brg.seedbook set 102"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "translate": "seedbook.brg.previous"
+      },
+      "width": 80,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "brg:damp_notes/7"
+      }
+    },
+    {
+      "label": {
+        "translate": "seedbook.brg.next"
+      },
+      "width": 80,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "brg:damp_notes/9"
+      }
+    }
+  ]
+}

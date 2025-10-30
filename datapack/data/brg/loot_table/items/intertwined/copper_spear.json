@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:reference",
+              "name": "brg:intwine/spear/copper"
+            }
+          ],
+          "name": "minecraft:copper_spear"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/intertwined/copper_spear"
+}

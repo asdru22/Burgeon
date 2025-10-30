@@ -1,0 +1,40 @@
+{
+  "parent": "brg:burgeon/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:straw_hat"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.equip_straw_hat"
+    },
+    "description": {
+      "translate": "advancements.brg.equip_straw_hat.description"
+    }
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "predicates": {
+                "minecraft:custom_data": "{brg:{id:\"straw_hat\"}}"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{id:\"straw_hat\"}}"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

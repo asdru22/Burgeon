@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{brg:{instrument:\"minecraft:ponder_goat_horn\"}}"
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "brg:intwine/goat_horn"
+            }
+          ],
+          "name": "minecraft:poisonous_potato"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "brg:items/intertwined/goat_horn"
+}

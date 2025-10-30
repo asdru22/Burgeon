@@ -1,0 +1,272 @@
+{
+  "entries": [
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.bean"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:sugar"
+      },
+      "result": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.sugarcoated_bean"
+          },
+          "minecraft:custom_model_data": {
+            "strings": [
+              "sugarcoated"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:bean",
+          "minecraft:item_name": {
+            "translate": "item.brg.bean"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:gold_block"
+      },
+      "result": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:protobean",
+          "minecraft:item_name": {
+            "translate": "item.brg.protobean"
+          }
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:crossbow"
+      },
+      "result": {
+        "id": "minecraft:crossbow",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/crossbow",
+          "minecraft:enchantments": {
+            "brg:intertwined_crossbow": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:wooden_spear"
+      },
+      "result": {
+        "id": "minecraft:wooden_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/wooden_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:stone_spear"
+      },
+      "result": {
+        "id": "minecraft:stone_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/stone_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:copper_spear"
+      },
+      "result": {
+        "id": "minecraft:copper_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/copper_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:iron_spear"
+      },
+      "result": {
+        "id": "minecraft:iron_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/iron_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:golden_spear"
+      },
+      "result": {
+        "id": "minecraft:golden_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/golden_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:diamond_spear"
+      },
+      "result": {
+        "id": "minecraft:diamond_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/diamond_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:netherite_spear"
+      },
+      "result": {
+        "id": "minecraft:netherite_spear",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/netherite_spear",
+          "minecraft:enchantments": {
+            "brg:intertwined_spear": 1
+          },
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    },
+    {
+      "ingredient1": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+          "minecraft:item_model": "brg:intwine",
+          "minecraft:item_name": {
+            "translate": "item.brg.intwine"
+          }
+        }
+      },
+      "ingredient2": {
+        "id": "minecraft:goat_horn"
+      },
+      "result": {
+        "id": "minecraft:goat_horn",
+        "components": {
+          "minecraft:item_model": "brg:intertwined/goat_horn",
+          "minecraft:enchantments": {
+            "brg:intertwined_goat_horn": 1
+          },
+          "!minecraft:instrument":{},
+          "minecraft:enchantment_glint_override": false
+        }
+      }
+    }
+  ]
+}

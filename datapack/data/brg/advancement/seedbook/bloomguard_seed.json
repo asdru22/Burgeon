@@ -1,0 +1,17 @@
+{
+  "parent": "brg:seedbook/root",
+  "criteria": {
+    "wheat_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{brg:{id:\"bloomguard_seed\"}}"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

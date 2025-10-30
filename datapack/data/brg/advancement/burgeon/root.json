@@ -7,7 +7,17 @@
       "translate": "pack.brg"
     },
     "description": {
-      "translate": "advancements.brg.root.description"
+      "translate": "advancements.brg.root.description",
+      "with": [
+        {
+          "translate": "pack.brg.version"
+        },
+        {
+          "translate": "pack.brg.version.name",
+          "color": "#1cc396"
+        }
+      ],
+      "color": "white"
     },
     "background": "minecraft:block/moss_block",
     "announce_to_chat": false,

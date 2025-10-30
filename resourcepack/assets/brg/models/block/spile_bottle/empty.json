@@ -1,0 +1,6 @@
+{
+  "parent": "brg:block/spile_bottle/root",
+  "textures": {
+    "item": "minecraft:item/glass_bottle"
+  }
+}

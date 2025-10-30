@@ -1,3 +1,4 @@
+# Spawn the item held by the claw
 data remove storage brg:macro root.item
 execute on passengers run data modify storage brg:macro root.item set from entity @s item
 execute on passengers run kill

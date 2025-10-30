@@ -1,0 +1,22 @@
+{
+  "parent":"brg:burgeon/convert_glutted_log",
+  "display": {
+    "icon": {
+      "id": "minecraft:stone",
+      "components": {
+        "minecraft:item_model": "brg:cobbler"
+      }
+    },
+    "title": {
+      "translate": "advancements.brg.get_cobbler_mouth_item"
+    },
+    "description": {
+      "translate": "advancements.brg.get_cobbler_mouth_item.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
