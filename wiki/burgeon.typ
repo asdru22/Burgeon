@@ -1,12 +1,30 @@
 #import "utils/variables.typ": *
 #import "utils/template.typ": template
+#import "utils/radar.typ": *
+
+#let rad(dmg: 0, ctrl: 0, spd: 0, heal: 0, range: 0, def: 0) = align(center, box(width: 100%, canvas({
+    radar(
+        (0, 0),
+        (
+            ([Damage], dmg),
+            ([Range], range),
+            ([Control], ctrl),
+            ([Speed], spd),
+            ([Healing], heal),
+            ([Defense], def),
+        ),
+        fill: red.transparentize(50%),
+        radius: 2,
+        stroke: 1.5pt + red,
+    )
+})))
 
 
 #rarity.insert("currency", (id: "Currency", color: rgb("#55FF55")))
 
 #let top_grid(col: 2, ..content, pb: true) = {
     grid(
-        columns: 3,
+        columns: col,
         align: top,
         gutter: 10pt,
         ..content,
@@ -116,19 +134,35 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
 
 == Tools & Weapons
 
-#top_grid(col: 2, item-tooltip(
-    bloomguard,
-    type: "Tool",
-    alt: "../resourcepack/assets/brg/textures/item/bloomguard_blocking.png",
-))[Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing #inputs.use will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.]
+#top_grid(
+    col: 2,
+    pb: false,
+    item-tooltip(
+        bloomguard,
+        type: "Tool",
+        alt: "../resourcepack/assets/brg/textures/item/bloomguard_blocking.png",
+    ),
+    rad(ctrl: 0.3, def: 0.8, dmg: 0.5, heal: 0, range: 0.9, spd: 0.5),
+)
 
-#top_grid(col: 2, item-tooltip(
-    rootsplit_sickle,
-    type: "Tool",
-    max_stack: 1,
-    durability: 465,
-    alt: "/resourcepack/assets/brg/textures/item/rootsplit_staff_small.png",
-))[Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6), has 2.8 attack speed, and -1 attack range. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. When fusing the Sickles you gain Speed I for 10 seconds and Hunger II for 20 seconds. The Staff deals #damage(8), has 0.8 attack speed and +1 attack range. The Staff has 20 durability, and will break into two sickles, dealing #health(5)[splinter Damage] to the wielder. The durability will also be split equally between the two Sickles.]
+Obtained from grown #(bloomguard_seed.txt-param)[Bloomguard Seeds]. Also drops 1-3 seeds when broken. When in your mainhand, holding and releasing #inputs.use will let you throw the Bloomguard, dealing #damage(5). When in offhand, the Bloomguard opens, so that it can be used as a shield. Blocking an attack will break the Bloomguard, removing one from the item stack used.
+#pagebreak()
+
+#top_grid(
+    col: 2,
+    pb: false,
+    item-tooltip(
+        rootsplit_sickle,
+        type: "Tool",
+        max_stack: 1,
+        durability: 465,
+        alt: "/resourcepack/assets/brg/textures/item/rootsplit_staff_small.png",
+    ),
+    rad(ctrl: 0.1, def: 0.0, dmg: 0.8, heal: 0, range: 0.2, spd: 0.4),
+)
+Obtained from grown #(tangleroot.txt-param)[Tangleroots]. The Sickle deals #damage(6), has 2.8 attack speed, and -1 attack range. If you are holding a sickle in both the mainhand and offhand, holding #inputs.use will cause them to fuse into one, becoming a Rootsplit Staff. When fusing the Sickles you gain Speed I for 10 seconds and Hunger II for 20 seconds. The Staff deals #damage(8), has 0.8 attack speed and +1 attack range. The Staff has 20 durability, and will break into two sickles, dealing #health(5)[splinter Damage] to the wielder. The durability will also be split equally between the two Sickles.
+
+#pagebreak()
 
 #top_grid(col: 2, item-tooltip(
     blooming_bulb,
@@ -141,12 +175,20 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     type: "Tool",
 ))[Obtained from grown #azure_thistle_seeds.txt. Also drops 1-2 seeds when broken. Azure Thistles can be used as arrows. Mobs hit will take an additional #damage(2) every time they are hurt for 20 seconds.]
 
-#top_grid(col: 2, item-tooltip(
-    scarlet_fang,
-    type: "Tool",
-    max_stack: 1,
-    durability: 142,
-))[Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Pressing #inputs.use will drain #health(4)[health] from the player and release a homing Crimson Spore that targets the nearest entity. The spores deal #damage(4) and decay after 1 second. If a spore hits an entity, the owner will be healed for #health(4)[health].]
+#top_grid(
+    col: 2,
+    pb: false,
+    item-tooltip(
+        scarlet_fang,
+        type: "Tool",
+        max_stack: 1,
+        durability: 142,
+    ),
+    rad(ctrl: 0.1, def: 0.0, dmg: 0.6, heal: 0.3, range: 0.4, spd: 0.8),
+)
+Obtained from grown #(scarlet_fang_root.txt-param)[Scarlet Fang Roots]. Pressing #inputs.use will drain #health(4)[health] from the player and release a homing Crimson Spore that targets the nearest entity. The spores deal #damage(4) and decay after 1 second. If a spore hits an entity, the owner will be healed for #health(4)[health].
+
+#pagebreak()
 
 #top_grid(col: 2, item-tooltip(
     intertwined_goat_horn,
@@ -154,19 +196,28 @@ Can be planted in #(etched_vase.txt-param)[Etched Vases] filled with #sand.txt. 
     max_stack: 1,
 ))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. Holding #inputs.use will launch the player. There is a 25 second cooldown.]
 
-#top_grid(col: 2, item-tooltip(
-    intertwined_crossbow,
-    type: "Tool",
-    max_stack: 1,
-))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. Consumes 10 durability to shoot an arrow that binds mobs near the one that it hits together for 2.5 seconds.]
+#top_grid(
+    col: 2,
+    pb: false,
+    item-tooltip(
+        intertwined_crossbow,
+        type: "Tool",
+        max_stack: 1,
+    ),
+    rad(ctrl: 0.8, def: 0.0, dmg: 0.5, heal: 0, range: 1, spd: 0.2),
+)
+Obtained from #(cobbler.txt-param)[Cobbler] crafting. Consumes 10 durability to shoot an arrow that binds mobs near the one that it hits together for 2.5 seconds.
 
-#top_grid(col: 2, item-tooltip(
+#pagebreak()
+
+#top_grid(col: 2, pb: false, item-tooltip(
     intertwined_spear,
     type: "Tool",
     max_stack: 1,
-))[Obtained from #(cobbler.txt-param)[Cobbler] crafting. When attacking it looses 3 durability to cast a torny vine that deals #damage(2) to entities that come in cotact with it.
-Can be crafted from any spear.
-]
+),rad(ctrl: 0.8, def: 0.0, dmg: 0.6, heal: 0, range: 0.3, spd: 0.7))
+Obtained from #(cobbler.txt-param)[Cobbler] crafting. When attacking it looses 3 durability to cast a torny vine that deals #damage(2) to entities that come in cotact with it. Can be crafted from any spear.
+
+#pagebreak()
 
 #top_grid(col: 2, item-tooltip(
     twining_tendril,
@@ -350,9 +401,9 @@ Each second there's a 5% chance for the seeds growth stage to be increased by 1.
         scarlet_fang_root.txt, [2],
         bloom_bud.txt, [2],
         appalling_shinguards.txt, [2],
-        baby_cobbler.txt,[3],
-        intwine.txt,[4],
-        bursting_bud.txt,[2]
+        baby_cobbler.txt, [3],
+        intwine.txt, [4],
+        bursting_bud.txt, [2],
     )
 ]
 
@@ -401,7 +452,7 @@ If items corresponding to a recipe are in its mouth, it will start combining the
         [#bean.txt + #gold_block.txt], [#protobean.txt],
         [#goat_horn.txt + #intwine.txt], [#intertwined_goat_horn.txt],
         [#crossbow.txt + #intwine.txt], [#intertwined_crossbow.txt],
-        [#wooden_spear.txt + #intwine.txt], [#intertwined_spear.txt],
+        [#(wooden_spear.txt-param)[Any Spear] + #intwine.txt], [#intertwined_spear.txt],
     ),
 )
 
@@ -411,7 +462,7 @@ If items corresponding to a recipe are in its mouth, it will start combining the
     crackle,
     type: "Block",
     rarity: rarity.uncommon,
-    max_stack: 1
+    max_stack: 1,
 ))[
     A Crackle is obtained when a #murky_crevice.txt takes a #sugarcoated_bean.txt, instead of a normal #bean.txt. When placed, pressing #inputs.use will display the held item with its claw. If it's powered by redstone, its claw will spin. A Crackle can be equipped in the head slot, and has no effect whatsoever other than looking cute.
 ]
