@@ -15,7 +15,12 @@
     "id": "minecraft:player_head",
     "components": {
       "!minecraft:equippable": {},
-      "minecraft:custom_data": "{brg:{custom_block:1b,id:\"etched_vase\"}}",
+      "minecraft:custom_data": {
+        "brg": {
+          "custom_block": true,
+          "id": "etched_vase"
+        }
+      },
       "minecraft:item_model": "brg:block/etched_vase",
       "minecraft:item_name": {
         "translate": "block.brg.etched_vase"

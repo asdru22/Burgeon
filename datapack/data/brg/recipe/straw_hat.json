@@ -11,7 +11,33 @@
   },
   "result": {
     "id": "minecraft:leather_helmet",
-    "components": {"!minecraft:damage":{},"minecraft:attribute_modifiers":[],"minecraft:custom_data":{"brg":{"id":"straw_hat"}},"minecraft:equippable":{"equip_sound":{"sound_id":"brg:item.armor.equip_straw_hat"},"slot":"head"},"minecraft:item_model":"brg:straw_hat","minecraft:item_name":{"translate":"item.brg.straw_hat"},"minecraft:lore":[{"color":"white","font":"brg:tooltip","italic":false,"translate":"pack.brg.tooltip"}]},
+    "components": {
+      "!minecraft:damage": {},
+      "minecraft:attribute_modifiers": [],
+      "minecraft:custom_data": {
+        "brg": {
+          "id": "straw_hat"
+        }
+      },
+      "minecraft:equippable": {
+        "equip_sound": {
+          "sound_id": "brg:item.armor.equip_straw_hat"
+        },
+        "slot": "head"
+      },
+      "minecraft:item_model": "brg:straw_hat",
+      "minecraft:item_name": {
+        "translate": "item.brg.straw_hat"
+      },
+      "minecraft:lore": [
+        {
+          "color": "white",
+          "font": "brg:tooltip",
+          "italic": false,
+          "translate": "pack.brg.tooltip"
+        }
+      ]
+    },
     "count": 1
   }
 }

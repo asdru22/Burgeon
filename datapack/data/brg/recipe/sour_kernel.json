@@ -18,11 +18,10 @@
           "id": "sour_kernel",
           "seed": {
             "identifier": true,
-            "result": "burgeon:blocks/glutted_log",
             "soil": {
               "id": "minecraft:pale_oak_log"
             },
-            "stages": 12
+            "stages": 24
           }
         }
       },
