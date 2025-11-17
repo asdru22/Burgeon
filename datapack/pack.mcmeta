@@ -1,7 +1,7 @@
   {
     "pack": {
-      "min_format": [91,0],
-      "max_format": [91,0],
+      "min_format": [93,1],
+      "max_format": [93,1],
       "description": [
       {
           "text": "Burgeon",
@@ -19,14 +19,14 @@
     "overlays": {
       "entries": [
         {
-          "formats": [45,90],
+          "formats": [45,92],
           "min_format": [45,0],
-          "max_format": 90,
+          "max_format": 92,
           "directory": "invalid_version"
         },
         {
-          "formats": [92,2147483647],
-          "min_format": [92,1],
+          "formats": [94,2147483647],
+          "min_format": [94,0],
           "max_format": 2147483647,
           "directory": "invalid_version"
         }
