@@ -1,18 +1,18 @@
 {
   "pack": {
-    "pack_format": 74,
-    "min_format": 74,
-    "max_format": 74,
+    "pack_format": 75,
+    "min_format": 75,
+    "max_format": 75,
     "description": [
       {
-        "text": "Burgeon",
+        "text": "Burgeon V1.0.0",
         "color": "#1cc396"
       },
       {
         "text": "\n"
       },
       {
-        "text": "DEV VERSION DON'T DISTRIBUTE",
+        "text": "Perilous Plantations",
         "color": "#1cc396"
       }
     ]

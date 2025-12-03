@@ -1,32 +1,32 @@
   {
     "pack": {
-      "min_format": [93,1],
-      "max_format": [93,1],
+      "min_format": [94,0],
+      "max_format": [94,0],
       "description": [
       {
-          "text": "Burgeon",
-          "color": "#1cc396"
-        },
-            {
-          "text": "\n"
-        },
-        {
-          "text": "DEV VERSION DON'T DISTRIBUTE",
-          "color": "#1cc396"
-        }
+        "text": "Burgeon V1.0.0",
+        "color": "#1cc396"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "Perilous Plantations",
+        "color": "#1cc396"
+      }
       ]
     },
     "overlays": {
       "entries": [
         {
-          "formats": [45,92],
+          "formats": [45,93],
           "min_format": [45,0],
-          "max_format": 92,
+          "max_format": 93,
           "directory": "invalid_version"
         },
         {
-          "formats": [94,2147483647],
-          "min_format": [94,0],
+          "formats": [95,2147483647],
+          "min_format": [95,0],
           "max_format": 2147483647,
           "directory": "invalid_version"
         }
